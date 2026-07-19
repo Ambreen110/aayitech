@@ -17,17 +17,24 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-2">
-          <div className="rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-2 py-1">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-lg font-black tracking-widest text-transparent">
-              AAYI
-            </span>
-          </div>
+       <Link href="/" className="flex items-center gap-3">
 
-          <span className="text-sm font-semibold tracking-[0.3em] text-white/80 group-hover:text-white">
-            /TECH
-          </span>
-        </Link>
+  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 text-lg font-black text-black shadow-lg shadow-cyan-500/30">
+    A
+  </div>
+
+  <div>
+    <h3 className="text-lg font-black tracking-wider">
+  <span className="text-white">AAYI</span>
+  <span className="text-cyan-400">/TECH</span>
+</h3>
+
+    <p className="-mt-1 text-[10px] uppercase tracking-[0.3em] text-white/45">
+      Systems & AI
+    </p>
+  </div>
+
+</Link>
 
         {/* Desktop Menu */}
         <nav className="hidden items-center gap-8 md:flex">

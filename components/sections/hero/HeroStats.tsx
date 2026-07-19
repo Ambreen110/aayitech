@@ -8,7 +8,7 @@ import {
   BrainCircuit,
 } from "lucide-react";
 
-import AnimatedCounter from "./AnimatedCounter";
+import AnimatedCounter from "../../shared/AnimatedCounter";
 
 const stats = [
   {

@@ -1,18 +1,16 @@
 interface Props {
-  badge: string;
-  title: React.ReactNode;
+  title: string;
   subtitle: string;
 }
 
 export default function SectionHeading({
-  badge,
+  
   title,
   subtitle,
 }: Props) {
   return (
     <div className="mx-auto mb-16 max-w-3xl text-center">
       <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
-        {badge}
       </p>
 
       <h2 className="text-4xl font-bold md:text-5xl">

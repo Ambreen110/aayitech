@@ -9,48 +9,12 @@ import {
   Network,
   Workflow,
 } from "lucide-react";
+import { services } from "@/data/services";
 
 import ServiceBackground from "./ServiceBackground";
 import ServiceCard from "./ServiceCard";
 
-const services = [
-  {
-    title: "Full Stack Development",
-    description:
-      "Modern, scalable web applications using Next.js, React, Node.js, NestJS, and the MERN stack.",
-    icon: Code2,
-  },
-  {
-    title: "CRM Implementation",
-    description:
-      "Setup, customize, and optimize HubSpot, GoHighLevel, Zoho CRM, Brevo, and Kit for business growth.",
-    icon: Briefcase,
-  },
-  {
-    title: "Workflow Automation",
-    description:
-      "Automate repetitive processes using AI, APIs, Zapier, Make, and custom workflow solutions.",
-    icon: Workflow,
-  },
-  {
-    title: "API Development",
-    description:
-      "Develop secure REST APIs and integrate third-party services with authentication and automation.",
-    icon: Network,
-  },
-  {
-    title: "AI Business Solutions",
-    description:
-      "Build AI assistants, chatbots, intelligent workflows, and productivity tools tailored to your business.",
-    icon: Bot,
-  },
-  {
-    title: "Database & Backend",
-    description:
-      "Design reliable backend systems with PostgreSQL, MongoDB, MySQL, and scalable server architectures.",
-    icon: Database,
-  },
-];
+
 
 export default function Services() {
   return (
@@ -98,12 +62,13 @@ export default function Services() {
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard
-              key={service.title}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-              delay={index * 0.1}
-            />
+    key={service.slug}
+    slug={service.slug}
+    title={service.shortTitle}
+    description={service.description}
+    icon={service.icon}
+    delay={index * 0.1}
+/>
           ))}
         </div>
       </div>

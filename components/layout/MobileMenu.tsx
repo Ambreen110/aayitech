@@ -15,13 +15,13 @@ interface MobileMenuProps {
 }
 
 const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Tech Stack", href: "#tech-stack" },
-  { label: "Projects", href: "#projects" },
-  { label: "Approach", href: "#approach" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "Tech Stack", href: "/tech-stack" },
+  { label: "Projects", href: "/projects" },
+  { label: "Approach", href: "/approach" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const socials = [
@@ -98,7 +98,7 @@ export default function MobileMenu({
 
             {/* CTA */}
             <Link
-              href="#contact"
+              href="/contact"
               onClick={onClose}
               className="mt-8 flex items-center justify-center rounded-xl bg-cyan-500 px-6 py-4 font-semibold text-black transition hover:bg-cyan-400"
             >

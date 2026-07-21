@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 import MobileMenu from "./MobileMenu";
 
 const navItems = [
-  { name: "Services", href: "#services" },
-  { name: "Tech Stack", href: "#tech-stack" },
-  { name: "Projects", href: "#projects" },
-  { name: "Approach", href: "#approach" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Services", href: "/services" },
+  { name: "Technologies", href: "/technologies" },
+  { name: "Projects", href: "/projects" },
+  { name: "Approach", href: "/approach" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -60,7 +60,7 @@ export default function Navbar() {
           {/* Right Side */}
           <div className="flex items-center gap-3">
             <Link
-              href="#contact"
+              href="/contact"
               className="hidden rounded-xl bg-cyan-500 px-5 py-2.5 text-sm font-semibold text-black transition-all duration-300 hover:bg-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 lg:flex"
             >
               Get Started

@@ -58,7 +58,7 @@ export default async function ProjectPage({
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-black text-white">
+      {/* <main className="min-h-screen bg-black text-white"> */}
         <ProjectHero project={project} />
 
         <ProjectOverview project={project} />
@@ -70,9 +70,8 @@ export default async function ProjectPage({
         <ProjectOutcome project={project} />
 
         <RelatedProjects project={project} />
-      </main>
+      {/* </main> */}
 
-      <Footer />
     </>
   );
 }

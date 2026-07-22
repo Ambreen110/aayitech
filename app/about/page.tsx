@@ -7,11 +7,8 @@ export default function AboutPage() {
     <>
       <Navbar />
 
-      <main className="bg-black text-white pt-20">
         <About />
-      </main>
 
-      <Footer />
     </>
   );
 }

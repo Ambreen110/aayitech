@@ -162,10 +162,10 @@ export const projects: Project[] = [
   image: "/projects/infrastructure.png",
 
   gallery: [
-    "/projects/infrastructure.png",
-    "/projects/infrastructure.png",
-    "/projects/infrastructure.png",
-    "/projects/infrastructure.png",
+    // "/projects/infrastructure.png",
+    // "/projects/infrastructure.png",
+    // "/projects/infrastructure.png",
+    // "/projects/infrastructure.png",
   ],
 
   tech: [
@@ -233,10 +233,10 @@ export const projects: Project[] = [
   image: "/projects/business-websites.png",
 
   gallery: [
-    "/projects/business-websites.png",
-    "/projects/business-websites.png",
-    "/projects/business-websites.png",
-    "/projects/business-websites.png",
+    // "/projects/business-websites.png",
+    // "/projects/business-websites.png",
+    // "/projects/business-websites.png",
+    // "/projects/business-websites.png",
   ],
 
   tech: [
@@ -306,10 +306,10 @@ export const projects: Project[] = [
   image: "/projects/portfolio.png",
 
   gallery: [
-    "/projects/portfolio.png",
-    "/projects/portfolio.png",
-    "/projects/portfolio.png",
-    "/projects/portfolio.png",
+    // "/projects/portfolio.png",
+    // "/projects/portfolio.png",
+    // "/projects/portfolio.png",
+    // "/projects/portfolio.png",
   ],
 
   tech: [
@@ -429,7 +429,7 @@ export const projects: Project[] = [
     image: "/projects/portfolio.png",
 
     gallery: [
-      "/projects/portfolio.png",
+      // "/projects/portfolio.png",
     ],
 
     tech: [

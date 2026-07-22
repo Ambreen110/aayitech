@@ -18,7 +18,7 @@ export interface FAQ {
 }
 
 export interface Service {
-  slug: string;
+ slug: string;
 
   badge: string;
 
@@ -32,17 +32,29 @@ export interface Service {
 
   icon: keyof typeof iconMap;
 
+  // Existing
   benefits?: string[];
-
   process?: string[];
-
   technologies?: Technology[];
-
   projects?: Project[];
-
   faqs?: FAQ[];
 
   ctaTitle?: string;
-
   ctaDescription?: string;
+
+  // NEW
+  overview?: string[];
+
+  challenges?: string[];
+
+  solutions?: string[];
+
+  deliverables?: string[];
+
+  industries?: string[];
+
+  whyChooseUs?: string[];
+
+  results?: string[];
+  
 }

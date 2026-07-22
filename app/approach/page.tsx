@@ -7,11 +7,10 @@ export default function approach() {
     <>
       <Navbar />
 
-      <main className="bg-black text-white pt-20">
+      {/* <main className="bg-black text-white pt-20"> */}
         <Approach />
-      </main>
+      {/* </main> */}
 
-      <Footer />
     </>
   );
 }

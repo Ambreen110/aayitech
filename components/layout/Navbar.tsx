@@ -24,25 +24,46 @@ export default function Navbar() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center gap-3"
-          >
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 text-lg font-black text-black shadow-lg shadow-cyan-500/30">
-              A
-            </div>
+<Link
+  href="/"
+  className="flex items-center gap-3 group"
+>
+  {/* Logo */}
+  <div
+    className="
+      flex
+      h-10
+      w-10
+      items-center
+      justify-center
+      rounded-xl
+      bg-gradient-to-br
+      from-cyan-400
+      via-sky-500
+      to-blue-700
+      shadow-lg
+      shadow-cyan-500/20
+      transition-all
+      duration-300
+      group-hover:scale-105
+    "
+  >
+    <span className="text-xl font-black text-white">
+      A
+    </span>
+  </div>
 
-            <div>
-              <h3 className="text-lg font-black tracking-wider">
-                <span className="text-white">AAYI</span>
-                <span className="text-cyan-400">/TECH</span>
-              </h3>
+  <div className="leading-none">
+    <h2 className="text-[20px] font-extrabold tracking-tight">
+      <span className="text-white">AAYI</span>
+      <span className="text-cyan-400">/TECH</span>
+    </h2>
 
-              <p className="-mt-1 text-[10px] uppercase tracking-[0.3em] text-white/45">
-                Systems & AI
-              </p>
-            </div>
-          </Link>
+    <p className="mt-1 text-[9px] uppercase tracking-[0.35em] text-white/50">
+      SYSTEMS & AI
+    </p>
+  </div>
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 lg:flex">

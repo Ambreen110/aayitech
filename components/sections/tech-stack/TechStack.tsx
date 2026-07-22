@@ -52,12 +52,14 @@ export default function TechStack() {
         <div className="space-y-12">
          <div className="space-y-12">
   {techStack.map((category) => (
-    <TechCategory
-      key={category.category}
-      category={category.category}
-      technologies={category.technologies}
-    />
-  ))}
+  <TechCategory
+    key={category.category}
+    category={category.category}
+    description={category.description}
+    expertise={category.expertise}
+    technologies={category.technologies}
+  />
+))}
 </div>
         </div>
       </Container>

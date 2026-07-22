@@ -7,11 +7,10 @@ export default function projects() {
     <>
       <Navbar />
 
-      <main className="bg-black text-white pt-20">
+      {/* <main className="bg-black text-white pt-20"> */}
         <Projects/>
-      </main>
+      {/* </main> */}
 
-      <Footer />
     </>
   );
 }

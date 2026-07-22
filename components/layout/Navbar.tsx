@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import MobileMenu from "./MobileMenu";
 
@@ -26,40 +26,28 @@ export default function Navbar() {
           {/* Logo */}
 <Link
   href="/"
-  className="flex items-center gap-3 group"
+  className="group flex items-center gap-2"
 >
-  {/* Logo */}
-  <div
-    className="
-      flex
-      h-10
-      w-10
-      items-center
-      justify-center
-      rounded-xl
-      bg-gradient-to-br
-      from-cyan-400
-      via-sky-500
-      to-blue-700
-      shadow-lg
-      shadow-cyan-500/20
-      transition-all
-      duration-300
-      group-hover:scale-105
-    "
-  >
-    <span className="text-xl font-black text-white">
-      A
-    </span>
+  {/* Logo Icon */}
+  <div className="shrink-0">
+    <Image
+      src="/logo.png"
+      alt="AAYI TECH"
+      width={46}
+      height={46}
+      priority
+      className="h-11 w-11 object-contain transition-transform duration-300 group-hover:scale-105"
+    />
   </div>
 
+  {/* Brand Text */}
   <div className="leading-none">
-    <h2 className="text-[20px] font-extrabold tracking-tight">
+    <h2 className="text-[18px] font-extrabold tracking-tight">
       <span className="text-white">AAYI</span>
-      <span className="text-cyan-400">/TECH</span>
+      <span className="text-[#0EA5E9]">/TECH</span>
     </h2>
 
-    <p className="mt-1 text-[9px] uppercase tracking-[0.35em] text-white/50">
+    <p className="mt-0.5 text-[8px] font-medium uppercase tracking-[0.22em] text-white/55">
       SYSTEMS & AI
     </p>
   </div>

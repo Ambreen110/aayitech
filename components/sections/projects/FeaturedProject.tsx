@@ -28,19 +28,29 @@ export default function FeaturedProject({
       {/* Background Glow */}
       <div className="absolute -top-20 right-0 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
 
-      <div className="grid gap-10 p-8 lg:grid-cols-2 lg:p-12">
-        {/* Image */}
+<div className="grid items-center gap-16 p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-14">
+          {/* Image */}
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.4 }}
-          className="relative overflow-hidden rounded-2xl"
+className="
+relative
+overflow-hidden
+rounded-2xl
+border
+border-cyan-500/20
+shadow-2xl
+shadow-cyan-500/20
+"
         >
           <Image
             src={project.image}
             alt={project.title}
             width={900}
             height={600}
-            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+            className="h-auto
+w-full
+object-contain transition-transform duration-700 hover:scale-105"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />

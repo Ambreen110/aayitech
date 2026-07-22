@@ -34,33 +34,35 @@ export default function Projects() {
       <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-purple-500/10 blur-[160px]" />
 
       <div className="container relative mx-auto px-6">
+
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-16 max-w-3xl text-center"
+          className="mx-auto mb-16 max-w-4xl text-center"
         >
-          <span className="mb-4 inline-block rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
-            Featured Work
+          <span className="mb-4 inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+            Client Success Stories
           </span>
 
           <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-            Projects That Deliver
-            <span className="text-cyan-400"> Real Business Value</span>
+            Building Systems That
+            <span className="text-cyan-400"> Drive Business Growth</span>
           </h2>
 
-          <p className="text-lg leading-8 text-zinc-400">
-            From AI automation and CRM implementations to scalable web
-            applications, these projects showcase solutions built to solve
-            real-world business challenges.
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-zinc-400">
+            A collection of real client engagements spanning CRM implementation,
+            AI automation, technical infrastructure, lead generation, business
+            websites, and operational systems across healthcare, procurement,
+            logistics, and professional services.
           </p>
         </motion.div>
 
-        {/* Featured Project */}
+        {/* Featured */}
         {featuredProject && (
-          <div className="mb-20">
+          <div className="mb-24">
             <FeaturedProject project={featuredProject} />
           </div>
         )}
@@ -74,38 +76,38 @@ export default function Projects() {
           />
         </div>
 
-        {/* Project Grid */}
-        <motion.div
-          layout
-          className="grid gap-8 md:grid-cols-2 xl:grid-cols-3"
-        >
-          {filteredProjects.map((project) => (
-            <motion.div
-              key={project.id}
-              layout
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.35,
-              }}
-            >
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
-        </motion.div>
+        {/* Grid */}
+       {/* Grid */}
+<motion.div
+  layout
+  className="grid gap-8 md:grid-cols-2 xl:grid-cols-3"
+>
+  {filteredProjects.map((project) => (
+    <motion.div
+      key={project.slug}
+      layout
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.35,
+      }}
+    >
+      <ProjectCard project={project} />
+    </motion.div>
+  ))}
+</motion.div>
 
-        {/* Empty State */}
         {filteredProjects.length === 0 && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="mt-16 text-center"
+            className="mt-20 text-center"
           >
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-2xl font-semibold text-white">
               No projects found
             </h3>
 
-            <p className="mt-2 text-zinc-400">
+            <p className="mt-3 text-zinc-400">
               Try selecting another category.
             </p>
           </motion.div>

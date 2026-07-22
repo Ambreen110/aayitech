@@ -3,10 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight, GitBranch } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  GitBranch,
+} from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
-
 import { Project } from "./types";
 
 interface Props {
@@ -21,32 +24,37 @@ export default function ProjectCard({ project }: Props) {
       className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl"
     >
       {/* Image */}
-      <div className="relative h-64 overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+      <Link href={`/projects/${project.slug}`}>
+        <div className="relative h-64 overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+          />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-        <div className="absolute left-5 top-5">
-          <Badge className="border border-cyan-500/30 bg-cyan-500/20 text-cyan-300 backdrop-blur">
-            {project.category}
-          </Badge>
+          <div className="absolute left-5 top-5">
+            <Badge className="border border-cyan-500/30 bg-cyan-500/20 text-cyan-300 backdrop-blur">
+              {project.category}
+            </Badge>
+          </div>
         </div>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="space-y-5 p-6">
         <div>
-          <h3 className="mb-2 text-2xl font-bold text-white transition-colors duration-300 group-hover:text-cyan-400">
-            {project.title}
-          </h3>
+          {/* Clickable Title */}
+          <Link href={`/projects/${project.slug}`}>
+            <h3 className="mb-2 text-2xl font-bold text-white transition-colors duration-300 hover:text-cyan-400">
+              {project.title}
+            </h3>
+          </Link>
 
           <p className="text-sm leading-7 text-zinc-400">
-            {project.description}
+            {project.shortDescription}
           </p>
         </div>
 
@@ -63,7 +71,15 @@ export default function ProjectCard({ project }: Props) {
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href={`/projects/${project.slug}`}
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-5 py-3 font-medium text-cyan-300 transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-500/20 hover:text-white"
+          >
+            View Case Study
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+
           {project.liveUrl && (
             <Link
               href={project.liveUrl}

@@ -355,7 +355,7 @@ export const projects: Project[] = [
   ],
 
   liveUrl:
-    "https://agent-6a5d120f16620955a37493bb--aayitech.netlify.app",
+    "https://aayitech.netlify.app/",
 
   githubUrl: "",
 },
@@ -414,58 +414,58 @@ export const projects: Project[] = [
     githubUrl: "",
   },
 
-  {
-    slug: "portfolio",
+  // {
+  //   slug: "portfolio",
 
-    title: "Personal Portfolio Website",
-    category: "Web Development",
+  //   title: "Personal Portfolio Website",
+  //   category: "Web Development",
 
-    shortDescription:
-      "Modern portfolio built using Next.js, TypeScript and Tailwind CSS.",
+  //   shortDescription:
+  //     "Modern portfolio built using Next.js, TypeScript and Tailwind CSS.",
 
-    description:
-      "Designed and developed a modern portfolio website using Next.js, TypeScript, Tailwind CSS, and Framer Motion to showcase CRM implementations, AI automation, technical infrastructure, and business systems.",
+  //   description:
+  //     "Designed and developed a modern portfolio website using Next.js, TypeScript, Tailwind CSS, and Framer Motion to showcase CRM implementations, AI automation, technical infrastructure, and business systems.",
 
-    image: "/projects/portfolio.png",
+  //   image: "/projects/portfolio.png",
 
-    gallery: [
-      // "/projects/portfolio.png",
-    ],
+  //   gallery: [
+  //     // "/projects/portfolio.png",
+  //   ],
 
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
+  //   tech: [
+  //     "Next.js",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Framer Motion",
+  //   ],
 
-    client: "Personal Project",
-    role: "Designer & Developer",
-    // duration: "2026",
+  //   client: "Personal Project",
+  //   role: "Designer & Developer",
+  //   // duration: "2026",
 
-    overview:
-      "Designed and developed a premium portfolio focused on CRM, AI automation and technical systems.",
+  //   overview:
+  //     "Designed and developed a premium portfolio focused on CRM, AI automation and technical systems.",
 
-    challenge:
-      "Create a portfolio that communicates enterprise-level technical expertise rather than just web development.",
+  //   challenge:
+  //     "Create a portfolio that communicates enterprise-level technical expertise rather than just web development.",
 
-    solution:
-      "Built a custom Next.js website with animated UI, reusable components, and detailed case studies.",
+  //   solution:
+  //     "Built a custom Next.js website with animated UI, reusable components, and detailed case studies.",
 
-    outcome:
-      "A professional portfolio that demonstrates real client work and technical capabilities.",
+  //   outcome:
+  //     "A professional portfolio that demonstrates real client work and technical capabilities.",
 
-    features: [
-      "Next.js",
-      "Dark UI",
-      "Animations",
-      "Case Studies",
-      "Responsive",
-    ],
+  //   features: [
+  //     "Next.js",
+  //     "Dark UI",
+  //     "Animations",
+  //     "Case Studies",
+  //     "Responsive",
+  //   ],
 
-    liveUrl: "https://agent-6a5d120f16620955a37493bb--aayitech.netlify.app",
-    githubUrl: "",
-  },
+  //   liveUrl: "https://agent-6a5d120f16620955a37493bb--aayitech.netlify.app",
+  //   githubUrl: "",
+  // },
 ];
 
 export const projectCategories = [

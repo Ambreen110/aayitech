@@ -15,8 +15,8 @@ export const contactInfo = [
   {
     id: 1,
     title: "Email",
-    value: "ambreen.f037@gmail.com",
-    href: "mailto:ambreen.f037@gmail.com",
+    value: "ambreen@aayitech.com",
+    href: "mailto:ambreen@aayitech.com",
     icon: Mail,
   },
   {

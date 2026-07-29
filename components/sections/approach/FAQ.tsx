@@ -43,42 +43,49 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section className="py-28">
-      <div className="container mx-auto px-6">
+    <section className="relative bg-background py-24">
+      {/* Background Glow */}
+      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-primary/12 blur-[160px]" />
+      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-accent/10 blur-[160px]" />
+
+      <div className="container relative mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: .6 }}
-          className="mx-auto mb-20 max-w-3xl text-center"
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-5 py-2 text-sm font-medium text-cyan-300">
+          <span className="inline-flex rounded-full border border-border bg-secondary px-5 py-2 text-sm font-medium text-accent">
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-6 text-5xl font-bold text-white">
+          <h2 className="mt-6 text-5xl font-bold text-foreground">
             Common Questions
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-zinc-400">
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">
             A few questions clients often ask before starting a project.
           </p>
         </motion.div>
 
-        <div className="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl">
-        <Accordion className="w-full">
-  {faqs.map((faq, index) => (
-    <AccordionItem key={index}>
-      <AccordionTrigger>
-        {faq.question}
-      </AccordionTrigger>
+        <div className="mx-auto max-w-4xl rounded-3xl border border-border bg-card p-6 shadow-lg shadow-primary/5 backdrop-blur-xl transition-all duration-300 hover:border-accent/40">
+          <Accordion className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                className="border-border last:border-b-0"
+              >
+                <AccordionTrigger className="text-left font-semibold text-foreground transition-colors hover:text-accent">
+                  {faq.question}
+                </AccordionTrigger>
 
-      <AccordionContent>
-        {faq.answer}
-      </AccordionContent>
-    </AccordionItem>
-  ))}
-</Accordion>
+                <AccordionContent className="leading-7 text-muted-foreground">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

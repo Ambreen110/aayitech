@@ -36,10 +36,9 @@ export default function ServiceCard({
           ease: "easeOut",
         }}
         whileHover={{ y: -8 }}
-        className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/40 hover:bg-white/[0.08] cursor-pointer"
-      >
+className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 backdrop-blur-xl transition-all duration-500 hover:border-accent/40 hover:bg-secondary cursor-pointer"      >
         {/* Hover Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/5 to-blue-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/5 to-primary/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
         {/* Icon */}
         <div className="relative z-10 mb-6">
@@ -47,17 +46,17 @@ export default function ServiceCard({
         </div>
 
         {/* Title */}
-        <h3 className="relative z-10 mb-3 text-2xl font-semibold text-white">
+        <h3 className="relative z-10 mb-3 text-2xl font-semibold text-foreground">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="relative z-10 leading-7 text-gray-400">
+        <p className="relative z-10 leading-7 text-muted-foreground">
           {description}
         </p>
 
         {/* Learn More */}
-        <div className="relative z-10 mt-8 flex items-center text-cyan-400">
+        <div className="relative z-10 mt-8 flex items-center text-accent">
           <span className="text-sm font-medium">
             Learn More
           </span>
@@ -69,8 +68,7 @@ export default function ServiceCard({
         </div>
 
         {/* Border Glow */}
-        <div className="absolute inset-0 rounded-3xl border border-cyan-400/0 transition-all duration-500 group-hover:border-cyan-400/20" />
-      </motion.div>
+<div className="absolute inset-0 rounded-3xl border border-accent/0 transition-all duration-500 group-hover:border-accent/20" />      </motion.div>
     </Link>
   );
 }

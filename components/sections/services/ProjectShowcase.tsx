@@ -29,11 +29,11 @@ export default function ProjectShowcase({
         <div className="mx-auto max-w-6xl">
 
           <div className="mb-16 text-center">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold text-foreground">
               {title}
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-400">
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
               {description}
             </p>
           </div>
@@ -49,30 +49,29 @@ export default function ProjectShowcase({
                   duration: .5,
                   delay: index * .1,
                 }}
-                className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
-              >
+className="group overflow-hidden rounded-3xl border border-border bg-card backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"              >
                 <div className="relative h-64">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
                 <div className="p-8">
 
-                  <h3 className="mb-4 text-2xl font-semibold text-white">
+                  <h3 className="mb-4 text-2xl font-semibold text-foreground">
                     {project.title}
                   </h3>
 
-                  <p className="leading-7 text-gray-400">
+                  <p className="leading-7 text-muted-foreground">
                     {project.description}
                   </p>
 
                   <Link
                     href={project.href}
-                    className="mt-8 inline-flex items-center text-cyan-400 transition hover:text-cyan-300"
+                    className="mt-8 inline-flex items-center text-accent transition hover:text-primary"
                   >
                     View Project
 

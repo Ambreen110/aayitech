@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const colors = [
-  "bg-cyan-300",
-  "bg-sky-400",
-  "bg-blue-400",
-  "bg-indigo-400",
-  "bg-purple-400",
+  "bg-primary/40",
+  "bg-primary/30",
+  "bg-accent/40",
+  "bg-accent/30",
 ];
 
 interface Particle {
@@ -35,7 +34,7 @@ export default function FloatingParticles() {
         top: Math.random() * 100,
         duration: Math.random() * 12 + 18,
         delay: Math.random() * 8,
-        opacity: Math.random() * 0.4 + 0.15,
+        opacity: Math.random() * 0.35 + 0.1,
         color: colors[Math.floor(Math.random() * colors.length)],
       })
     );

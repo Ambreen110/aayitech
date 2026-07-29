@@ -26,7 +26,7 @@ export default function ServiceFAQ({
       <div className="container mx-auto max-w-4xl px-6">
 
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
             {title}
           </h2>
         </div>
@@ -35,49 +35,50 @@ export default function ServiceFAQ({
 
           {faqs.map((faq, index) => (
             <motion.div
-              key={faq.question}
-              className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
-            >
-              <button
-                onClick={() =>
-                  setOpen(open === index ? null : index)
-                }
-                className="flex w-full items-center justify-between p-7 text-left"
-              >
-                <span className="text-lg font-semibold text-white">
-                  {faq.question}
-                </span>
+  key={faq.question}
+  className={`rounded-3xl border bg-card backdrop-blur-xl transition-all duration-300 ${
+    open === index
+      ? "border-accent/40"
+      : "border-border hover:border-accent/30"
+  }`}
+>
+  <button
+    onClick={() => setOpen(open === index ? null : index)}
+    className="flex w-full items-center justify-between p-7 text-left"
+  >
+    <span className="text-lg font-semibold text-foreground">
+      {faq.question}
+    </span>
 
-                <ChevronDown
-                  className={`transition-transform ${
-                    open === index ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
+    <ChevronDown
+      className={`text-accent transition-transform duration-300 ${
+        open === index ? "rotate-180" : ""
+      }`}
+    />
+  </button>
 
-              <AnimatePresence>
-
-                {open === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{
-                      height: "auto",
-                      opacity: 1,
-                    }}
-                    exit={{
-                      height: 0,
-                      opacity: 0,
-                    }}
-                    className="overflow-hidden"
-                  >
-                    <div className="px-7 pb-7 leading-7 text-gray-400">
-                      {faq.answer}
-                    </div>
-                  </motion.div>
-                )}
-
-              </AnimatePresence>
-            </motion.div>
+  <AnimatePresence>
+    {open === index && (
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        animate={{
+          height: "auto",
+          opacity: 1,
+        }}
+        exit={{
+          height: 0,
+          opacity: 0,
+        }}
+        transition={{ duration: 0.3 }}
+        className="overflow-hidden"
+      >
+        <div className="px-7 pb-7 leading-7 text-muted-foreground">
+          {faq.answer}
+        </div>
+      </motion.div>
+    )}
+  </AnimatePresence>
+</motion.div>
           ))}
 
         </div>

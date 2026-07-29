@@ -1,26 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Bot,
-  Briefcase,
-  Code2,
-  Database,
-  Network,
-  Workflow,
-} from "lucide-react";
 import { services } from "@/data/services";
 
 import ServiceBackground from "./ServiceBackground";
 import ServiceCard from "./ServiceCard";
 
-
-
 export default function Services() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-black py-28"
+      className="relative overflow-hidden bg-background py-28"
     >
       <ServiceBackground />
 
@@ -33,7 +23,7 @@ export default function Services() {
           transition={{ duration: 0.5 }}
           className="mb-4 flex justify-center"
         >
-          <span className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-400">
+          <span className="rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
             Services
           </span>
         </motion.div>
@@ -46,12 +36,12 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+          <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
             Solutions That Drive
-            <span className="text-cyan-400"> Growth</span>
+            <span className="text-accent"> Growth</span>
           </h2>
 
-          <p className="text-lg leading-8 text-gray-400">
+          <p className="text-lg leading-8 text-muted-foreground">
             I help businesses build scalable digital products, automate
             workflows, integrate CRMs, and develop intelligent systems that
             improve efficiency and accelerate growth.
@@ -62,13 +52,13 @@ export default function Services() {
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard
-    key={service.slug}
-    slug={service.slug}
-    title={service.shortTitle}
-    description={service.description}
-    icon={service.icon}
-    delay={index * 0.1}
-/>
+              key={service.slug}
+              slug={service.slug}
+              title={service.shortTitle}
+              description={service.description}
+              icon={service.icon}
+              delay={index * 0.1}
+            />
           ))}
         </div>
       </div>

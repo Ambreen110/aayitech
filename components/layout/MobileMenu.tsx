@@ -18,7 +18,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
-  { label: "Tech Stack", href: "/tech-stack" },
+{ label: "Technologies", href: "/technologies" },
   { label: "Projects", href: "/projects" },
   { label: "Approach", href: "/approach" },
   { label: "Contact", href: "/contact" },
@@ -51,7 +51,7 @@ export default function MobileMenu({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
-          className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-xl md:hidden"
+          className="fixed inset-0 z-[100] bg-background/80 backdrop-blur-xl md:hidden"
         >
           <motion.div
             initial={{ x: "100%" }}
@@ -62,21 +62,20 @@ export default function MobileMenu({
               stiffness: 260,
               damping: 28,
             }}
-            className="absolute right-0 top-0 flex h-full w-full flex-col bg-zinc-950 p-8"
+            className="absolute right-0 top-0 flex h-full w-full flex-col bg-background p-8"
           >
             {/* Header */}
             <div className="mb-12 flex items-center justify-between">
               <Link
                 href="/"
                 onClick={onClose}
-                className="text-2xl font-bold text-white"
+                className="text-2xl font-bold text-foreground"
               >
-                Ambreen<span className="text-cyan-400">.</span>
-              </Link>
+AAYI<span className="text-accent">/TECH</span>              </Link>
 
               <button
                 onClick={onClose}
-                className="rounded-xl border border-white/10 p-2 text-white transition hover:border-cyan-400 hover:text-cyan-400"
+                className="rounded-xl border border-border p-2 text-foreground transition hover:border-accent hover:text-accent"
               >
                 <X size={24} />
               </button>
@@ -89,7 +88,7 @@ export default function MobileMenu({
                   key={item.label}
                   href={item.href}
                   onClick={onClose}
-                  className="text-2xl font-semibold text-white transition hover:text-cyan-400"
+                  className="text-2xl font-semibold text-foreground transition hover:text-accent"
                 >
                   {item.label}
                 </Link>
@@ -100,7 +99,10 @@ export default function MobileMenu({
             <Link
               href="/contact"
               onClick={onClose}
-              className="mt-8 flex items-center justify-center rounded-xl bg-cyan-500 px-6 py-4 font-semibold text-black transition hover:bg-cyan-400"
+              className="mt-8 flex items-center justify-center rounded-xl bg-primary
+text-primary-foreground
+hover:bg-accent
+hover:text-background px-6 py-4 font-semibold transition"
             >
               Let's Talk
             </Link>
@@ -115,7 +117,12 @@ export default function MobileMenu({
                     key={index}
                     href={social.href}
                     target="_blank"
-                    className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-400 transition hover:border-cyan-400 hover:bg-cyan-500/10 hover:text-cyan-400"
+                    className="flex h-12 w-12 items-center justify-center rounded-full border border-border
+bg-card
+text-muted-foreground
+hover:border-accent
+hover:bg-accent/10
+hover:text-accent transition"
                   >
                     <Icon size={18} />
                   </Link>

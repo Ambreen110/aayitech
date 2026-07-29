@@ -32,15 +32,15 @@ export default function ProjectFilters({
                 relative overflow-hidden rounded-full px-5 py-2 transition-all duration-300
                 ${
                   active
-                    ? "bg-cyan-500 text-black hover:bg-cyan-400"
-                    : "border-white/10 bg-white/5 text-zinc-300 hover:border-cyan-400/40 hover:bg-cyan-500/10 hover:text-cyan-300"
+                    ? "bg-primary text-primary-foreground hover:bg-accent hover:text-background"
+                    : "border-border bg-card text-foreground hover:border-accent hover:bg-secondary"
                 }
               `}
             >
               {active && (
                 <motion.span
                   layoutId="activeProjectFilter"
-                  className="absolute inset-0 rounded-full bg-cyan-500"
+                  className="absolute inset-0 rounded-full bg-primary"
                   transition={{
                     type: "spring",
                     stiffness: 350,
@@ -50,7 +50,9 @@ export default function ProjectFilters({
                 />
               )}
 
-              <span className="relative z-10">{category}</span>
+              <span className="relative z-10">
+                {category}
+              </span>
             </Button>
           </motion.div>
         );

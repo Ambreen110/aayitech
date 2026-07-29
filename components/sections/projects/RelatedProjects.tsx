@@ -34,17 +34,17 @@ export default function RelatedProjects({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mx-auto mb-14 max-w-3xl text-center"
+          className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="mb-4 inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+          <span className="mb-4 inline-flex rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
             More Projects
           </span>
 
-          <h2 className="mb-5 text-4xl font-bold text-white">
+          <h2 className="mb-5 text-4xl font-bold text-foreground">
             Related Projects
           </h2>
 
-          <p className="text-lg leading-8 text-zinc-400">
+          <p className="text-lg leading-8 text-muted-foreground">
             Explore more projects from the same category and discover additional
             solutions, automations, and technical implementations.
           </p>

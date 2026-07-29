@@ -16,7 +16,7 @@ export default function HomeTechCategory({
 }: Props) {
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-semibold text-white">
+      <h3 className="text-xl font-semibold text-foreground">
         {category}
       </h3>
 

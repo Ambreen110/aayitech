@@ -8,7 +8,7 @@ import { socialLinks } from "./contact.data";
 export default function SocialLinks() {
   return (
     <div>
-      <h3 className="mb-5 text-lg font-semibold text-white">
+      <h3 className="mb-5 text-lg font-semibold text-foreground">
         Connect With Me
       </h3>
 
@@ -46,15 +46,15 @@ export default function SocialLinks() {
                   justify-center
                   rounded-2xl
                   border
-                  border-white/10
-                  bg-white/[0.03]
-                  text-zinc-300
+                  border-border
+                  bg-card
+                  text-muted-foreground
                   backdrop-blur-xl
                   transition-all
                   duration-300
-                  hover:border-cyan-400/40
-                  hover:bg-cyan-500/10
-                  hover:text-cyan-400
+                  hover:border-accent/40
+                  hover:bg-secondary
+                  hover:text-accent
                 "
               >
                 <Icon

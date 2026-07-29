@@ -22,21 +22,21 @@ export default function AboutContent() {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        <span className="mb-4 inline-block rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-400">
+        <span className="mb-4 inline-block rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
           Technical Systems Consultant
         </span>
 
-        <h3 className="mb-6 text-4xl font-bold leading-tight text-white">
+        <h3 className="mb-6 text-4xl font-bold leading-tight text-foreground">
           From Building Websites to Designing Complete Business Systems.
         </h3>
 
-        <p className="mb-6 leading-8 text-gray-400">
+        <p className="mb-6 leading-8 text-muted-foreground">
           My journey in technology began more than six years ago with web
           development, where I built responsive websites and modern web
           applications using React, Next.js, and backend technologies.
         </p>
 
-        <p className="mb-6 leading-8 text-gray-400">
+        <p className="mb-6 leading-8 text-muted-foreground">
           As I worked with businesses, I realized that great software alone
           wasn't enough. Companies needed connected systems that streamlined
           operations, automated repetitive work, and supported growth. That
@@ -44,7 +44,7 @@ export default function AboutContent() {
           integrations, AI solutions, and technical consulting.
         </p>
 
-        <p className="leading-8 text-gray-400">
+        <p className="leading-8 text-muted-foreground">
           Today, I combine development, automation, CRM strategy, and AI to
           build complete technical ecosystems that help businesses operate
           smarter and scale with confidence.
@@ -57,9 +57,9 @@ export default function AboutContent() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
+        className="rounded-3xl border border-border bg-card p-8 backdrop-blur-xl transition-all duration-300 hover:border-accent/30"
       >
-        <h4 className="mb-8 text-2xl font-semibold text-white">
+        <h4 className="mb-8 text-2xl font-semibold text-foreground">
           What I Bring
         </h4>
 
@@ -67,11 +67,11 @@ export default function AboutContent() {
           {highlights.map((item) => (
             <div key={item} className="flex items-start gap-4">
               <CheckCircle2
-                className="mt-1 text-cyan-400"
+                className="mt-1 text-accent"
                 size={22}
               />
 
-              <p className="text-gray-300">
+              <p className="text-foreground">
                 {item}
               </p>
             </div>

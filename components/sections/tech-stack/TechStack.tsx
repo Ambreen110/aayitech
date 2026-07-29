@@ -14,7 +14,7 @@ export default function TechStack() {
   return (
     <section
       id="tech-stack"
-      className="relative overflow-hidden bg-black py-28"
+      className="relative overflow-hidden bg-background py-28"
     >
       {/* Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -23,18 +23,18 @@ export default function TechStack() {
 
         <BlurCircle
           className="left-[-10rem] top-24"
-          color="bg-cyan-500/15"
+          color="bg-primary/12"
         />
 
         <BlurCircle
           className="right-[-8rem] bottom-10"
-          color="bg-blue-500/10"
+          color="bg-accent/10"
           duration={10}
         />
 
         <FloatingParticles />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
       </div>
 
       <Container>
@@ -50,17 +50,15 @@ export default function TechStack() {
 
         {/* Categories */}
         <div className="space-y-12">
-         <div className="space-y-12">
-  {techStack.map((category) => (
-  <TechCategory
-    key={category.category}
-    category={category.category}
-    description={category.description}
-    expertise={category.expertise}
-    technologies={category.technologies}
-  />
-))}
-</div>
+          {techStack.map((category) => (
+            <TechCategory
+              key={category.category}
+              category={category.category}
+              description={category.description}
+              expertise={category.expertise}
+              technologies={category.technologies}
+            />
+          ))}
         </div>
       </Container>
     </section>

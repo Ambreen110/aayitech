@@ -25,27 +25,27 @@ export default function HomeAboutContent() {
       transition={{ duration: 0.6 }}
     >
       {/* Badge */}
-
-      <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-5 py-2 text-sm font-medium text-cyan-300">
+      <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-5 py-2 text-sm font-medium text-accent">
         <User className="h-4 w-4" />
         About Me
       </div>
 
       {/* Heading */}
-
-      <h2 className="mt-6 text-4xl font-bold leading-tight text-white lg:text-5xl">
+      <h2 className="mt-6 text-4xl font-bold leading-tight text-foreground lg:text-5xl">
         Building Technology That Solves
-        <span className="block text-cyan-400">
+        <span className="block text-accent">
           Real Business Problems
         </span>
       </h2>
 
       {/* Intro */}
-
-      <p className="mt-8 text-lg leading-8 text-zinc-400">
-        I'm a <span className="text-white font-medium">Full Stack Developer</span>
+      <p className="mt-8 text-lg leading-8 text-muted-foreground">
+        I'm a{" "}
+        <span className="font-semibold text-foreground">
+          Full Stack Developer
+        </span>{" "}
         &{" "}
-        <span className="text-white font-medium">
+        <span className="font-semibold text-foreground">
           CRM & AI Automation Specialist
         </span>{" "}
         with 6+ years of technical experience building scalable websites,
@@ -53,7 +53,7 @@ export default function HomeAboutContent() {
         support business growth.
       </p>
 
-      <p className="mt-5 leading-8 text-zinc-400">
+      <p className="mt-5 leading-8 text-muted-foreground">
         From modern web applications to CRM implementations, API integrations,
         AI-powered workflows, and technical infrastructure, I focus on creating
         practical solutions that help businesses streamline operations and scale
@@ -61,12 +61,11 @@ export default function HomeAboutContent() {
       </p>
 
       {/* Expertise */}
-
-      <div className="mt-10 rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl">
+      <div className="mt-10 rounded-3xl border border-border bg-card p-6 backdrop-blur-xl transition-all duration-300 hover:border-accent/30">
         <div className="mb-5 flex items-center gap-2">
-          <Sparkles className="h-5 w-5 text-cyan-400" />
+          <Sparkles className="h-5 w-5 text-accent" />
 
-          <h3 className="text-xl font-semibold text-white">
+          <h3 className="text-xl font-semibold text-foreground">
             Core Expertise
           </h3>
         </div>
@@ -77,9 +76,9 @@ export default function HomeAboutContent() {
               key={item}
               className="flex items-start gap-3"
             >
-              <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-400" />
+              <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
 
-              <span className="text-zinc-300">
+              <span className="text-foreground">
                 {item}
               </span>
             </div>
@@ -88,7 +87,6 @@ export default function HomeAboutContent() {
       </div>
 
       {/* Buttons */}
-
       <div className="mt-10 flex flex-wrap gap-4">
         <Link
           href="/about"
@@ -97,20 +95,21 @@ export default function HomeAboutContent() {
             items-center
             gap-2
             rounded-full
-            bg-cyan-500
+            bg-primary
             px-7
             py-3.5
             font-semibold
-            text-black
+            text-primary-foreground
             transition-all
             duration-300
             hover:scale-105
-            hover:bg-cyan-400
+            hover:bg-accent
+            hover:text-background
           "
         >
           Learn More
 
-          <ArrowRight className="h-5 w-5" />
+          <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
 
         <Link
@@ -120,15 +119,16 @@ export default function HomeAboutContent() {
             items-center
             rounded-full
             border
-            border-white/10
+            border-border
+            bg-card
             px-7
             py-3.5
             font-semibold
-            text-white
+            text-foreground
             transition-all
             duration-300
-            hover:border-cyan-400
-            hover:text-cyan-300
+            hover:border-accent
+            hover:bg-secondary
           "
         >
           Let's Talk

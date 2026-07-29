@@ -33,31 +33,32 @@ export default function TechCard({
         overflow-hidden
         rounded-2xl
         border
-        border-white/10
-        bg-white/5
+        border-border
+        bg-card
         p-6
         backdrop-blur-xl
         transition-all
         duration-300
-        hover:border-cyan-400/30
+        hover:border-accent/40
+        hover:bg-secondary
       "
     >
       {/* Hover Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/5 to-blue-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/5 to-primary/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       {/* Icon */}
-      <div className="relative z-10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-cyan-500/20">
+      <div className="relative z-10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-secondary text-accent transition-all duration-300 group-hover:scale-110 group-hover:border-accent/40 group-hover:bg-accent/10">
         <Icon className="h-8 w-8" />
       </div>
 
       {/* Technology Name */}
-      <h4 className="relative z-10 text-center text-sm font-semibold text-white">
+      <h4 className="relative z-10 text-center text-sm font-semibold text-foreground">
         {name}
       </h4>
 
       {/* Bottom Accent */}
       <motion.div
-        className="absolute bottom-0 left-0 h-1 bg-cyan-400"
+        className="absolute bottom-0 left-0 h-1 bg-accent"
         initial={{ width: 0 }}
         whileHover={{ width: "100%" }}
         transition={{ duration: 0.3 }}

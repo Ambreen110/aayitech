@@ -13,10 +13,10 @@ export default function ScrollIndicator() {
         duration: 2,
         repeat: Infinity,
       }}
-      className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 lg:flex flex-col items-center text-white/50"
+      className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 lg:flex flex-col items-center text-muted-foreground"
     >
       <span className="mb-2 text-xs uppercase tracking-[0.3em]">
-        Scroll
+        EXPLORE
       </span>
 
       <ChevronDown className="h-5 w-5" />

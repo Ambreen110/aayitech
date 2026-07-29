@@ -28,15 +28,15 @@ export default function SpotlightCard({
       )}
     >
       {/* Glass Background */}
-      <div className="absolute inset-0 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl" />
+      <div className="absolute inset-0 rounded-3xl border border-border bg-card/90 backdrop-blur-xl" />
 
       {/* Glow */}
       <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-        <div className="absolute -left-16 -top-16 h-40 w-40 rounded-full bg-cyan-500/15 blur-3xl" />
+        <div className="absolute -left-16 -top-16 h-40 w-40 rounded-full bg-accent/15 blur-3xl" />
       </div>
 
       {/* Border Glow */}
-      <div className="absolute inset-0 rounded-3xl ring-1 ring-white/5 transition-all duration-300 group-hover:ring-cyan-400/40" />
+      <div className="absolute inset-0 rounded-3xl ring-1 ring-border/40 transition-all duration-300 group-hover:ring-accent/40" />
 
       {/* Content */}
       <div className="relative z-10 flex min-h-[220px] flex-col justify-center p-8">

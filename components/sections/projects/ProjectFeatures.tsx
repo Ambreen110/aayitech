@@ -21,17 +21,17 @@ export default function ProjectFeatures({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mx-auto mb-14 max-w-3xl text-center"
+          className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="mb-4 inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+          <span className="mb-4 inline-flex rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
             Capabilities
           </span>
 
-          <h2 className="mb-5 text-4xl font-bold text-white">
+          <h2 className="mb-5 text-4xl font-bold text-foreground">
             Key Features
           </h2>
 
-          <p className="text-lg leading-8 text-zinc-400">
+          <p className="text-lg leading-8 text-muted-foreground">
             The solution was designed around these core capabilities to improve
             efficiency, scalability, and business operations.
           </p>
@@ -49,20 +49,45 @@ export default function ProjectFeatures({
                 duration: 0.4,
                 delay: index * 0.08,
               }}
-              whileHover={{
-                y: -6,
-              }}
-              className="group rounded-3xl border border-white/10 bg-white/[0.03] p-7 backdrop-blur-xl transition-all duration-300 hover:border-cyan-500/40 hover:bg-white/[0.05]"
+              whileHover={{ y: -6 }}
+              className="
+                group
+                rounded-3xl
+                border
+                border-border
+                bg-card
+                p-7
+                backdrop-blur-xl
+                transition-all
+                duration-300
+                hover:border-accent/40
+                hover:bg-secondary
+              "
             >
-              <div className="mb-5 inline-flex rounded-xl bg-cyan-500/10 p-3 transition-colors duration-300 group-hover:bg-cyan-500/20">
-                <CheckCircle2 className="h-6 w-6 text-cyan-400" />
+              <div
+                className="
+                  mb-5
+                  inline-flex
+                  rounded-xl
+                  border
+                  border-border
+                  bg-secondary
+                  p-3
+                  text-accent
+                  transition-all
+                  duration-300
+                  group-hover:border-accent/40
+                  group-hover:bg-accent/10
+                "
+              >
+                <CheckCircle2 className="h-6 w-6" />
               </div>
 
-              <h3 className="text-lg font-semibold text-white transition-colors duration-300 group-hover:text-cyan-400">
+              <h3 className="text-lg font-semibold text-foreground transition-colors duration-300 group-hover:text-accent">
                 {feature}
               </h3>
 
-              <p className="mt-3 text-sm leading-7 text-zinc-400">
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">
                 This functionality contributes to a more efficient, reliable,
                 and scalable business workflow.
               </p>

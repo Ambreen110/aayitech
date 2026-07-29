@@ -36,14 +36,14 @@ export default function MouseGlow() {
         x,
         y,
       }}
-      className="pointer-events-none absolute left-0 top-0 -z-20 h-[500px] w-[500px] rounded-full"
+      className="pointer-events-none absolute left-0 top-0 -z-20 h-[400px] w-[400px] rounded-full"
     >
       <div
         className="
           h-full
           w-full
           rounded-full
-          bg-cyan-400/10
+bg-accent/15
           blur-[130px]
         "
       />

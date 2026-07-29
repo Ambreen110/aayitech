@@ -14,9 +14,11 @@ export default function HeroContent() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-xl"
+        className="mb-6 inline-flex items-center gap-2 rounded-full border border-border
+bg-secondary
+text-accent px-4 py-2 text-sm font-medium backdrop-blur-xl"
       >
-        AI • CRM • Automation • Development
+CRM • AI • Web Development
       </motion.div>
 
       {/* Heading */}
@@ -24,13 +26,11 @@ export default function HeroContent() {
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15, duration: 0.6 }}
-        className="max-w-5xl text-5xl font-black leading-tight tracking-tight text-white md:text-6xl xl:text-7xl"
+        className="max-w-5xl text-5xl font-black leading-tight tracking-tight text-foreground md:text-6xl xl:text-7xl"
       >
-        Build Smarter
-        <br />
-        <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500 bg-clip-text text-transparent">
-          Technical Systems
-        </span>
+Build Smarter         <br />
+        <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+Business Systems        </span>
       </motion.h1>
 
       {/* Description */}
@@ -38,11 +38,9 @@ export default function HeroContent() {
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        className="mt-8 max-w-3xl text-lg leading-8 text-zinc-400 md:text-xl"
+        className="mt-8 max-w-3xl text-lg leading-8 text-muted-foreground md:text-xl"
       >
-        We design and build intelligent digital systems that help businesses
-        automate operations, integrate AI, optimize CRM workflows, and develop
-        scalable web applications that grow with your business.
+        We build CRM systems, AI automations, and custom web applications that streamline operations, improve productivity, and help businesses scale.
       </motion.p>
 
       {/* CTA Buttons */}
@@ -54,18 +52,21 @@ export default function HeroContent() {
       >
         <Button
           size="lg"
-          className="group rounded-full bg-cyan-500 px-8 py-6 text-base font-semibold text-white transition-all duration-300 hover:bg-cyan-400"
+          className="group rounded-full bg-primary
+text-primary-foreground
+hover:bg-accent
+hover:text-background px-8 py-6 text-base font-semibold transition-all duration-300"
         >
-          Start Your Project
+Book a Discovery Call
           <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
         </Button>
 
         <Button
           size="lg"
           variant="outline"
-          className="rounded-full border-zinc-700 bg-transparent px-8 py-6 text-base text-zinc-200 hover:border-cyan-500 hover:bg-cyan-500/10 hover:text-white"
+          className="rounded-full border-border bg-transparent px-8 py-6 text-base text-muted-foreground hover:border-accent hover:bg-accent/10 hover:text-background"
         >
-          View Services
+Explore Services
         </Button>
       </motion.div>
 

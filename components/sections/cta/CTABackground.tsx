@@ -26,17 +26,17 @@ const particles = [
 export default function CTABackground() {
   return (
     <>
-      {/* Cyan Glow */}
-      <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[140px]" />
+      {/* Primary Glow */}
+      <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-primary/12 blur-[140px]" />
 
-      {/* Purple Glow */}
-      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-purple-500/10 blur-[160px]" />
+      {/* Accent Glow */}
+      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-accent/10 blur-[160px]" />
 
       {/* Grid */}
       <div
         className="
-          absolute inset-0 opacity-[0.04]
-          [background-image:linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)]
+          absolute inset-0 opacity-[0.05]
+          [background-image:linear-gradient(to_right,rgba(23,53,46,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(23,53,46,0.12)_1px,transparent_1px)]
           [background-size:70px_70px]
         "
       />
@@ -46,7 +46,7 @@ export default function CTABackground() {
         {particles.map((particle) => (
           <motion.span
             key={particle.id}
-            className="absolute rounded-full bg-cyan-400/50"
+            className="absolute rounded-full bg-accent/50"
             style={{
               width: particle.size,
               height: particle.size,

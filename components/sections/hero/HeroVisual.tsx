@@ -17,25 +17,25 @@ const cards = [
     title: "CRM",
     description: "Centralized customer management",
     icon: Database,
-    color: "text-cyan-400",
+color: "text-accent",
   },
   {
     title: "Automation",
     description: "Smart workflows & integrations",
     icon: Workflow,
-    color: "text-purple-400",
+    color: "text-accent",
   },
   {
     title: "AI Systems",
     description: "AI agents & intelligent assistants",
     icon: Bot,
-    color: "text-emerald-400",
+    color: "text-accent",
   },
   {
     title: "Analytics",
     description: "Real-time business insights",
     icon: BarChart3,
-    color: "text-orange-400",
+    color: "text-accent",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function HeroVisual() {
       className="relative mx-auto mt-20 w-full max-w-6xl"
     >
       {/* Background Glow */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-indigo-500/10 blur-3xl" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 blur-3xl" />
 
       {/* Connection Lines */}
       <FloatingConnections />
@@ -68,13 +68,13 @@ export default function HeroVisual() {
               }}
             >
               <SpotlightCard>
-                <Icon className={`mb-5 h-10 w-10 ${card.color}`} />
+                <Icon className="mb-5 h-10 w-10 text-accent" />
 
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-xl font-semibold text-foreground">
                   {card.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-6 text-zinc-400">
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">
                   {card.description}
                 </p>
               </SpotlightCard>
@@ -92,13 +92,14 @@ export default function HeroVisual() {
           duration: 4,
           repeat: Infinity,
         }}
-        className="mx-auto mt-14 flex h-28 w-28 items-center justify-center rounded-full border border-cyan-500/30 bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 backdrop-blur-xl"
+        className="mx-auto mt-14 flex h-28 w-28 items-center justify-center rounded-full border border-accent/30
+bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-xl"
       >
-        <BrainCircuit className="h-12 w-12 text-cyan-400" />
+        <BrainCircuit className="h-12 w-12 text-accent" />
       </motion.div>
 
-      <p className="mt-6 text-center text-sm uppercase tracking-[0.3em] text-zinc-500">
-        Connected Intelligent Systems
+      <p className="mt-6 text-center text-sm uppercase tracking-[0.3em] text-muted-foreground">
+         CONNECTED BUSINESS SYSTEMS
       </p>
     </motion.div>
   );

@@ -17,7 +17,7 @@ export default function HomeProjectCard({ project }: Props) {
     <motion.div
       whileHover={{ y: -6 }}
       transition={{ duration: 0.3 }}
-      className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl"
+      className="group overflow-hidden rounded-2xl border border-border bg-card backdrop-blur-xl transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
     >
       <Link href={`/projects/${project.slug}`}>
         <div className="relative h-52 overflow-hidden">
@@ -28,9 +28,9 @@ export default function HomeProjectCard({ project }: Props) {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
 
-          <Badge className="absolute left-4 top-4 border border-cyan-500/30 bg-cyan-500/20 text-cyan-300">
+          <Badge className="absolute left-4 top-4 border border-border bg-secondary text-accent">
             {project.category}
           </Badge>
         </div>
@@ -38,11 +38,11 @@ export default function HomeProjectCard({ project }: Props) {
 
       <div className="space-y-5 p-6">
         <div>
-          <h3 className="mb-2 text-xl font-semibold text-white transition-colors group-hover:text-cyan-400">
+          <h3 className="mb-2 text-xl font-semibold text-foreground transition-colors group-hover:text-accent">
             {project.title}
           </h3>
 
-          <p className="line-clamp-2 text-sm leading-7 text-zinc-400">
+          <p className="line-clamp-2 text-sm leading-7 text-muted-foreground">
             {project.shortDescription}
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function HomeProjectCard({ project }: Props) {
           {project.tech.slice(0, 3).map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300"
+              className="rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-foreground"
             >
               {tech}
             </span>
@@ -60,10 +60,11 @@ export default function HomeProjectCard({ project }: Props) {
 
         <Link
           href={`/projects/${project.slug}`}
-          className="inline-flex items-center gap-2 font-medium text-cyan-400 transition-colors hover:text-cyan-300"
+          className="group inline-flex items-center gap-2 font-medium text-accent transition-all duration-300 hover:gap-3 hover:text-primary"
         >
           View Project
-          <ArrowRight className="h-4 w-4" />
+
+          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
       </div>
     </motion.div>

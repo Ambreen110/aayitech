@@ -13,8 +13,8 @@ export default function ServiceIcon({
   return (
     <motion.div
       whileHover={{
-        scale: 1.1,
-        rotate: 6,
+        scale: 1.08,
+        rotate: 4,
       }}
       transition={{
         duration: 0.3,
@@ -29,19 +29,19 @@ export default function ServiceIcon({
         justify-center
         rounded-2xl
         border
-        border-cyan-400/20
-        bg-cyan-500/10
+        border-border
+        bg-secondary
         backdrop-blur-md
       "
     >
       {/* Glow */}
-      <div className="absolute inset-0 rounded-2xl bg-cyan-400/10 blur-xl" />
+      <div className="absolute inset-0 rounded-2xl bg-accent/10 blur-xl" />
 
       {/* Icon */}
       <Icon
         size={30}
         strokeWidth={2}
-        className="relative z-10 text-cyan-400"
+        className="relative z-10 text-accent"
       />
     </motion.div>
   );

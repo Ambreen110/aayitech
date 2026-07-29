@@ -20,11 +20,11 @@ export default function ServiceProcess({
         <div className="mx-auto max-w-6xl">
           {/* Heading */}
           <div className="mb-16 text-center">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold text-foreground">
               {title}
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-400">
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
               {description}
             </p>
           </div>
@@ -41,19 +41,23 @@ export default function ServiceProcess({
                   duration: 0.5,
                   delay: index * 0.08,
                 }}
-                className="relative rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
+                whileHover={{ y: -6 }}
+                className="relative rounded-3xl border border-border bg-card p-8 backdrop-blur-xl transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
               >
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-xl font-bold text-cyan-400">
+                {/* Step Number */}
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-secondary text-xl font-bold text-accent">
                   {index + 1}
                 </div>
 
-                <h3 className="text-xl font-semibold text-white">
+                {/* Step Title */}
+                <h3 className="text-xl font-semibold text-foreground">
                   {step}
                 </h3>
 
+                {/* Connector Arrow */}
                 {index !== steps.length - 1 && (
                   <ArrowRight
-                    className="absolute -right-5 top-1/2 hidden -translate-y-1/2 text-cyan-500 xl:block"
+                    className="absolute -right-5 top-1/2 hidden -translate-y-1/2 text-accent xl:block"
                     size={24}
                   />
                 )}

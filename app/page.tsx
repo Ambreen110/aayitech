@@ -9,7 +9,7 @@ import HomeAbout from "@/components/sections/home-about/HomeAbout";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-background text-foreground">
       <Hero />
       <HomeServices />
       <HomeAbout />

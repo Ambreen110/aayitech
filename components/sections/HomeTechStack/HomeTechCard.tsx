@@ -27,13 +27,13 @@ export default function HomeTechCard({
         gap-3
         rounded-xl
         border
-        border-white/10
-        bg-white/[0.03]
+        border-border
+        bg-card
         p-5
         transition-all
         duration-300
-        hover:border-cyan-400/30
-        hover:bg-white/[0.05]
+        hover:border-accent/40
+        hover:bg-secondary
       "
     >
       <div
@@ -44,17 +44,20 @@ export default function HomeTechCard({
           items-center
           justify-center
           rounded-xl
-          bg-cyan-500/10
-          text-cyan-400
+          border
+          border-border
+          bg-secondary
+          text-accent
           transition-all
           duration-300
-          group-hover:bg-cyan-500/20
+          group-hover:border-accent/40
+          group-hover:bg-accent/10
         "
       >
         <Icon className="h-7 w-7" />
       </div>
 
-      <span className="text-center text-sm font-medium text-white">
+      <span className="text-center text-sm font-medium text-foreground">
         {name}
       </span>
     </motion.div>

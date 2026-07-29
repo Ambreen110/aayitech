@@ -58,21 +58,21 @@ export default function Stats() {
             whileHover={{
               y: -8,
             }}
-            className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30"
+            className="group rounded-3xl border border-border bg-card p-8 text-center backdrop-blur-xl transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
           >
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400 transition-transform duration-300 group-hover:scale-110">
+            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-secondary text-accent transition-all duration-300 group-hover:scale-110 group-hover:border-accent/40 group-hover:bg-accent/10">
               <Icon size={30} />
             </div>
 
-            <h3 className="mb-2 text-4xl font-bold text-white">
+            <h3 className="mb-2 text-4xl font-bold text-foreground">
               {stat.value}
             </h3>
 
-            <h4 className="mb-4 text-lg font-semibold text-cyan-400">
+            <h4 className="mb-4 text-lg font-semibold text-accent">
               {stat.label}
             </h4>
 
-            <p className="text-sm leading-7 text-gray-400">
+            <p className="text-sm leading-7 text-muted-foreground">
               {stat.description}
             </p>
           </motion.div>

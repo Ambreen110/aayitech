@@ -32,30 +32,32 @@ export default function TechCategory({
       className="
         rounded-3xl
         border
-        border-white/10
-        bg-white/[0.03]
+        border-border
+        bg-card
         p-8
         backdrop-blur-xl
+        transition-all
+        duration-300
+        hover:border-accent/30
         lg:p-12
       "
     >
       <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-
         {/* Left Side */}
         <div>
-          <span className="mb-4 inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+          <span className="mb-4 inline-flex rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
             Technology Category
           </span>
 
-          <h2 className="mb-5 text-3xl font-bold text-white">
+          <h2 className="mb-5 text-3xl font-bold text-foreground">
             {category}
           </h2>
 
-          <p className="mb-8 leading-8 text-zinc-400">
+          <p className="mb-8 leading-8 text-muted-foreground">
             {description}
           </p>
 
-          <h3 className="mb-5 text-lg font-semibold text-white">
+          <h3 className="mb-5 text-lg font-semibold text-foreground">
             What I Build
           </h3>
 
@@ -65,9 +67,9 @@ export default function TechCategory({
                 key={item}
                 className="flex items-center gap-3"
               >
-                <CheckCircle2 className="h-5 w-5 text-cyan-400" />
+                <CheckCircle2 className="h-5 w-5 text-accent" />
 
-                <span className="text-zinc-300">
+                <span className="text-foreground">
                   {item}
                 </span>
               </div>
@@ -77,7 +79,7 @@ export default function TechCategory({
 
         {/* Right Side */}
         <div>
-          <h3 className="mb-6 text-lg font-semibold text-white">
+          <h3 className="mb-6 text-lg font-semibold text-foreground">
             Technologies
           </h3>
 
@@ -92,7 +94,6 @@ export default function TechCategory({
             ))}
           </div>
         </div>
-
       </div>
     </motion.section>
   );

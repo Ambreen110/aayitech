@@ -27,23 +27,23 @@ export default function HomeServiceCard({
       <motion.article
         whileHover={{ y: -6 }}
         transition={{ duration: 0.3 }}
-        className="group h-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.05]"
+        className="group h-full rounded-2xl border border-border bg-card p-6 backdrop-blur-xl transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
       >
         <div className="mb-5">
           <ServiceIcon icon={Icon} />
         </div>
 
-        <h3 className="mb-3 text-xl font-semibold text-white transition-colors group-hover:text-cyan-400">
+        <h3 className="mb-3 text-xl font-semibold text-foreground transition-colors group-hover:text-accent">
           {title}
         </h3>
 
-        <p className="mb-6 line-clamp-3 text-sm leading-7 text-zinc-400">
+        <p className="mb-6 line-clamp-3 text-sm leading-7 text-muted-foreground">
           {description}
         </p>
 
-        <div className="inline-flex items-center gap-2 font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
+        <div className="inline-flex items-center gap-2 font-medium text-accent transition-all duration-300 group-hover:gap-3 group-hover:text-primary">
           Learn More
-          <ArrowRight className="h-4 w-4" />
+          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </div>
       </motion.article>
     </Link>

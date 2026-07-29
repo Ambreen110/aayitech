@@ -16,28 +16,28 @@ const stats = [
     suffix: "+",
     label: "Projects Delivered",
     icon: BriefcaseBusiness,
-    color: "text-cyan-400",
+    color: "text-accent",
   },
   {
-    value: 98,
+    value: 100,
     suffix: "%",
     label: "Client Satisfaction",
     icon: BadgeCheck,
-    color: "text-emerald-400",
+    color: "text-accent",
   },
   {
     value: 24,
     suffix: "/7",
     label: "Technical Support",
     icon: Clock3,
-    color: "text-orange-400",
+    color: "text-accent",
   },
   {
     value: 100,
     suffix: "%",
-    label: "AI-Driven Solutions",
+    label: "AI Automations",
     icon: BrainCircuit,
-    color: "text-purple-400",
+    color: "text-accent",
   },
 ];
 
@@ -56,23 +56,26 @@ export default function HeroStats() {
               delay: 0.8 + index * 0.1,
               duration: 0.5,
             }}
-            className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-white/[0.05]"
+            className="group rounded-2xl border border-border
+bg-card
+hover:border-accent/40
+hover:bg-secondary p-6 backdrop-blur-xl transition-all duration-300"
           >
             <div className="mb-5 flex items-center justify-center">
-              <div className="rounded-xl bg-white/5 p-3 transition-transform duration-300 group-hover:scale-110">
-                <Icon className={`h-6 w-6 ${stat.color}`} />
+              <div className="rounded-xl bg-secondary p-3 transition-transform duration-300 group-hover:scale-110">
+<Icon className="h-6 w-6 text-accent" />
               </div>
             </div>
 
             <div className="text-center">
-              <h3 className="text-3xl font-bold text-white">
+              <h3 className="text-3xl font-bold text-foreground">
                 <AnimatedCounter
                   value={stat.value}
                   suffix={stat.suffix}
                 />
               </h3>
 
-              <p className="mt-2 text-sm text-zinc-400">
+              <p className="mt-2 text-sm text-muted-foreground">
                 {stat.label}
               </p>
             </div>

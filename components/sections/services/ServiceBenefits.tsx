@@ -19,11 +19,11 @@ export default function ServiceBenefits({
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 text-center">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
               {title}
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-400">
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground sm:text-xl lg:text-2xl">
               {description}
             </p>
           </div>
@@ -39,10 +39,10 @@ export default function ServiceBenefits({
                   duration: 0.5,
                   delay: index * 0.08,
                 }}
-                className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl"
+                className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-accent/40"
               >
                 <CheckCircle2
-                  className="mt-1 text-cyan-400"
+                  className="mt-1 text-accent"
                   size={22}
                 />
 

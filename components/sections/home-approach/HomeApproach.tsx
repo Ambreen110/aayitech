@@ -22,7 +22,7 @@ export default function HomeApproach() {
   return (
     <section
       id="approach"
-      className="relative overflow-hidden bg-black py-24"
+      className="relative overflow-hidden bg-background py-20"
     >
       {/* Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -31,23 +31,22 @@ export default function HomeApproach() {
 
         <BlurCircle
           className="left-[-8rem] top-24"
-          color="bg-cyan-500/10"
+          color="bg-primary/12"
         />
 
         <BlurCircle
           className="right-[-8rem] bottom-0"
-          color="bg-blue-500/10"
+          color="bg-accent/10"
         />
 
         <FloatingParticles />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
       </div>
 
       <Container>
         {/* Heading */}
-
-        <div className="mx-auto mb-20 max-w-3xl text-center">
+        <div className="mx-auto mb-16 max-w-3xl text-center">
           <SectionBadge>My Approach</SectionBadge>
 
           <SectionHeading
@@ -57,7 +56,6 @@ export default function HomeApproach() {
         </div>
 
         {/* Steps */}
-
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {featuredSteps.map((step, index) => (
             <motion.div
@@ -76,7 +74,6 @@ export default function HomeApproach() {
         </div>
 
         {/* Bottom CTA */}
-
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -84,36 +81,36 @@ export default function HomeApproach() {
           transition={{ delay: 0.3 }}
           className="mt-16 text-center"
         >
-          <p className="mx-auto mb-8 max-w-2xl text-zinc-400 leading-8">
-            My complete delivery process includes discovery,
-            architecture planning, development, AI automation,
-            optimization, and long-term support.
+          <p className="mx-auto mb-8 max-w-2xl leading-8 text-muted-foreground">
+            My complete delivery process includes discovery, architecture
+            planning, development, AI automation, optimization, and long-term
+            support.
           </p>
 
           <Link
             href="/approach"
             className="
+              group
               inline-flex
               items-center
               gap-2
               rounded-full
               border
-              border-cyan-500/20
-              bg-cyan-500/10
+              border-border
+              bg-card
               px-7
               py-3
               font-medium
-              text-cyan-300
+              text-foreground
               transition-all
               duration-300
-              hover:border-cyan-400
-              hover:bg-cyan-500/20
-              hover:text-white
+              hover:border-accent
+              hover:bg-secondary
             "
           >
             View Complete Process
 
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </motion.div>
       </Container>

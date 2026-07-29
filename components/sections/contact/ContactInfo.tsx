@@ -22,16 +22,16 @@ export default function ContactInfo() {
     >
       {/* Heading */}
       <div>
-        <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+        <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
           <CheckCircle2 className="h-4 w-4" />
           Available for New Projects
         </span>
 
-        <h2 className="mt-4 text-4xl font-bold text-white">
+        <h2 className="mt-4 text-4xl font-bold text-foreground">
           Let's Build Something Amazing Together
         </h2>
 
-        <p className="mt-5 max-w-lg leading-8 text-zinc-400">
+        <p className="mt-5 max-w-lg leading-8 text-muted-foreground">
           Whether you need CRM implementation, AI automation,
           API integrations, or a modern web application,
           I'd love to hear about your project and discuss
@@ -44,6 +44,30 @@ export default function ContactInfo() {
         {contactInfo.map((item, index) => {
           const Icon = item.icon;
 
+          const cardClass =
+            "group flex items-center gap-5 rounded-2xl border border-border bg-card p-5 transition-all duration-300 hover:border-accent/40 hover:bg-secondary";
+
+          const iconClass =
+            "flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-secondary text-accent transition-all duration-300 group-hover:border-accent/40 group-hover:bg-accent/10 group-hover:scale-110";
+
+          const content = (
+            <>
+              <div className={iconClass}>
+                <Icon className="h-6 w-6" />
+              </div>
+
+              <div>
+                <p className="text-sm text-muted-foreground">
+                  {item.title}
+                </p>
+
+                <h3 className="mt-1 font-semibold text-foreground transition-colors duration-300 group-hover:text-accent">
+                  {item.value}
+                </h3>
+              </div>
+            </>
+          );
+
           return (
             <motion.div
               key={item.id}
@@ -55,40 +79,16 @@ export default function ContactInfo() {
               }}
             >
               {item.href === "#" ? (
-                <div className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400">
-                    <Icon className="h-6 w-6" />
-                  </div>
-
-                  <div>
-                    <p className="text-sm text-zinc-500">
-                      {item.title}
-                    </p>
-
-                    <h3 className="mt-1 font-semibold text-white">
-                      {item.value}
-                    </h3>
-                  </div>
+                <div className={cardClass}>
+                  {content}
                 </div>
               ) : (
                 <Link
                   href={item.href}
                   target="_blank"
-                  className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.05]"
+                  className={cardClass}
                 >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400 transition-transform duration-300 group-hover:scale-110">
-                    <Icon className="h-6 w-6" />
-                  </div>
-
-                  <div>
-                    <p className="text-sm text-zinc-500">
-                      {item.title}
-                    </p>
-
-                    <h3 className="mt-1 font-semibold text-white">
-                      {item.value}
-                    </h3>
-                  </div>
+                  {content}
                 </Link>
               )}
             </motion.div>
@@ -101,13 +101,13 @@ export default function ContactInfo() {
         {contactStats.map((stat) => (
           <div
             key={stat.id}
-            className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-center"
+            className="rounded-2xl border border-border bg-card p-5 text-center transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
           >
-            <h3 className="text-2xl font-bold text-cyan-400">
+            <h3 className="text-2xl font-bold text-accent">
               {stat.value}
             </h3>
 
-            <p className="mt-2 text-sm text-zinc-500">
+            <p className="mt-2 text-sm text-muted-foreground">
               {stat.label}
             </p>
           </div>

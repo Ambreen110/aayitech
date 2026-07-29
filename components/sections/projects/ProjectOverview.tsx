@@ -1,7 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileText, TriangleAlert, Lightbulb } from "lucide-react";
+import {
+  FileText,
+  TriangleAlert,
+  Lightbulb,
+} from "lucide-react";
 
 import { Project } from "./types";
 
@@ -21,17 +25,17 @@ export default function ProjectOverview({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-14 text-center"
+          className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="mb-4 inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+          <span className="mb-4 inline-flex rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
             Case Study
           </span>
 
-          <h2 className="text-4xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-foreground">
             Project Overview
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Every successful project starts with understanding the problem,
             designing the right solution, and delivering measurable results.
           </p>
@@ -44,17 +48,45 @@ export default function ProjectOverview({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl"
+            whileHover={{ y: -6 }}
+            className="
+              group
+              rounded-3xl
+              border
+              border-border
+              bg-card
+              p-8
+              backdrop-blur-xl
+              transition-all
+              duration-300
+              hover:border-accent/40
+              hover:bg-secondary
+            "
           >
-            <div className="mb-5 inline-flex rounded-xl bg-cyan-500/10 p-3">
-              <FileText className="h-6 w-6 text-cyan-400" />
+            <div
+              className="
+                mb-5
+                inline-flex
+                rounded-xl
+                border
+                border-border
+                bg-secondary
+                p-3
+                text-accent
+                transition-all
+                duration-300
+                group-hover:border-accent/40
+                group-hover:bg-accent/10
+              "
+            >
+              <FileText className="h-6 w-6" />
             </div>
 
-            <h3 className="mb-4 text-2xl font-semibold text-white">
+            <h3 className="mb-4 text-2xl font-semibold text-foreground transition-colors duration-300 group-hover:text-accent">
               Overview
             </h3>
 
-            <p className="leading-8 text-zinc-400">
+            <p className="leading-8 text-muted-foreground">
               {project.overview}
             </p>
           </motion.div>
@@ -65,17 +97,45 @@ export default function ProjectOverview({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl"
+            whileHover={{ y: -6 }}
+            className="
+              group
+              rounded-3xl
+              border
+              border-border
+              bg-card
+              p-8
+              backdrop-blur-xl
+              transition-all
+              duration-300
+              hover:border-accent/40
+              hover:bg-secondary
+            "
           >
-            <div className="mb-5 inline-flex rounded-xl bg-orange-500/10 p-3">
-              <TriangleAlert className="h-6 w-6 text-orange-400" />
+            <div
+              className="
+                mb-5
+                inline-flex
+                rounded-xl
+                border
+                border-border
+                bg-secondary
+                p-3
+                text-accent
+                transition-all
+                duration-300
+                group-hover:border-accent/40
+                group-hover:bg-accent/10
+              "
+            >
+              <TriangleAlert className="h-6 w-6" />
             </div>
 
-            <h3 className="mb-4 text-2xl font-semibold text-white">
+            <h3 className="mb-4 text-2xl font-semibold text-foreground transition-colors duration-300 group-hover:text-accent">
               Challenge
             </h3>
 
-            <p className="leading-8 text-zinc-400">
+            <p className="leading-8 text-muted-foreground">
               {project.challenge}
             </p>
           </motion.div>
@@ -86,17 +146,45 @@ export default function ProjectOverview({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl"
+            whileHover={{ y: -6 }}
+            className="
+              group
+              rounded-3xl
+              border
+              border-border
+              bg-card
+              p-8
+              backdrop-blur-xl
+              transition-all
+              duration-300
+              hover:border-accent/40
+              hover:bg-secondary
+            "
           >
-            <div className="mb-5 inline-flex rounded-xl bg-emerald-500/10 p-3">
-              <Lightbulb className="h-6 w-6 text-emerald-400" />
+            <div
+              className="
+                mb-5
+                inline-flex
+                rounded-xl
+                border
+                border-border
+                bg-secondary
+                p-3
+                text-accent
+                transition-all
+                duration-300
+                group-hover:border-accent/40
+                group-hover:bg-accent/10
+              "
+            >
+              <Lightbulb className="h-6 w-6" />
             </div>
 
-            <h3 className="mb-4 text-2xl font-semibold text-white">
+            <h3 className="mb-4 text-2xl font-semibold text-foreground transition-colors duration-300 group-hover:text-accent">
               Solution
             </h3>
 
-            <p className="leading-8 text-zinc-400">
+            <p className="leading-8 text-muted-foreground">
               {project.solution}
             </p>
           </motion.div>

@@ -12,7 +12,7 @@ export default function ServiceBackground() {
       className="absolute inset-0 -z-10 overflow-hidden"
     >
       {/* Base Background */}
-      <div className="absolute inset-0 bg-black" />
+      <div className="absolute inset-0 bg-background" />
 
       {/* Global Glow */}
       <BackgroundGlow />
@@ -34,10 +34,10 @@ export default function ServiceBackground() {
       <FloatingParticles />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background" />
 
       {/* Radial Focus */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.08),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(197,154,61,0.08),transparent_70%)]" />
     </div>
   );
 }

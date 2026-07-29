@@ -13,11 +13,11 @@ export default function HomeTechStack() {
   return (
     <section
       id="tech-stack"
-      className="relative overflow-hidden bg-black py-24"
+      className="relative overflow-hidden bg-background py-20"
     >
       {/* Background Glow */}
-      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[130px]" />
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-blue-500/10 blur-[130px]" />
+      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-primary/12 blur-[130px]" />
+      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-accent/10 blur-[130px]" />
 
       <div className="container relative mx-auto px-6">
         {/* Heading */}
@@ -28,18 +28,18 @@ export default function HomeTechStack() {
           transition={{ duration: 0.5 }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <span className="mb-4 inline-flex rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300">
+          <span className="mb-4 inline-flex rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
             Technologies
           </span>
 
-          <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+          <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
             Tools That Power
-            <span className="text-cyan-400"> Every Solution</span>
+            <span className="text-accent"> Every Solution</span>
           </h2>
 
-          <p className="text-lg leading-8 text-zinc-400">
-            Modern technologies used to build scalable applications, CRM systems,
-            automation workflows, and business platforms.
+          <p className="text-lg leading-8 text-muted-foreground">
+            Modern technologies used to build scalable applications, CRM
+            systems, automation workflows, and business platforms.
           </p>
         </motion.div>
 
@@ -59,26 +59,27 @@ export default function HomeTechStack() {
           <Link
             href="/technologies"
             className="
+              group
               inline-flex
               items-center
               gap-2
               rounded-xl
               border
-              border-cyan-500/30
-              bg-cyan-500/10
+              border-border
+              bg-card
               px-6
               py-3
               font-medium
-              text-cyan-300
+              text-foreground
               transition-all
               duration-300
-              hover:border-cyan-400
-              hover:bg-cyan-500/20
-              hover:text-white
+              hover:border-accent
+              hover:bg-secondary
             "
           >
             View Full Technology Stack
-            <ArrowRight className="h-4 w-4" />
+
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
       </div>

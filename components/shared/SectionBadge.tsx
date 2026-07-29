@@ -28,19 +28,23 @@ export default function SectionBadge({
           gap-2
           rounded-full
           border
-          border-cyan-400/20
-          bg-cyan-500/10
+          border-border
+          bg-secondary
           px-5
           py-2
           backdrop-blur-md
+          transition-all
+          duration-300
+          hover:border-accent/40
+          hover:bg-accent/10
         "
       >
         <Sparkles
           size={16}
-          className="text-cyan-400"
+          className="text-accent"
         />
 
-        <span className="text-sm font-medium tracking-wide text-cyan-300">
+        <span className="text-sm font-medium tracking-wide text-accent">
           {children}
         </span>
       </div>

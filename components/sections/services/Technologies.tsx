@@ -25,11 +25,11 @@ export default function Technologies({
         <div className="mx-auto max-w-6xl">
           {/* Heading */}
           <div className="mb-16 text-center">
-            <h2 className="text-4xl font-bold text-white">
+            <h2 className="text-4xl font-bold text-foreground">
               {title}
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-400">
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
               {description}
             </p>
           </div>
@@ -52,16 +52,16 @@ export default function Technologies({
                   whileHover={{
                     y: -6,
                   }}
-                  className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all hover:border-cyan-400/30"
+                  className="rounded-3xl border border-border bg-card p-8 text-center backdrop-blur-xl transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
                 >
-                  <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10">
+                  <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-secondary">
                     <Icon
                       size={32}
-                      className="text-cyan-400"
+                      className="text-accent"
                     />
                   </div>
 
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-foreground">
                     {tech.name}
                   </h3>
                 </motion.div>

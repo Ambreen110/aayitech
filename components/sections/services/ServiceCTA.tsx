@@ -32,13 +32,12 @@ export default function ServiceCTA({
           transition={{
             duration: .6,
           }}
-          className="mx-auto max-w-5xl rounded-[40px] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 via-white/5 to-blue-500/10 p-14 text-center backdrop-blur-xl"
-        >
-          <h2 className="text-4xl font-bold text-white md:text-5xl">
+className="mx-auto max-w-5xl rounded-[40px] border border-border bg-gradient-to-br from-primary/5 via-card to-accent/5 p-14 text-center backdrop-blur-xl"        >
+          <h2 className="text-4xl font-bold text-foreground md:text-5xl">
             {title}
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
             {description}
           </p>
 
@@ -46,21 +45,19 @@ export default function ServiceCTA({
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-black transition hover:bg-cyan-400"
-            >
+className="groupinline-flex items-center justify-center rounded-xl bg-primary px-8 py-4 font-semibold text-primary-foreground transition hover:bg-accent hover:text-background"            >
               Book a Consultation
             </Link>
 
             <Link
               href="/projects"
-              className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-8 py-4 font-semibold text-white transition hover:border-cyan-400"
-            >
+className="inline-flex items-center justify-center rounded-xl border border-border bg-card px-8 py-4 font-semibold text-foreground transition hover:border-accent hover:bg-secondary"            >
               View Projects
 
               <ArrowRight
-                size={18}
-                className="ml-2"
-              />
+  size={18}
+  className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
+/>
             </Link>
 
           </div>

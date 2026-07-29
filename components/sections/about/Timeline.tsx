@@ -53,7 +53,7 @@ export default function Timeline() {
   return (
     <div className="relative mx-auto max-w-5xl">
       {/* Center Line */}
-      <div className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-cyan-500 via-cyan-400/40 to-transparent lg:left-1/2 lg:-translate-x-1/2" />
+      <div className="absolute left-6 top-0 h-full w-px bg-gradient-to-b from-primary via-accent/50 to-transparent lg:left-1/2 lg:-translate-x-1/2" />
 
       <div className="space-y-12">
         {journey.map((item, index) => {
@@ -77,24 +77,24 @@ export default function Timeline() {
             >
               {/* Content */}
               <div className="ml-16 flex-1 lg:ml-0">
-                <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30">
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400">
+                <div className="rounded-3xl border border-border bg-card p-6 backdrop-blur-xl transition-all duration-300 hover:border-accent/40 hover:bg-secondary">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-secondary text-accent transition-all duration-300">
                     <Icon size={28} />
                   </div>
 
-                  <h3 className="mb-3 text-2xl font-semibold text-white">
+                  <h3 className="mb-3 text-2xl font-semibold text-foreground">
                     {item.title}
                   </h3>
 
-                  <p className="leading-7 text-gray-400">
+                  <p className="leading-7 text-muted-foreground">
                     {item.description}
                   </p>
                 </div>
               </div>
 
               {/* Timeline Dot */}
-              <div className="absolute left-6 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border-4 border-black bg-cyan-400 lg:left-1/2">
-                <div className="h-2 w-2 rounded-full bg-black" />
+              <div className="absolute left-6 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border-4 border-background bg-accent lg:left-1/2">
+                <div className="h-2 w-2 rounded-full bg-primary" />
               </div>
 
               {/* Empty Side */}

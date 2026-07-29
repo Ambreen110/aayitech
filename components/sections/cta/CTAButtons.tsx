@@ -17,16 +17,18 @@ export default function CTAButtons() {
           className="
             group inline-flex items-center justify-center gap-2
             rounded-xl
-            bg-cyan-500
+            bg-primary
             px-7
             py-3.5
             font-semibold
-            text-black
-            shadow-lg shadow-cyan-500/20
+            text-primary-foreground
+            shadow-lg
+            shadow-primary/15
             transition-all
             duration-300
-            hover:bg-cyan-400
-            hover:shadow-cyan-500/40
+            hover:bg-accent
+            hover:text-background
+            hover:shadow-accent/30
           "
         >
           Let's Work Together
@@ -46,18 +48,18 @@ export default function CTAButtons() {
             group inline-flex items-center justify-center gap-2
             rounded-xl
             border
-            border-white/15
-            bg-white/5
+            border-border
+            bg-card
             px-7
             py-3.5
             font-semibold
-            text-white
+            text-foreground
             backdrop-blur-md
             transition-all
             duration-300
-            hover:border-cyan-400/40
-            hover:bg-cyan-500/10
-            hover:text-cyan-300
+            hover:border-accent
+            hover:bg-secondary
+            hover:text-accent
           "
         >
           View My Projects

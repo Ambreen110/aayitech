@@ -97,22 +97,22 @@ export default function ContactInfo() {
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3 gap-4">
-        {contactStats.map((stat) => (
-          <div
-            key={stat.id}
-            className="rounded-2xl border border-border bg-card p-5 text-center transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
-          >
-            <h3 className="text-2xl font-bold text-accent">
-              {stat.value}
-            </h3>
+<div className="grid grid-cols-3 gap-3">
+  {contactStats.map((stat) => (
+    <div
+      key={stat.id}
+      className="rounded-2xl border border-border bg-card p-3 text-center transition-all duration-300 hover:border-accent/40 hover:bg-secondary sm:p-5"
+    >
+      <h3 className="text-lg font-bold text-accent sm:text-2xl">
+        {stat.value}
+      </h3>
 
-            <p className="mt-2 text-sm text-muted-foreground">
-              {stat.label}
-            </p>
-          </div>
-        ))}
-      </div>
+      <p className="mt-1 text-xs leading-5 text-muted-foreground sm:mt-2 sm:text-sm">
+        {stat.label}
+      </p>
+    </div>
+  ))}
+</div>
 
       {/* Social Links */}
       <SocialLinks />

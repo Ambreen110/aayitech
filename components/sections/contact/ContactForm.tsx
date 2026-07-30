@@ -149,7 +149,22 @@ focus:ring-accent/20
   onChange={handleChange}
   required
   placeholder="john@example.com"
-              className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-12 pr-4 text-white outline-none transition focus:border-cyan-400"
+              className="w-full
+rounded-xl
+border
+border-border
+bg-background
+py-3
+pl-12
+pr-4
+text-foreground
+placeholder:text-muted-foreground
+outline-none
+transition-all
+duration-300
+focus:border-accent
+focus:ring-2
+focus:ring-accent/20"
             />
           </div>
         </div>
@@ -169,7 +184,22 @@ focus:ring-accent/20
   value={formData.company}
   onChange={handleChange}
   placeholder="Your Company"
-              className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-12 pr-4 text-white outline-none transition focus:border-cyan-400"
+              className="w-full
+rounded-xl
+border
+border-border
+bg-background
+py-3
+pl-12
+pr-4
+text-foreground
+placeholder:text-muted-foreground
+outline-none
+transition-all
+duration-300
+focus:border-accent
+focus:ring-2
+focus:ring-accent/20"
             />
           </div>
         </div>

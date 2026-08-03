@@ -39,10 +39,10 @@ export default function SectionBadge({
           hover:bg-accent/10
         "
       >
-        <Sparkles
+        {/* <Sparkles
           size={16}
           className="text-accent"
-        />
+        /> */}
 
         <span className="text-sm font-medium tracking-wide text-accent">
           {children}

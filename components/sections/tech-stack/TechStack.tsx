@@ -40,7 +40,7 @@ export default function TechStack() {
       <Container>
         {/* Section Header */}
         <div className="mx-auto mb-20 max-w-3xl text-center">
-          <SectionBadge>Tech Stack</SectionBadge>
+          <SectionBadge>Technologies</SectionBadge>
 
           <SectionHeading
             title="Technologies I Work With"

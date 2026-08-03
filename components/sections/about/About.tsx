@@ -41,7 +41,7 @@ export default function About() {
 
       <Container>
         {/* Section Header */}
-        <div className="mx-auto mb-20 max-w-3xl text-center">
+        <div className="mx-auto mb-[-20px] max-w-3xl text-center">
           <SectionBadge>About Me</SectionBadge>
 
           <SectionHeading

@@ -31,7 +31,7 @@ export default async function ServicePage({
   }
 
   return (
-    <main className="relative overflow-hidden bg-black text-white">
+    <main className="relative overflow-hidden bg-background text-foreground">
       <ServiceBackground />
 
       <ServiceHero

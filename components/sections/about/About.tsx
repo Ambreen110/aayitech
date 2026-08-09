@@ -14,12 +14,9 @@ import SectionHeading from "@/components/shared/SectionHeading";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="relative overflow-hidden bg-background py-20"
-    >
+    <section className="relative isolate overflow-hidden py-24">
       {/* Background */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <BackgroundGlow />
         <AnimatedGrid />
 
@@ -39,30 +36,33 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
       </div>
 
-      <Container>
-        {/* Section Header */}
-        <div className="mx-auto mb-[-20px] max-w-3xl text-center">
-          <SectionBadge>About Me</SectionBadge>
+      {/* Content */}
+      <div className="relative z-10">
+        <Container>
+          {/* Section Header */}
+          <div className="mx-auto mb-16 mt-12 max-w-3xl text-center">
+            <SectionBadge>About AAYI TECH</SectionBadge>
 
-          <SectionHeading
-            title="Building Technology That Solves Real Business Problems"
-            subtitle="..."
-          />
-        </div>
+            <SectionHeading
+              title="Building Connected Technology for Modern Businesses"
+              subtitle="AAYI TECH combines development, CRM, automation, AI, integrations, and technical infrastructure to create practical digital systems that help businesses operate smarter."
+            />
+          </div>
 
-        {/* About Content */}
-        <AboutContent />
+          {/* About Content */}
+          <AboutContent />
 
-        {/* Journey Timeline */}
-        <div className="mt-24">
-          <Timeline />
-        </div>
+          {/* Journey Timeline */}
+          <div className="mt-24">
+            <Timeline />
+          </div>
 
-        {/* Experience Stats */}
-        <div className="mt-24">
-          <Stats />
-        </div>
-      </Container>
+          {/* Stats */}
+          <div className="mt-24">
+            <Stats />
+          </div>
+        </Container>
+      </div>
     </section>
   );
 }

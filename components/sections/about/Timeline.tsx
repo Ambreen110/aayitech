@@ -13,39 +13,39 @@ import {
 const journey = [
   {
     icon: Code2,
-    title: "Software Development",
+    title: "Digital Development",
     description:
-      "Started my journey by learning programming fundamentals and building applications with JavaScript and modern web technologies.",
+      "Building modern websites and web applications designed around performance, usability, and business objectives.",
   },
   {
     icon: Globe,
-    title: "Web Development",
+    title: "Modern Web Solutions",
     description:
-      "Built responsive websites and full-stack applications using React, Next.js, Node.js, NestJS, and WordPress.",
+      "Developing scalable digital experiences using modern frontend and backend technologies.",
   },
   {
     icon: Database,
     title: "CRM & Business Systems",
     description:
-      "Expanded into CRM implementation, business process optimization, customer journeys, and operational systems.",
+      "Implementing and customizing CRM platforms to organize customer data, processes, pipelines, and operations.",
   },
   {
     icon: Workflow,
-    title: "Automation",
+    title: "Automation & Integrations",
     description:
-      "Designed automated workflows, API integrations, email infrastructure, and connected business platforms.",
+      "Connecting business platforms through automated workflows, APIs, and intelligent processes.",
   },
   {
     icon: Bot,
-    title: "AI Solutions",
+    title: "AI-Powered Solutions",
     description:
-      "Integrated AI assistants, intelligent automations, and business productivity solutions into real-world workflows.",
+      "Introducing AI assistants, intelligent automation, and AI-powered workflows into everyday business operations.",
   },
   {
     icon: BriefcaseBusiness,
-    title: "Technical Systems Consultant",
+    title: "Complete Technical Ecosystems",
     description:
-      "Today I help businesses design complete technical ecosystems that combine development, CRM, automation, infrastructure, and AI.",
+      "Combining development, CRM, automation, integrations, infrastructure, and AI into connected business systems.",
   },
 ];
 

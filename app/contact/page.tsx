@@ -7,9 +7,9 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      {/* <main className="bg-black text-white pt-20"> */}
+      <main className="bg-black text-white pt-20">
         <Contact />
-      {/* </main> */}
+      </main>
 
     </>
   );

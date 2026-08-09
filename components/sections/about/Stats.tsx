@@ -6,36 +6,37 @@ import {
   Layers3,
   Workflow,
   BrainCircuit,
+  Globe,
 } from "lucide-react";
 
 const stats = [
   {
-    icon: Clock3,
-    value: "6+",
-    label: "Years of Continuous Learning",
-    description:
-      "Growing from web development to complete technical systems.",
-  },
-  {
     icon: Layers3,
-    value: "10+",
-    label: "Technologies & Platforms",
+    value: "End-to-End",
+    label: "Technical Solutions",
     description:
-      "Next.js, React, HubSpot, GHL, APIs, AI, WordPress and more.",
+      "From websites and applications to CRM, automation, integrations and infrastructure.",
   },
   {
     icon: Workflow,
-    value: "End-to-End",
-    label: "Business Solutions",
+    value: "Multiple",
+    label: "Automation Platforms",
     description:
-      "Development, CRM, automation, integrations and infrastructure.",
+      "Connected workflows across CRM, communication, marketing and business systems.",
   },
   {
     icon: BrainCircuit,
-    value: "Always",
-    label: "Learning & Innovating",
+    value: "AI-Ready",
+    label: "Business Solutions",
     description:
-      "Continuously exploring AI, automation and emerging technologies.",
+      "AI assistants, intelligent workflows and practical automation for modern businesses.",
+  },
+  {
+    icon: Globe,
+    value: "Full-Stack",
+    label: "Development",
+    description:
+      "Modern web applications and digital experiences built with current technologies.",
   },
 ];
 

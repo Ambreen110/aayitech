@@ -7,9 +7,9 @@ export default function ServicesPage() {
     <>
       <Navbar />
 
-      {/* <main className="bg-black text-white pt-20"> */}
+      <main className="bg-black text-white pt-20">
         <Services />
-      {/* </main> */}
+      </main>
 
     </>
   );

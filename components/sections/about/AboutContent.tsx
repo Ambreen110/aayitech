@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const highlights = [
-  "6+ years of continuous technical experience",
-  "Full Stack Development with React, Next.js & NestJS",
-  "CRM Systems (HubSpot, GoHighLevel, Salesforce)",
+  "Modern Web Development with Next.js, React & Node.js",
+  "CRM Implementation & Business Process Optimization",
   "Workflow Automation & API Integrations",
   "AI-Powered Business Solutions",
-  "Infrastructure, DNS & Email Deliverability",
+  "Email Infrastructure, DNS & Technical Systems",
+  "Connected Digital Ecosystems for Growing Businesses",
 ];
 
 export default function AboutContent() {
   return (
-    <div className="grid items-center gap-16 lg:grid-cols-2">
+    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
       {/* Left Content */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
@@ -22,32 +22,32 @@ export default function AboutContent() {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        <span className="mb-4 inline-block rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
-          Technical Systems Consultant
-        </span>
+        <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent">
+          AAYI TECH
+        </p>
 
         <h3 className="mb-6 text-4xl font-bold leading-tight text-foreground">
-          From Building Websites to Designing Complete Business Systems.
+          Technology That Connects Your Business.
         </h3>
 
         <p className="mb-6 leading-8 text-muted-foreground">
-          My journey in technology began more than six years ago with web
-          development, where I built responsive websites and modern web
-          applications using React, Next.js, and backend technologies.
+          AAYI TECH helps businesses build, connect, and improve their
+          technology systems. We combine modern web development, CRM
+          implementation, automation, AI, integrations, and technical
+          infrastructure to create solutions that work together.
         </p>
 
         <p className="mb-6 leading-8 text-muted-foreground">
-          As I worked with businesses, I realized that great software alone
-          wasn't enough. Companies needed connected systems that streamlined
-          operations, automated repetitive work, and supported growth. That
-          led me into CRM implementation, workflow automation, API
-          integrations, AI solutions, and technical consulting.
+          Instead of treating websites, CRMs, automations, and business tools
+          as separate systems, we focus on creating connected digital
+          ecosystems that simplify operations and improve efficiency.
         </p>
 
         <p className="leading-8 text-muted-foreground">
-          Today, I combine development, automation, CRM strategy, and AI to
-          build complete technical ecosystems that help businesses operate
-          smarter and scale with confidence.
+          From developing modern web applications to implementing CRM systems,
+          automating workflows, integrating APIs, and introducing AI-powered
+          solutions, AAYI TECH provides practical technology built around real
+          business needs.
         </p>
       </motion.div>
 
@@ -60,20 +60,18 @@ export default function AboutContent() {
         className="rounded-3xl border border-border bg-card p-8 backdrop-blur-xl transition-all duration-300 hover:border-accent/30"
       >
         <h4 className="mb-8 text-2xl font-semibold text-foreground">
-          What I Bring
+          What We Do
         </h4>
 
         <div className="space-y-5">
           {highlights.map((item) => (
             <div key={item} className="flex items-start gap-4">
               <CheckCircle2
-                className="mt-1 text-accent"
+                className="mt-1 shrink-0 text-accent"
                 size={22}
               />
 
-              <p className="text-foreground">
-                {item}
-              </p>
+              <p className="text-foreground">{item}</p>
             </div>
           ))}
         </div>

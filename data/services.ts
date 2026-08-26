@@ -2,151 +2,162 @@ import { Service } from "./service.types";
 
 export const services: Service[] = [
   {
-    slug: "crm-implementation",
+  slug: "crm-implementation",
 
-    badge: "CRM Services",
+  badge: "CRM Services",
 
-    title: "CRM",
+  title: "CRM",
 
-    highlight: "Implementation",
+  highlight: "Implementation",
 
-    shortTitle: "CRM Implementation",
+  shortTitle: "CRM Implementation",
 
-    description:
-      "Build a CRM system that streamlines your sales, marketing, and customer operations through automation and smart workflows.",
+  description:
+    "Build and optimize a CRM system that streamlines your sales, marketing, and customer operations through automation, smart workflows, and structured data.",
 
-    icon: "briefcase",
+  icon: "briefcase",
 
-    benefits: [
-      "HubSpot CRM Setup",
-      "GoHighLevel Configuration",
-      "Zoho CRM Customization",
-      "Brevo & Kit Setup",
-      "Custom Pipelines",
-      "Lifecycle Stages",
-      "Dashboards & Reports",
-      "Workflow Automation",
-      "Data Migration",
-    ],
+  benefits: [
+    "HubSpot CRM Setup",
+    "Close CRM Setup",
+    "GoHighLevel Configuration",
+    "Zoho CRM Customization",
+    "Brevo & Kit Setup",
+    "Custom Pipelines",
+    "Lifecycle Stages",
+    "Dashboards & Reports",
+    "Workflow Automation",
+    "Data Migration",
+  ],
 
-    process: [
-      "Discovery",
-      "Planning",
-      "Implementation",
-      "Testing",
-      "Training",
-    ],
+  process: [
+    "Discovery",
+    "Planning",
+    "Implementation",
+    "Testing",
+    "Training",
+  ],
 
-    technologies: [
-      { name: "HubSpot", icon: "briefcase" },
-      { name: "GoHighLevel", icon: "workflow" },
-      { name: "Zoho CRM", icon: "database" },
-      { name: "Brevo", icon: "network" },
-      { name: "Kit", icon: "bot" },
-      { name: "Apollo", icon: "code2" },
-    ],
+  technologies: [
+    { name: "HubSpot", icon: "briefcase" },
+    { name: "Close CRM", icon: "briefcase" },
+    { name: "GoHighLevel", icon: "workflow" },
+    { name: "Zoho CRM", icon: "database" },
+    { name: "Brevo", icon: "network" },
+    { name: "Kit", icon: "bot" },
+    { name: "Apollo", icon: "code2" },
+  ],
 
-  
-
-    faqs: [
-      {
-        question: "Which CRM platforms do you support?",
-        answer:
-          "HubSpot, GoHighLevel, Zoho CRM, Brevo, Kit and custom CRM solutions.",
-      },
-      {
-        question: "Can you migrate our existing CRM?",
-        answer:
-          "Yes. I can migrate contacts, companies, deals, custom properties, workflows and other CRM data.",
-      },
-      {
-        question: "Do you provide training?",
-        answer:
-          "Yes. After implementation, I provide guidance and documentation so your team can confidently use the CRM.",
-      },
-    ],
-
-    ctaTitle: "Ready to Build a Better CRM?",
-
-    ctaDescription:
-      "Let's create a CRM that saves time, improves productivity, and supports your business growth.",
-  overview: [
-  "A well-designed Customer Relationship Management (CRM) system is more than a contact database—it's the operational backbone of your business. It centralizes customer information, streamlines sales processes, automates repetitive tasks, and provides valuable insights that help teams make informed decisions.",
-
-  "Whether you're implementing a CRM for the first time, migrating from another platform, or optimizing an existing system, I design solutions that align with your business goals, workflows, and customer journey. Every implementation is tailored to improve efficiency, visibility, and collaboration across departments.",
-
-  "From HubSpot and GoHighLevel to Zoho CRM, Brevo, and Kit, I build scalable CRM ecosystems that integrate seamlessly with your marketing, sales, and operational processes while reducing manual work through intelligent automation."
-],
-
-challenges: [
-  "Customer information scattered across spreadsheets and multiple tools",
-  "Manual lead assignment and follow-up processes",
-  "Lack of visibility into sales pipelines and customer lifecycle",
-  "Disconnected marketing and sales operations",
-  "Duplicate records and inconsistent customer data",
-  "Limited reporting and business insights",
-  "Time-consuming repetitive administrative tasks",
-  "Difficulty scaling existing business processes"
-],
-
-solutions: [
-  "Complete CRM implementation and customization",
-  "Sales pipeline design and optimization",
-  "Lead capture and automated routing",
-  "Workflow automation and task management",
-  "Marketing and sales alignment",
-  "Custom properties and lifecycle stages",
-  "Dashboard creation and performance reporting",
-  "Third-party integrations with business tools"
-],
-
-deliverables: [
-  "CRM account setup and configuration",
-  "Custom pipelines and deal stages",
-  "Contact, company and deal properties",
-  "Workflow automation",
-  "Email and calendar integration",
-  "Custom reports and dashboards",
-  "Data migration from existing systems",
-  "User roles and permission management",
-  "Documentation and team training",
-  "Post-launch optimization and support"
-],
-
-industries: [
-  "Healthcare",
-  "B2B SaaS",
-  "Professional Services",
-  "Manufacturing",
-  "Recruitment",
-  "Consulting",
-  "Marketing Agencies",
-  "Technology Startups"
-],
-
-whyChooseUs: [
-  "Business-first CRM strategy tailored to your processes",
-  "Hands-on experience with multiple CRM platforms",
-  "Automation-focused implementations that reduce manual work",
-  "Scalable architecture designed for future business growth",
-  "Clean documentation and structured implementation process",
-  "Technical expertise in APIs, integrations and workflow automation",
-  "Training and post-implementation support",
-  "Focus on long-term operational efficiency rather than short-term fixes"
-],
-
-results: [
-  "Centralized customer data across your organization",
-  "Faster lead response and improved sales efficiency",
-  "Reduced manual administrative work",
-  "Improved collaboration between sales and marketing teams",
-  "Real-time dashboards and actionable business insights",
-  "Higher data accuracy and consistency",
-  "Scalable CRM infrastructure ready for future growth",
-  "Better customer experience through streamlined processes"
-],
-  
+  faqs: [
+    {
+      question: "Which CRM platforms do you support?",
+      answer:
+        "HubSpot, Close CRM, GoHighLevel, Zoho CRM, Brevo, Kit and custom CRM solutions.",
     },
+
+    {
+      question: "Can you set up Close CRM?",
+      answer:
+        "Yes. I can configure Close CRM for lead and contact management, sales pipelines, activities, sales processes, and workflow optimization.",
+    },
+
+    {
+      question: "Can you migrate our existing CRM?",
+      answer:
+        "Yes. I can migrate contacts, companies, deals, custom properties, workflows and other CRM data.",
+    },
+
+    {
+      question: "Do you provide training?",
+      answer:
+        "Yes. After implementation, I provide guidance and documentation so your team can confidently use the CRM.",
+    },
+  ],
+
+  ctaTitle: "Ready to Build a Better CRM?",
+
+  ctaDescription:
+    "Let's create a CRM that saves time, improves productivity, and supports your business growth.",
+
+  overview: [
+    "A well-designed Customer Relationship Management (CRM) system is more than a contact database—it's the operational backbone of your business. It centralizes customer information, streamlines sales processes, automates repetitive tasks, and provides valuable insights that help teams make informed decisions.",
+
+    "Whether you're implementing a CRM for the first time, migrating from another platform, or optimizing an existing system, I design solutions that align with your business goals, workflows, and customer journey. Every implementation is tailored to improve efficiency, visibility, and collaboration across departments.",
+
+    "From HubSpot, Close CRM, and GoHighLevel to Zoho CRM, Brevo, and Kit, I build scalable CRM ecosystems that integrate seamlessly with your marketing, sales, and operational processes while reducing manual work through intelligent automation.",
+  ],
+
+  challenges: [
+    "Customer information scattered across spreadsheets and multiple tools",
+    "Manual lead assignment and follow-up processes",
+    "Lack of visibility into sales pipelines and customer lifecycle",
+    "Disconnected marketing and sales operations",
+    "Duplicate records and inconsistent customer data",
+    "Limited reporting and business insights",
+    "Time-consuming repetitive administrative tasks",
+    "Difficulty scaling existing business processes",
+  ],
+
+  solutions: [
+    "Complete CRM implementation and customization",
+    "Close CRM configuration and sales pipeline setup",
+    "Sales pipeline design and optimization",
+    "Lead capture and automated routing",
+    "Workflow automation and task management",
+    "Marketing and sales alignment",
+    "Custom properties and lifecycle stages",
+    "Dashboard creation and performance reporting",
+    "Third-party integrations with business tools",
+  ],
+
+  deliverables: [
+    "CRM account setup and configuration",
+    "Close CRM setup and configuration",
+    "Custom pipelines and deal stages",
+    "Contact, company and deal properties",
+    "Workflow automation",
+    "Email and calendar integration",
+    "Custom reports and dashboards",
+    "Data migration from existing systems",
+    "User roles and permission management",
+    "Documentation and team training",
+    "Post-launch optimization and support",
+  ],
+
+  industries: [
+    "Healthcare",
+    "B2B SaaS",
+    "Professional Services",
+    "Manufacturing",
+    "Recruitment",
+    "Consulting",
+    "Marketing Agencies",
+    "Technology Startups",
+  ],
+
+  whyChooseUs: [
+    "Business-first CRM strategy tailored to your processes",
+    "Hands-on experience with multiple CRM platforms",
+    "Close CRM, HubSpot, GoHighLevel, and Zoho CRM expertise",
+    "Automation-focused implementations that reduce manual work",
+    "Scalable architecture designed for future business growth",
+    "Clean documentation and structured implementation process",
+    "Technical expertise in APIs, integrations and workflow automation",
+    "Training and post-implementation support",
+    "Focus on long-term operational efficiency rather than short-term fixes",
+  ],
+
+  results: [
+    "Centralized customer data across your organization",
+    "Faster lead response and improved sales efficiency",
+    "Reduced manual administrative work",
+    "Improved collaboration between sales and marketing teams",
+    "Real-time dashboards and actionable business insights",
+    "Higher data accuracy and consistency",
+    "Scalable CRM infrastructure ready for future growth",
+    "Better customer experience through streamlined processes",
+  ],
+},
 
   {
     slug: "workflow-automation",

@@ -70,25 +70,28 @@ export const techStack = [
   },
 
   {
-    category: "CRM & Business Systems",
-    description:
-"Implementing CRM platforms that streamline customer management and business operations.",
+  category: "CRM & Business Systems",
 
-expertise:
-[
-"HubSpot CRM",
-"Pipeline Setup",
-"Workflow Automation",
-"Lead Management",
-"Email Marketing",
-"Reporting"
-],
-    technologies: [
-      { name: "HubSpot", icon: SiHubspot },
-      { name: "Salesforce", icon: BriefcaseBusiness },
-      { name: "WordPress", icon: SiWordpress },
-    ],
-  },
+  description:
+    "Implementing and optimizing CRM platforms that streamline sales, customer management, and business operations.",
+
+  expertise: [
+    "HubSpot CRM",
+    "Close CRM",
+    "Pipeline Setup",
+    "Workflow Automation",
+    "Lead Management",
+    "Email Marketing",
+    "Reporting",
+  ],
+
+  technologies: [
+    { name: "HubSpot", icon: SiHubspot },
+    { name: "Close CRM", icon: BriefcaseBusiness },
+    { name: "Salesforce", icon: BriefcaseBusiness },
+    { name: "WordPress", icon: SiWordpress },
+  ],
+},
 
   {
     category: "Automation & AI",

@@ -21,6 +21,8 @@ export const expertise = [
       "CRM architecture, pipelines, workflows, dashboards, reporting, integrations and business automation.",
     technologies: [
       "HubSpot",
+          "Close CRM",
+
       "Salesforce",
       "GoHighLevel",
       "Apollo",
@@ -71,7 +73,19 @@ export const expertise = [
     ],
   },
 ];
-
+export const selectedProjects = [
+  {
+    title: "Close CRM — CRM Setup & Sales Operations",
+    description:
+      "Configured Close CRM for contact and lead management, pipeline organization, sales operations, and workflow optimization.",
+    points: [
+      "Configured contact and lead management.",
+      "Organized sales pipelines and lead stages.",
+      "Managed CRM activities and sales processes.",
+      "Supported CRM workflow optimization and ongoing operations.",
+    ],
+  },
+];
 export const experience = [
   {
     company: "MCMCRM",

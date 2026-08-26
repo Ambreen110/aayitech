@@ -5,6 +5,7 @@ import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 const highlights = [
   "CRM implementation & architecture",
+  "Close CRM & CRM operations",
   "Workflow automation & integrations",
   "Technical systems & troubleshooting",
   "Web development with Next.js",
@@ -69,12 +70,13 @@ export default function AmbreenAbout() {
             </p>
 
             <p className="leading-8 text-muted-foreground">
-              I work with platforms such as HubSpot, Salesforce, GoHighLevel,
-              and Apollo, while also building modern web applications with
-              Next.js, React, TypeScript, and Node.js. My work also includes
-              EDI and database-related processes, DNS and email authentication,
-              and technical troubleshooting.
-            </p>
+  I work with CRM platforms such as HubSpot, Close CRM,
+  Salesforce, GoHighLevel, and Apollo, while also building
+  modern web applications with Next.js, React, TypeScript,
+  and Node.js. My work also includes EDI and database-related
+  processes, DNS and email authentication, and technical
+  troubleshooting.
+</p>
 
             <p className="leading-8 text-muted-foreground">
               My focus is practical technical execution: understanding the

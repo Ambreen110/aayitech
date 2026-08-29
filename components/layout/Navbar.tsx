@@ -67,27 +67,29 @@ export default function Navbar() {
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/logo.png"
-              alt="AAYI TECH"
-              width={42}
-              height={42}
-              className="h-10 w-10 object-contain"
-              priority
-            />
+        <Link href="/" className="flex items-center gap-3">
+  <div className="h-10 w-10 rounded-md bg-[#0E1311] flex items-center justify-center">
+    <Image
+      src="/logo1.png"
+      alt="AAYI TECH"
+      width={42}
+      height={42}
+      className="h-10 w-10 object-contain"
+      priority
+    />
+  </div>
 
-            {/* Brand Text */}
-            <div>
-              <p className="text-lg font-bold tracking-tight text-foreground">
-                AAYI<span className="text-accent">TECH</span>
-              </p>
+  {/* Brand Text */}
+  <div>
+    <p className="text-lg font-bold tracking-tight text-foreground">
+      AAYI<span className="text-accent">TECH</span>
+    </p>
 
-              <p className="mt-0.5 text-[8px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
-                CRM • AI • DEVELOPMENT
-              </p>
-            </div>
-          </Link>
+    <p className="mt-0.5 text-[8px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+      CRM • AI • DEVELOPMENT
+    </p>
+  </div>
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 lg:flex">

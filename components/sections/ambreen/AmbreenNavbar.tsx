@@ -68,13 +68,16 @@ export default function AmbreenNavbar() {
           href="/ambreen"
           className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-80"
         >
-          <Image
-            src="/logo.png"
-            alt="AAYI TECH"
-            width={38}
-            height={38}
-            className="h-9 w-9 object-contain"
-          />
+        <div className="h-10 w-10 rounded-md bg-[#0E1311] flex items-center justify-center">
+            <Image
+              src="/logo1.png"
+              alt="AAYI TECH"
+              width={42}
+              height={42}
+              className="h-10 w-10 object-contain"
+              priority
+            />
+          </div>
 
           <div className="flex flex-col leading-none">
             <span className="text-sm font-bold tracking-wide text-foreground">

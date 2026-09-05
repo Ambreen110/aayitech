@@ -1,0 +1,67 @@
+.portfolio { width: 100%; background: #f7f6f0; color: #183e35; font-family: Arial, Helvetica, sans-serif; color-scheme: light; }
+.portfolio * { box-sizing: border-box; }
+.portfolio a { text-decoration: none; }
+.portfolio a:focus-visible { outline: 3px solid #ac7927; outline-offset: 5px; }
+.portfolio section { scroll-margin-top: 125px; }
+.header { position: sticky; top: 0; z-index: 60; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px max(6%, calc((100vw - 1200px)/2)); background: #f7f6f0f5; border-bottom: 1px solid #dcded4; backdrop-filter: blur(14px); }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 14px; letter-spacing: 1px; white-space: nowrap; }
+.brand small { display: block; margin-top: 5px; font-size: 8px; letter-spacing: 1.7px; }
+.monogram { display: grid; place-items: center; width: 42px; height: 42px; background: #183e35; color: #f7f6f0; font-family: Georgia, serif; font-size: 23px; }
+.nav { display: flex; align-items: center; gap: 26px; font-size: 13px; }
+.nav a { display: flex; align-items: center; gap: 4px; padding: 7px 0; }
+.nav a:hover, .footer a:hover { color: #90621d; }
+.hero, .section, .contact, .footer { max-width: 1200px; margin: auto; width: 88%; }
+.hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 70px; align-items: center; padding: 90px 0 35px; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 27px; color: #766039; }
+.hero h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(48px, 5.9vw, 82px); line-height: 1.04; letter-spacing: -3px; font-weight: 400; }
+.hero h1 span { color: #947131; }
+.lead { font-size: 25px; line-height: 1.4; margin-top: 25px; }
+.intro { color: #58655e; font-size: 15px; line-height: 1.9; max-width: 530px; margin-top: 20px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.primary, .secondary { display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 15px 21px; font-size: 13px; font-weight: 600; border: 1px solid #183e35; border-radius: 4px; }
+.primary { background: #183e35; color: #fff; }
+.primary:hover { background: #2d5649; }
+.secondary:hover { background: #eaeade; }
+.location { display: flex; align-items: center; gap: 7px; color: #58655e; font-size: 12px; margin-top: 25px; }
+.profileCard { background: #183e35; color: #f7f6f0; padding: 30px; border-radius: 6px; box-shadow: 15px 15px 0 #e7e7d9; }
+.cardTop { display: flex; justify-content: space-between; gap: 10px; font-size: 9px; letter-spacing: 1.3px; color: #d1d6bd; }
+.largeMonogram { font-size: 125px; line-height: 1.4; font-family: Georgia, serif; color: #e9e5d6; }
+.largeMonogram span { color: #c6a66a; }
+.cardTitle { font-family: Georgia, serif; font-size: 33px; line-height: 1.2; padding-bottom: 28px; }
+.cardRow { display: flex; justify-content: space-between; gap: 12px; padding: 17px 0; border-top: 1px solid #426055; font-size: 12px; }
+.cardRow span { color: #ccd4cb; }
+.cardRow strong { font-weight: 500; text-align: right; }
+.explore { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; font-size: 12px; color: #58655e; }
+.section { padding: 75px 0; border-top: 1px solid #dcded4; }
+.section h2, .contact h2 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.2; letter-spacing: -1px; margin-bottom: 30px; }
+.section h2 span { color: #69766a; }
+.aboutGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; }
+.aboutGrid p, .expertiseCard p, .educationCard p { color: #58655e; line-height: 1.9; font-size: 14px; margin-bottom: 16px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.tags span { border: 1px solid #d8dacd; padding: 8px 12px; border-radius: 4px; font-size: 12px; }
+.expertiseGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.expertiseCard { padding: 25px 20px; border: 1px solid #dcded4; background: #fcfcf8; border-radius: 5px; }
+.number { color: #8c6b30; font-size: 12px; }
+.portfolio h3 { font-size: 18px; line-height: 1.4; font-weight: 600; margin-bottom: 12px; }
+.expertiseCard h3 { margin-top: 28px; }
+.tools { margin-top: 30px; }
+.job { display: grid; grid-template-columns: 0.7fr 2fr; gap: 35px; padding: 34px 0; border-bottom: 1px solid #dcded4; }
+.period { font-size: 12px; color: #796033; margin-bottom: 8px; font-weight: 600; }
+.jobLocation, .educationCard small { font-size: 12px; color: #58655e; }
+.company { font-size: 15px; margin-bottom: 18px; }
+.job ul, .recognition { list-style: disc; padding-left: 18px; color: #58655e; font-size: 14px; line-height: 1.9; }
+.job li { padding-left: 5px; margin-top: 5px; }
+.educationGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 55px; }
+.educationCard { border-left: 2px solid #b69a61; padding: 5px 0 5px 22px; }
+.educationCard h3 { margin-top: 18px; }
+.contact { background: #e9ecdf; padding: 55px; border-radius: 6px; margin-bottom: 60px; }
+.contact h2 { margin-bottom: 16px; }
+.contact > p:not(.eyebrow) { color: #58655e; line-height: 1.7; }
+.contactLinks { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 30px; }
+.contactLinks a { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; overflow-wrap: anywhere; }
+.contactLinks a:hover { text-decoration: underline; }
+.footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px 0; border-top: 1px solid #dcded4; font-size: 11px; color: #58655e; }
+.skip { position: fixed; top: -100px; left: 16px; z-index: 100; background: white; padding: 12px; }
+.skip:focus { top: 10px; }
+@media (max-width: 950px) { .header { flex-wrap: wrap; gap: 12px; padding: 15px 6%; } .nav { gap: 20px; } .hero { gap: 35px; padding-top: 55px; } .expertiseGrid { grid-template-columns: repeat(2, 1fr); } .aboutGrid { gap: 30px; } }
+@media (max-width: 650px) { .nav { width: 100%; gap: 0; justify-content: space-between; font-size: 11px; } .hero { grid-template-columns: 1fr; gap: 35px; padding-top: 45px; } .hero h1 { letter-spacing: -2px; } .lead { font-size: 22px; } .profileCard { max-width: 430px; width: calc(100% - 12px); } .largeMonogram { font-size: 90px; } .section { padding: 50px 0; } .aboutGrid, .educationGrid, .job { grid-template-columns: 1fr; gap: 22px; } .expertiseGrid { grid-template-columns: 1fr; } .expertiseCard h3 { margin-top: 15px; } .contact { padding: 30px 22px; } .contactLinks { flex-direction: column; } .contactLinks a { font-size: 12px; } .footer { flex-wrap: wrap; } }

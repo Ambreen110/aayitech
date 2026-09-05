@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 import {
@@ -33,6 +34,9 @@ const socials = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname === "/jamil") return null;
+
   return (
     <footer className="border-t border-border/60 bg-background">
       <div className="container mx-auto px-6 py-12">

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, Moon, Sun } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,7 @@ const navItems = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -60,6 +62,8 @@ export default function Navbar() {
     setDarkMode(isDark);
     localStorage.setItem("theme", isDark ? "dark" : "light");
   };
+
+  if (pathname === "/jamil") return null;
 
   return (
     <>

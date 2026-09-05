@@ -136,14 +136,14 @@ export default function AmbreenHero() {
                 <FaGithub size={17} />
               </a>
 
-              <a
+              {/* <a
                 href="https://www.upwork.com/freelancers/ambreencrm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-border px-4 py-2 text-xs font-semibold text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-foreground"
               >
                 Upwork
-              </a>
+              </a> */}
             </div>
           </motion.div>
 

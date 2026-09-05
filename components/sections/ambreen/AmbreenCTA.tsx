@@ -92,7 +92,7 @@ export default function AmbreenCTA() {
               />
             </a>
 
-            <a
+            {/* <a
               href="https://www.upwork.com/freelancers/ambreencrm"
               target="_blank"
               rel="noopener noreferrer"
@@ -101,7 +101,7 @@ export default function AmbreenCTA() {
               View My Upwork
 
               <ExternalLink size={16} />
-            </a>
+            </a> */}
           </div>
 
           {/* Social links */}

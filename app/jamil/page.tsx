@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowDown, ArrowUpRight, Download, Mail, MapPin, Phone } from "lucide-react";
 import { jamilEducation, jamilExperience, jamilExpertise } from "@/data/jamil";
 import styles from "./portfolio.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Syed Jamil Hussain Shah | Senior Accountant",
@@ -20,6 +21,7 @@ export default function JamilPage() {
         <nav aria-label="Jamil portfolio navigation" className={styles.nav}>
           <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact <ArrowUpRight size={14} /></a>
         </nav>
+        <ThemeToggle />
       </header>
 
       <section className={styles.hero} aria-labelledby="jamil-heading">

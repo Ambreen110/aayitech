@@ -63,5 +63,27 @@
 .footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px 0; border-top: 1px solid #dcded4; font-size: 11px; color: #58655e; }
 .skip { position: fixed; top: -100px; left: 16px; z-index: 100; background: white; padding: 12px; }
 .skip:focus { top: 10px; }
+.themeToggle { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; border: 1px solid #dcded4; border-radius: 10px; background: #eaeade; color: #183e35; cursor: pointer; }
+.themeToggle:hover { background: #d8dccb; }
+.themeToggle:focus-visible { outline: 3px solid #ac7927; outline-offset: 5px; }
+.portfolio, .header, .expertiseCard, .contact, .profileCard, .themeToggle { transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease; }
+:global(.dark) .portfolio { background: #0b1110; color: #f5f3ec; color-scheme: dark; }
+:global(.dark) .header { background: #0b1110f5; border-color: #2b3d34; }
+:global(.dark) .monogram { background: #d1a84a; color: #0b1110; }
+:global(.dark) .themeToggle { background: #182a25; color: #f5f3ec; border-color: #354a40; }
+:global(.dark) .themeToggle:hover { background: #2b4036; }
+:global(.dark) .eyebrow, :global(.dark) .hero h1 span, :global(.dark) .number, :global(.dark) .period, :global(.dark) .nav a:hover, :global(.dark) .footer a:hover { color: #d1a84a; }
+:global(.dark) .intro, :global(.dark) .location, :global(.dark) .explore, :global(.dark) .section h2 span, :global(.dark) .aboutGrid p, :global(.dark) .expertiseCard p, :global(.dark) .educationCard p, :global(.dark) .jobLocation, :global(.dark) .educationCard small, :global(.dark) .job ul, :global(.dark) .recognition, :global(.dark) .contact > p:not(.eyebrow), :global(.dark) .footer { color: #b5beb8; }
+:global(.dark) .section, :global(.dark) .job, :global(.dark) .tags span, :global(.dark) .footer, :global(.dark) .expertiseCard { border-color: #2b3d34; }
+:global(.dark) .expertiseCard { background: #111b18; }
+:global(.dark) .contact { background: #182a25; }
+:global(.dark) .primary { background: #d1a84a; color: #0b1110; border-color: #d1a84a; }
+:global(.dark) .primary:hover { background: #e2bd64; }
+:global(.dark) .secondary { border-color: #728579; }
+:global(.dark) .secondary:hover { background: #182a25; }
+:global(.dark) .profileCard { background: #18352c; box-shadow: 15px 15px 0 #14211e; }
+:global(.dark) .skip { background: #182a25; color: #f5f3ec; }
+@media (prefers-reduced-motion: reduce) { .portfolio, .header, .expertiseCard, .contact, .profileCard, .themeToggle { transition: none; } }
 @media (max-width: 950px) { .header { flex-wrap: wrap; gap: 12px; padding: 15px 6%; } .nav { gap: 20px; } .hero { gap: 35px; padding-top: 55px; } .expertiseGrid { grid-template-columns: repeat(2, 1fr); } .aboutGrid { gap: 30px; } }
 @media (max-width: 650px) { .nav { width: 100%; gap: 0; justify-content: space-between; font-size: 11px; } .hero { grid-template-columns: 1fr; gap: 35px; padding-top: 45px; } .hero h1 { letter-spacing: -2px; } .lead { font-size: 22px; } .profileCard { max-width: 430px; width: calc(100% - 12px); } .largeMonogram { font-size: 90px; } .section { padding: 50px 0; } .aboutGrid, .educationGrid, .job { grid-template-columns: 1fr; gap: 22px; } .expertiseGrid { grid-template-columns: 1fr; } .expertiseCard h3 { margin-top: 15px; } .contact { padding: 30px 22px; } .contactLinks { flex-direction: column; } .contactLinks a { font-size: 12px; } .footer { flex-wrap: wrap; } }
+@media (max-width: 950px) { .nav { order: 3; width: 100%; justify-content: space-between; } }

@@ -10,7 +10,7 @@ const experience = [
     period: "Dec 2024 – Present",
     current: true,
     points: [
-      "Built and maintain HubSpot CRM environments including custom properties, pipeline structures, automated workflows, dashboards, and reporting.",
+      "Built and maintained HubSpot CRM environments including custom properties, pipeline structures, automated workflows, dashboards, and reporting.",
       "Developed lead-routing and lifecycle automations.",
       "Handled DNS, email authentication, and SEO-related technical setup.",
     ],

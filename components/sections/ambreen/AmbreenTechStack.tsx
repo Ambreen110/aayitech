@@ -18,6 +18,7 @@ const techGroups = [
     icon: Blocks,
     technologies: [
       "HubSpot",
+      "Close CRM",
       "Salesforce",
       "GoHighLevel",
       "Apollo",
@@ -85,6 +86,8 @@ const techGroups = [
     technologies: [
       "WordPress",
       "Elementor",
+      "SEO",
+      "Website Optimization",
       "Google Workspace",
       "Git",
       "GitHub",

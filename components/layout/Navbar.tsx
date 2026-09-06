@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useTheme } from "@/components/providers/ThemeProvider";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, Moon, Sun } from "lucide-react";
@@ -20,50 +21,10 @@ const navItems = [
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const darkMode = theme === "dark";
 
- useEffect(() => {
-  const savedTheme = localStorage.getItem("theme");
-
-  // If user has manually selected a theme, use that
-  if (savedTheme === "dark" || savedTheme === "light") {
-    const isDark = savedTheme === "dark";
-
-    document.documentElement.classList.toggle("dark", isDark);
-    setDarkMode(isDark);
-
-    return;
-  }
-
-  // Otherwise, follow the device/browser theme
-  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-  const applyDeviceTheme = () => {
-    const isDark = mediaQuery.matches;
-
-    document.documentElement.classList.toggle("dark", isDark);
-    setDarkMode(isDark);
-  };
-
-  // Apply initially
-  applyDeviceTheme();
-
-  // Update if device theme changes while site is open
-  mediaQuery.addEventListener("change", applyDeviceTheme);
-
-  return () => {
-    mediaQuery.removeEventListener("change", applyDeviceTheme);
-  };
-}, []);
-
-  const toggleTheme = () => {
-    const isDark = document.documentElement.classList.toggle("dark");
-
-    setDarkMode(isDark);
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  };
-
-  if (pathname === "/jamil") return null;
+  if (pathname === "/jamil" || pathname === "/ambreen") return null;
 
   return (
     <>

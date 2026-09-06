@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
   ArrowRight,
   Mail,
-  ExternalLink,
 } from "lucide-react";
 import {
   FaGithub,
@@ -58,7 +57,7 @@ export default function AmbreenCTA() {
 
           {/* Email */}
           <motion.a
-            href="mailto:ambreen@aayitech.com"
+            href="mailto:ambreen.f037@gmail.com"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="group relative mx-auto mt-9 flex w-fit items-center gap-3 rounded-full border border-border bg-background/50 px-5 py-3 backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:bg-primary/5"
@@ -69,7 +68,7 @@ export default function AmbreenCTA() {
             />
 
             <span className="text-sm font-medium">
-              ambreen@aayitech.com
+              ambreen.f037@gmail.com
             </span>
 
             <ArrowRight
@@ -81,7 +80,7 @@ export default function AmbreenCTA() {
           {/* Primary actions */}
           <div className="relative mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:ambreen@aayitech.com"
+              href="mailto:ambreen.f037@gmail.com"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
             >
               Start a Conversation

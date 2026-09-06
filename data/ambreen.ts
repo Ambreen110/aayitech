@@ -28,6 +28,8 @@ export const expertise = [
       "Apollo",
       "Make",
       "Zapier",
+      "HubSpot Workflows",
+      "AI Automation",
       "APIs",
       "Webhooks",
     ],
@@ -44,6 +46,10 @@ export const expertise = [
       "Node.js",
       "Tailwind CSS",
       "WordPress",
+      "Elementor",
+      "HubSpot CMS",
+      "SEO",
+      "REST APIs",
     ],
   },
   {
@@ -54,6 +60,7 @@ export const expertise = [
       "EDI",
       "Database Operations",
       "Data Validation",
+      "Data Troubleshooting",
       "Data Synchronization",
     ],
   },
@@ -70,6 +77,7 @@ export const expertise = [
       "DKIM",
       "DMARC",
       "Google Workspace",
+      "Domain Management",
     ],
   },
 ];
@@ -85,6 +93,15 @@ export const selectedProjects = [
       "Supported CRM workflow optimization and ongoing operations.",
     ],
   },
+  {
+    title: "AAYI Tech — Technical Services Website",
+    description: "Designed and built a personal technical services website using Next.js, React and Tailwind CSS.",
+    points: [
+      "Built a modern, component-based website structure.",
+      "Created dedicated services, projects, about and contact pages.",
+      "Presented technical capabilities across CRM, automation and development.",
+    ],
+  },
 ];
 export const experience = [
   {
@@ -92,10 +109,10 @@ export const experience = [
     role: "CRM Technical Specialist",
     period: "Dec 2024 – Present",
     points: [
-      "Built and maintain HubSpot CRM environments.",
+      "Built and maintained HubSpot CRM environments.",
       "Configured custom properties, pipelines, workflows, dashboards and reporting.",
       "Developed lead-routing and lifecycle automations.",
-      "Handled DNS and email authentication setup.",
+      "Handled DNS, email authentication and SEO-related technical setup.",
     ],
   },
 

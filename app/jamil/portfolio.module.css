@@ -87,3 +87,21 @@
 @media (max-width: 950px) { .header { flex-wrap: wrap; gap: 12px; padding: 15px 6%; } .nav { gap: 20px; } .hero { gap: 35px; padding-top: 55px; } .expertiseGrid { grid-template-columns: repeat(2, 1fr); } .aboutGrid { gap: 30px; } }
 @media (max-width: 650px) { .nav { width: 100%; gap: 0; justify-content: space-between; font-size: 11px; } .hero { grid-template-columns: 1fr; gap: 35px; padding-top: 45px; } .hero h1 { letter-spacing: -2px; } .lead { font-size: 22px; } .profileCard { max-width: 430px; width: calc(100% - 12px); } .largeMonogram { font-size: 90px; } .section { padding: 50px 0; } .aboutGrid, .educationGrid, .job { grid-template-columns: 1fr; gap: 22px; } .expertiseGrid { grid-template-columns: 1fr; } .expertiseCard h3 { margin-top: 15px; } .contact { padding: 30px 22px; } .contactLinks { flex-direction: column; } .contactLinks a { font-size: 12px; } .footer { flex-wrap: wrap; } }
 @media (max-width: 950px) { .nav { order: 3; width: 100%; justify-content: space-between; } }
+
+.portrait { display: block; width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin: 26px auto; border: 1px solid #c6a66a; }
+.expertiseCard { transition: transform 220ms ease, border-color 220ms ease, background-color 250ms ease; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .expertiseCard:hover { transform: translateY(-3px); border-color: #b69a61; }
+  .actions a svg { transition: transform 220ms ease; }
+  .actions a:hover svg { transform: translate(2px, -2px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero > div > * { animation: introductionIn 650ms cubic-bezier(.2,.65,.3,1) both; }
+  .hero > div > :nth-child(2) { animation-delay: 60ms; }
+  .hero > div > :nth-child(3) { animation-delay: 110ms; }
+  .hero > div > :nth-child(4) { animation-delay: 160ms; }
+  .hero > div > :nth-child(5), .hero > div > :nth-child(6) { animation-delay: 210ms; }
+  .profileCard { animation: introductionIn 750ms cubic-bezier(.2,.65,.3,1) 140ms both; }
+}
+@keyframes introductionIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .expertiseCard { transition: none; } }

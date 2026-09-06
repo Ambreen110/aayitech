@@ -83,6 +83,17 @@ const projects = [
     href: "#experience",
     linkLabel: "View Experience",
   },
+  {
+    number: "05",
+    type: "Sales Operations",
+    title: "Close CRM Setup & Operations",
+    description: "Configured contact and lead management, organized pipelines and lead stages, and supported CRM activities, data management and workflow optimization around business requirements.",
+    technologies: ["Close CRM", "Lead Management", "Sales Pipelines", "Workflow Optimization"],
+    icon: Layers3,
+    featured: false,
+    href: "#experience",
+    linkLabel: "View Experience",
+  },
 ];
 
 export default function AmbreenProjects() {

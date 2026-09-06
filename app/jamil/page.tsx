@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Download, Mail, MapPin, Phone } from "lucide-react";
 import { jamilEducation, jamilExperience, jamilExpertise } from "@/data/jamil";
 import styles from "./portfolio.module.css";
@@ -35,7 +36,7 @@ export default function JamilPage() {
         </div>
         <aside className={styles.profileCard} aria-label="Career overview">
           <div className={styles.cardTop}><span>PROFESSIONAL PROFILE</span><span>01 / JS</span></div>
-          <div className={styles.largeMonogram} aria-hidden="true">JS<span>.</span></div>
+          <Image className={styles.portrait} src="/jamil/jamil-shah.png" alt="Syed Jamil Hussain Shah" width={400} height={400} sizes="180px" preload />
           <p className={styles.cardTitle}>A steady hand<br />in finance.</p>
           <div className={styles.cardRow}><span>Career since</span><strong>2007</strong></div>
           <div className={styles.cardRow}><span>Experience across</span><strong>UAE & Pakistan</strong></div>

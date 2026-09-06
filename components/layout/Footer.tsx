@@ -35,7 +35,7 @@ const socials = [
 
 export default function Footer() {
   const pathname = usePathname();
-  if (pathname === "/jamil") return null;
+  if (pathname === "/jamil" || pathname === "/ambreen") return null;
 
   return (
     <footer className="border-t border-border/60 bg-background">

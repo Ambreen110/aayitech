@@ -1,0 +1,312 @@
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+   Contact                     Syed     Mustansar         Hussain       Shah        
+   Ghubrah Muscat Oman                                                              
+   0096898291980 (Mobile)      Network and Infrastructure Specialist                
+   smustansarh@gmail.com       Oman                                                 
+                                                                                    
+   www.linkedin.com/in/                                                             
+   syed-mustansar-hussain-     Summary                                              
+   shah-124b83104 (LinkedIn)                                                        
+                               • CCNA Security Certified | Juniper Certified | FortiGate Firewall
+                               Expert | Aruba Network                               
+   Top Skills                                                                       
+   FCA                                                                              
+                               • Network Infrastructure Setup: Cisco Switches Like CBS350,
+   FCF                                                                              
+                               C9200L (iOS Installation & Configuration), FortiSwitches 148F-POE,
+   Cisco Application Centric                                                        
+   Infrastructure (ACI)        FortiAP 221E.                                        
+                                                                                    
+   Languages                   • SD-WAN Configuration: FortiGate FG40F, FG60F, FG101E,
+   English (Professional Working) FG201E, SD-WAN setup and optimization.            
+                                                                                    
+   urdu (Native or Bilingual)                                                       
+                               • Network Monitoring & Troubleshooting: Wireshark, SNMP tools.
+   Certifications                                                                   
+                                                                                    
+   Juniper Networks Certified Associate • Secure Network Design: Access control, segmentation, firewall
+   - Junos (JNCIA-Junos)                                                            
+                               rules, VPN.                                          
+   Fortinet Certified Associate in                                                  
+   Cybersecurity                                                                    
+                               • Firewall Management: FortiGate (NAT, Policies, SSL VPN, IPS),
+   Microsoft Certified IT Professional                                              
+   (MCITP)                     Juniper SRX                                          
+   Fortinet Certified Fundamentals in                                               
+   Cybersecurity                                                                    
+                               • IPSec VPN with SDWAN in Fortigate Firewall.        
+   Fortinet Network Security Expert                                                 
+   Level 3: Certified Associate                                                     
+                               • Experience in Managing, Monitoring and Handling of VPN, VPN
+                               tunneling, Vlan, security policies and Zones (routing/policies) in
+                               Juniper 1000C, Cisco ISR 900 and other vendor devices.
+                               • Working Experience in Managing, designing, configuring and
+                                                                                    
+                               Implementing Networks and its device Like Cisco, Juniper,
+                               FortiGate (Fortinet).                                
+                                                                                    
+                                                                                    
+                               • Implementation and configuration of Aruba AP’s (AP25) and
+                               Switches (Instant On 1930)                           
+                                                                                    
+                                                                                    
+                               • Implementation and configuration of Unifi controller (Unifi Cloud
+                               Key G2 Plus HO) and AP’s (Wi-Fi U6+)                 
+                                                                                    
+                                                                                    
+                                                     Page 1 of 5                    
+
+--- PAGE ---
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                               • Works Experience in IP Phones configuration Like Yeastar P560,
+                               Avaya IP OFFICE IP500, Cisco CUCM.                   
+                                                                                    
+                                                                                    
+                               • Knowledge of Azure Cloud Management.               
+                                                                                    
+                                                                                    
+                               • Knowledge of Office 365 Management.                
+                                                                                    
+                               • Knowledge of G-Suit Management.                    
+                                                                                    
+                                                                                    
+                                                                                    
+                               Experience                                           
+                                                                                    
+                                                                                    
+                               National Energy Center                               
+                               Network and Infrastructure Specialist                
+                               April 2026 - Present (6 months)                      
+                               Seeb                                                 
+                                                                                    
+                               • Fortigate FG40F, FG60F, FG201E Firewall configuration
+                               • Fortigate SDWAN configuration on IPSec VPN.        
+                                                                                    
+                               • Designing and implementing IPSec VPN in Fortigate and other vendor
+                               devices.                                             
+                                                                                    
+                               • Installed and configured Cisco switches including IOS upgrade and initial
+                               setup.                                               
+                               • Deployed and managed FortiGate firewalls, FortiSwitches 148F-POE,
+                                                                                    
+                               FortiAP 221E across multiple sites.                  
+                               • Implemented and maintained FortiGate SD-WAN for optimized traffic routing
+                               and redundancy.                                      
+                                                                                    
+                               • Created secure firewall policies, VPN tunnels, and intrusion prevention
+                               systems (IPS).                                       
+                                                                                    
+                               • Provided ongoing network support, troubleshooting, and optimization for
+                               LAN/WAN environments.                                
+                               • Implementation and configuration of Aruba AP’s (AP25) and Switches
+                                                                                    
+                               (Instant On 1930)                                    
+                               • Implementation and configuration of Unifi controller (Unifi Cloud Key G2 Plus
+                                                                                    
+                               HO) and AP’s (Wi-Fi U6+)                             
+                               • Experience in Gmail suit and outlook administration.
+                               • Managing NAS/SAN storage devices.                  
+                                                                                    
+                               • IP Phones configuration Like Yeastar P560, Avaya IP OFFICE IP500, Cisco
+                               cucm.                                                
+                               • Cisco Switches CBS350, C9200L and router configuration.
+                                                                                    
+                                                                                    
+                                                                                    
+                                                     Page 2 of 5                    
+
+--- PAGE ---
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                               Infinite Information Technology LLC                  
+                               Network Security Engineer                            
+                               April 2024 - April 2026 (2 years 1 month)            
+                                                                                    
+                               Muscat                                               
+                               • Fortigate FG40F, FG60F, FG101E, FG201E Firewall configuration
+                                                                                    
+                               • Fortigate SDWAN configuration on IPSec VPN.        
+                               • Designing and implementing IPSec VPN in Fortigate and other vendor
+                               devices.                                             
+                                                                                    
+                               • Installed and configured Cisco switches including IOS upgrade and initial
+                               setup.                                               
+                                                                                    
+                               • Deployed and managed FortiGate firewalls, FortiSwitches 148F-POE,
+                               FortiAP 221E across multiple sites.                  
+                               • Implemented and maintained FortiGate SD-WAN for optimized traffic routing
+                                                                                    
+                               and redundancy.                                      
+                               • Created secure firewall policies, VPN tunnels, and intrusion prevention
+                               systems (IPS).                                       
+                                                                                    
+                               • Provided ongoing network support, troubleshooting, and optimization for
+                               LAN/WAN environments.                                
+                                                                                    
+                               • Implementation and configuration of Aruba AP’s (AP25) and Switches
+                               (Instant On 1930)                                    
+                               • Implementation and configuration of Unifi controller (Unifi Cloud Key G2 Plus
+                                                                                    
+                               HO) and AP’s (Wi-Fi U6+)                             
+                               • Experience in Gmail suit and outlook administration.
+                                                                                    
+                               • Managing NAS/SAN storage devices.                  
+                               • IP Phones configuration Like Yeastar P560, Avaya IP OFFICE IP500, Cisco
+                               cucm.                                                
+                                                                                    
+                               • Cisco Switches CBS350, C9200L and router configuration.
+                                                                                    
+                                                                                    
+                               Motive                                               
+                               IT Support Engineer                                  
+                               March 2019 - April 2024 (5 years 2 months)           
+                               Lahore, Pakistan                                     
+                                                                                    
+                               • FortiGate 500D Firewall configuration.             
+                               • Designing and implementing VPN and VPN tunnel in FortiGate and other
+                                                                                    
+                               vendor devices.                                      
+                               • Designing and implementation of core networks.     
+                               • Cisco 3500 Switched and router configuration.      
+                                                                                    
+                               • Network and VPN Monitoring                         
+                               • IP Phones configuration.                           
+                                                                                    
+                                                                                    
+                                                     Page 3 of 5                    
+
+--- PAGE ---
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                               • Experience in Azure (Intune), Jira Ticketing, Okta Administration, Gmail suit
+                               administration.                                      
+                               • Managing the Inventory of IT.                      
+                                                                                    
+                               • Managing NAS/SAN storage devices.                  
+                                                                                    
+                                                                                    
+                               Elegant Serve                                        
+                               Network and System Engineer                          
+                               March 2014 - January 2019 (4 years 11 months)        
+                               Dubai, UAE                                           
+                                                                                    
+                               •Network design &ImplementationofFirewall,           
+                               SwitchesandWIFIcontrollerofdifferentvendorslike Cisco, Fortinet.
+                                                                                    
+                               •IP Phonesconfiguration(Cisco,Avaya).                
+                               •ServersInstallation and configuration.              
+                               •Designing the network infrastructure, configuration ofBoschDoor Access
+                                                                                    
+                               Control & CCTV NVR.                                  
+                                                                                    
+                                                                                    
+                               Ministry of Finance(National Saving Center)          
+                               Network Engineer                                     
+                               November 2010 - February 2014 (3 years 4 months)     
+                               Islamabad, Pakistan                                  
+                                                                                    
+                               Designing of core network.                           
+                                                                                    
+                                                                                    
+                               Handling and managing security policies in juniper and other vendor devices.
+                                                                                    
+                               Designing and implementing VPN and VPN tunnel in Juniper and other vendor
+                                                                                    
+                               devices.                                             
+                                                                                    
+                                                                                    
+                               Design & Handling of Zones and Zones routing/policies in Network devices of
+                               different vendor.                                    
+                                                                                    
+                                                                                    
+                               Network and VPN Monitoring                           
+                                                                                    
+                                                                                    
+                               Configuration, Troubleshoot and implementation of Juniper Switches (JNOs)
+                               and firewall (ISG 2000, SSG series etc), Cisco switches & Routers (Switches,
+                               Routers at Core level), Fortinet (FortiGate) Firewall (1000c).
+                                                                                    
+                                                                                    
+                               Handling and supporting 400 sites online             
+                                                                                    
+                                                                                    
+                               Private And government Companies                     
+                               System and Network Engineer                          
+                               March 2006 - October 2010 (4 years 8 months)         
+                                                     Page 4 of 5                    
+
+--- PAGE ---
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                               Worked on multiple Projects of Networking/Telecom, in different Private and
+                               Government Companies i.e.                            
+                                                                                    
+                                                                                    
+                               FBR PRAL (Motorway Project) Islamabad, Pakistan as Network Engineer.
+                                                                                    
+                                                                                    
+                               PowerTech (Blue Area, Islamabad Pakistan) as BSS Engineer I have worked
+                               on WARID PHASE VI in Sukkar Region (Sind).           
+                                                                                    
+                                                                                    
+                               Hulk Technology (F-10/1, Islamabad, Pakistan) as IT/Network Administrator.
+                                                                                    
+                                                                                    
+                               My Responsibilities were:                            
+                               Managing & Configuration of Cisco Router, Switches and Support services.
+                               Installation and Upgrades, PC diagnosis and repair, preventive maintenance.
+                                                                                    
+                               Work on Huawei BTS 3012.                             
+                               Site QC and Testing.                                 
+                               Able to use Site Master Bird & Anristo for VSWR Testing.
+                                                                                    
+                               Assisting Customer (Warid PAT Officer) for PAT.      
+                               Work as an acting Team Lead.                         
+                                                                                    
+                               Drive Test 3G & 4G.                                  
+                                                                                    
+                                                                                    
+                                                                                    
+                               Education                                            
+                                                                                    
+                               University of Engineering and Technology, Taxila     
+                               BEIT, Computer Systems Networking and Telecommunications · (2002 - 2006)
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                     Page 5 of 5                    

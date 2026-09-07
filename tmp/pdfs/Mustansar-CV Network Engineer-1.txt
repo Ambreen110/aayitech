@@ -1,0 +1,265 @@
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+             Syed      Mustansar          Hussain       Shah                      
+                                                                                  
+                                                                                  
+       Mobile No: +968-98291980                                                   
+       Email:    smustansarh@gmail.com                                            
+       LinkedIn: www.linkedin.com/in/syed-mustansar-hussain-shah-124b83104        
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                 Professional Summary                             
+                                                                                  
+          • CCNA Security Certified | Juniper Certified | FortiGate Firewall Expert | Aruba Network
+                                                                                  
+          • Network Infrastructure Setup: Cisco Switches CBS350, C9200L (iOS Installation & Configuration),
+            FortiSwitches 148F-POE, FortiAP 221E.                                 
+                                                                                  
+          • SD-WAN Configuration: FortiGate FG40F, FG60F, FG101E, FG201E, SD-WAN setup and
+            optimization.                                                         
+                                                                                  
+          • Network Monitoring & Troubleshooting: Solarwinds, PRTG, WhatsUp Gold, Cacti, Wireshark, SNMP
+            tools                                                                 
+                                                                                  
+          • Secure Network Design: Access control, segmentation, firewall rules, VPN.
+                                                                                  
+          • Firewall Management: FortiGate (NAT, Policies, SSL VPN, IPS), Juniper SRX
+                                                                                  
+          • IPSec VPN with SDWAN in Fortigate Firewall.                           
+                                                                                  
+          • Experience in Managing, Monitoring and Handling of VPN, VPN tunneling, Vlan, security policies and
+                                                                                  
+            Zones (routing/policies) in Juniper 1000C, Cisco ISR 900 and other vendor devices.
+                                                                                  
+          • Working Experience in Managing, designing, configuring and Implementing Networks and its device
+                                                                                  
+            Like Cisco, Juniper, FortiGate (Fortinet).                            
+                                                                                  
+         •  Implementation and configuration of Aruba AP’s (AP25) and Switches (Instant On 1930)
+         •  Implementation and configuration of Unifi controller (Unifi Cloud Key G2 Plus HO) and AP’s (Wi-Fi
+            U6+)                                                                  
+         •  Works Experience in IP Phones configuration Like Yeastar P560, Avaya IP OFFICE IP500, Cisco
+                                                                                  
+            CUCM.                                                                 
+          • Knowledge of Azure Cloud Management.                                  
+                                                                                  
+          • Knowledge of Office 365 Management.                                   
+                                                                                  
+          • Knowledge of G-Suit Management.                                       
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+
+--- PAGE ---
+
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                 Work Experience                                  
+                              April 2024 To Till Date:                            
+                                                                                  
+                                                                                  
+       Working in Infinite Technologies LLC Oman working as Network Security Engineer.
+       My Responsibilities are:                                                   
+                                                                                  
+            •  Fortigate FG40F, FG60F, FG101E, FG201E Firewall configuration      
+            •  Fortigate SDWAN configuration on IPSec VPN.                        
+            •  Designing and implementing IPSec VPN in Fortigate and other vendor devices.
+                                                                                  
+            •  Installed and configured Cisco switches including IOS upgrade and initial setup.
+            •  Deployed and managed FortiGate firewalls, FortiSwitches 148F-POE, FortiAP 221E across
+               multiple sites.                                                    
+                                                                                  
+            •  Implemented and maintained FortiGate SD-WAN for optimized traffic routing and redundancy.
+            •  Created secure firewall policies, VPN tunnels, and intrusion prevention systems (IPS).
+            •  Provided ongoing network support, troubleshooting, and optimization for LAN/WAN
+                                                                                  
+               environments.                                                      
+            •  Implementation and configuration of Aruba AP’s (AP25) and Switches (Instant On 1930)
+            •  Implementation and configuration of Unifi controller (Unifi Cloud Key G2 Plus HO) and AP’s (Wi-
+                                                                                  
+               Fi U6+)                                                            
+            •  Experience in Gmail suit and outlook administration.               
+            •  Managing NAS/SAN storage devices.                                  
+            •  IP Phones configuration Like Yeastar P560, Avaya IP OFFICE IP500, Cisco cucm.
+                                                                                  
+            •  Cisco Switches CBS350, C9200L and router configuration.            
+                                                                                  
+                             March 2019 To April 2024:                            
+       Working in Motive Formerly Known as KeepTruckin (US base Company) working as IT/Network
+       Engineer.                                                                  
+                                                                                  
+       My Responsibilities are:                                                   
+            •  FortiGate 500D Firewall configuration.                             
+            •  Designing and implementing VPN and VPN tunnel in FortiGate and other vendor devices.
+                                                                                  
+            •  Designing and implementation of core networks.                     
+            •  Cisco 3500 Switched and router configuration.                      
+            •  Network and VPN Monitoring using Network Monitoring Tools like Solarwinds, PRTG, WhatsUp
+               Gold.                                                              
+            •  IP Phones configuration.                                           
+            •  Experience in Azure (Intune), Jira Ticketing, Okta Administration, Gmail suit administration.
+                                                                                  
+            •  Managing the Inventory of IT.                                      
+            •  Managing NAS/SAN storage devices.                                  
+                                                                                  
+                            March 2014 to January 2019:                           
+                                                                                  
+       Worked in Elegant serve Technologies (Dubai,UAE) as Network Engineer in different projects, some of
+       them are as follows:                                                       
+            •  Network design & Implementation of Firewall, Switches and WIFI controller of different vendors
+               like Cisco, Fortinet.                                              
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+
+--- PAGE ---
+
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            •  IP Phones configuration (Cisco, Avaya).                            
+            •  Servers Installation and configuration.                            
+            •  Designing the network infrastructure, configuration of Bosch Door Access Control & CCTV NVR.
+                         November  2010 to February 2014:                         
+                                                                                  
+       Worked with Central Directorate of National Savings, Ministry of Finance (Islamabad, Pakistan) as Network
+       Engineer (Core Networks). My Responsibilities were:                        
+                                                                                  
+            •  Designing and implementation of core networks.                     
+            •  Handling and managing security policies in juniper and other vendor devices.
+            •  Designing and implementing VPN and VPN tunnel in Juniper and other vendor devices.
+                                                                                  
+            •  Design & Handling of Zones and Zones routing/policies in Network devices of different vendor.
+            •  Network and VPN Monitoring                                         
+            •  Configuration, Troubleshoot and implementation of Juniper Switches (JNOs) and firewall (ISG
+               2000, SSG series etc), Cisco switches & Routers (Switches, Routers at Core level), Fortinet
+               (FortiGate) Firewall (1000c).                                      
+            •  Handling and supporting 400 sites online.                          
+                                                                                  
+                                                                                  
+                            March 2006 to October 2010:                           
+                                                                                  
+                                                                                  
+       Worked on multiple Projects of Networking/Telecom, in different Private and Government Companies i.e.
+            •  FBR PRAL (Motorway Project) Islamabad, Pakistan as Network Engineer.
+            •  PowerTech (Blue Area, Islamabad Pakistan) as BSS Engineer I have worked on WARID
+               PHASE VI in Sukkar Region (Sind).                                  
+            •  Hulk Technology (F-10/1, Islamabad, Pakistan) as IT/Network Administrator.
+       My Responsibilities were:                                                  
+            •  Managing & Configuration of Cisco Router, Switches and Support services.
+            •  Installation and Upgrades, PC diagnosis and repair, preventive maintenance.
+                                                                                  
+            •  Work on Huawei BTS 3012.                                           
+            •  Site QC and Testing.                                               
+            •  Able to use Site Master Bird & Anristo for VSWR Testing.           
+            •  Assisting Customer (Warid PAT Officer) for PAT.                    
+                                                                                  
+            •  Work as an acting Team Lead.                                       
+            •  Drive Test 3G & 4G.                                                
+                                                                                  
+                                                                                  
+                             Certification/Diploma/Trainings                      
+                                    Certification:                                
+                                                                                  
+                                                                                  
+       Fortinet Certification:                                                    
+          • Fortinet Certified Fundamentals in Cybersecurity                      
+          • Fortinet Certified Associate in Cybersecurity                         
+                                                                                  
+       Cisco                                                                      
+          CCNA (Security)                                                         
+                                                                                  
+       Juniper Networks                                                           
+            •  Certified Internet Associate (Enterprise Routing Track)            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+
+--- PAGE ---
+
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            •  Certified Internet Associate (Enterprise Switching Track)          
+            •  Certified Internet Specialist (Enterprise Routing Track)           
+                                                                                  
+       Microsoft                                                                  
+          • Microsoft Certified Professional (MCP).                               
+          • Office 365 (MCSA)                                                     
+                                                                                  
+          • Implementing Microsoft Azure Infrastructure Solutions (MS)            
+                                                                                  
+                                                                                  
+                                  Diploma/Trainings                               
+                                                                                  
+          • Fortigate Firewall.                                                   
+          • FortiAP.                                                              
+          • Aruba                                                                 
+                                                                                  
+          • Juniper Firewall (VPN)                                                
+          • Juniper Security Training                                             
+          • Juniper Switching Training (EX-Series)                                
+          • Training and Experience in CCNA and CCNP.                             
+                                                                                  
+          • Training of MCSE 2012 (Server 2012 R2) and VMware (VCP).              
+                                                                                  
+                                                                                  
+                               Educational Qualification                          
+                                                                                  
+       Bachelor of Engineering in Information Technology                          
+       University of Engineering and Technology, Taxila Pakistan 2006             
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  

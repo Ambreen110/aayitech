@@ -29,16 +29,16 @@ export const experience = [
 export const credentials = [
   { title: "Fortinet Certified Associate in Cybersecurity", issuer: "Fortinet", date: "September 2025", note: "Valid through September 2027", image: "/mustansar/cert-fortinet-associate.png" },
   { title: "FCA — FortiGate 7.6 Operator", issuer: "Fortinet Training Institute", date: "September 2025", note: "Operator self-paced course", image: "/mustansar/cert-fortigate-operator.png" },
-  { title: "Fortinet Certified Fundamentals in Cybersecurity", issuer: "Fortinet", date: "September 2025", note: "Valid through September 2027", image: "/mustansar/cert-fortinet-fundamentals.jfif" },
-  { title: "CCNA Security", issuer: "Cisco", date: "July 2010", note: "Implementing Cisco IOS Network Security", image: "/mustansar/cert-ccna-security.jfif" },
-  { title: "Routing Protocols and Concepts", issuer: "Cisco Networking Academy", date: "March 2009", note: "CCNA Exploration", image: "/mustansar/cert-cisco-routing.jfif" },
-  { title: "LAN Switching and Wireless", issuer: "Cisco Networking Academy", date: "May 2009", note: "CCNA Exploration", image: "/mustansar/cert-cisco-switching.jfif" },
-  { title: "Network Fundamentals", issuer: "Cisco Networking Academy", date: "January 2009", note: "CCNA Exploration", image: "/mustansar/cert-cisco-fundamentals.jfif" },
-  { title: "Internet Specialist — Enterprise Routing", issuer: "Juniper Networks", date: "November 2009", note: "Enterprise routing track", image: "/mustansar/cert-juniper-specialist.jfif" },
-  { title: "Internet Associate — Enterprise Switching", issuer: "Juniper Networks", date: "September 2009", note: "Enterprise switching track", image: "/mustansar/cert-juniper-associate.jfif" },
-  { title: "Microsoft Certified Professional", issuer: "Microsoft", date: "December 2014", note: "Microsoft professional credential", image: "/mustansar/cert-microsoft-professional.jfif" },
-  { title: "Microsoft Certified Solutions Associate", issuer: "Microsoft", date: "December 2014", note: "Office 365", image: "/mustansar/cert-microsoft-associate.jfif" },
-  { title: "Microsoft Specialist — Azure Infrastructure", issuer: "Microsoft", date: "December 2014", note: "Azure Infrastructure Solutions", image: "/mustansar/cert-microsoft-azure.jfif" },
+  { title: "Fortinet Certified Fundamentals in Cybersecurity", issuer: "Fortinet", date: "September 2025", note: "Valid through September 2027", image: "/mustansar/cert-fortinet-fundamentals.jpg" },
+  { title: "CCNA Security", issuer: "Cisco", date: "July 2010", note: "Implementing Cisco IOS Network Security", image: "/mustansar/cert-ccna-security.jpg" },
+  { title: "Routing Protocols and Concepts", issuer: "Cisco Networking Academy", date: "March 2009", note: "CCNA Exploration", image: "/mustansar/cert-cisco-routing.jpg" },
+  { title: "LAN Switching and Wireless", issuer: "Cisco Networking Academy", date: "May 2009", note: "CCNA Exploration", image: "/mustansar/cert-cisco-switching.jpg" },
+  { title: "Network Fundamentals", issuer: "Cisco Networking Academy", date: "January 2009", note: "CCNA Exploration", image: "/mustansar/cert-cisco-fundamentals.jpg" },
+  { title: "Internet Specialist — Enterprise Routing", issuer: "Juniper Networks", date: "November 2009", note: "Enterprise routing track", image: "/mustansar/cert-juniper-specialist.jpg" },
+  { title: "Internet Associate — Enterprise Switching", issuer: "Juniper Networks", date: "September 2009", note: "Enterprise switching track", image: "/mustansar/cert-juniper-associate.jpg" },
+  { title: "Microsoft Certified Professional", issuer: "Microsoft", date: "December 2014", note: "Microsoft professional credential", image: "/mustansar/cert-microsoft-professional.jpg" },
+  { title: "Microsoft Certified Solutions Associate", issuer: "Microsoft", date: "December 2014", note: "Office 365", image: "/mustansar/cert-microsoft-associate.jpg" },
+  { title: "Microsoft Specialist — Azure Infrastructure", issuer: "Microsoft", date: "December 2014", note: "Azure Infrastructure Solutions", image: "/mustansar/cert-microsoft-azure.jpg" },
 ];
 
 export const platforms = ["FortiGate", "Cisco IOS", "Juniper SRX", "Aruba", "UniFi", "SolarWinds", "PRTG", "Wireshark", "Azure Intune", "Okta", "Microsoft 365", "Google Workspace"];

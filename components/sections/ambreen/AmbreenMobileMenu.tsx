@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { X } from "lucide-react";
 
 const navItems = [
@@ -32,6 +33,7 @@ export default function AmbreenMobileMenu({ open, onClose }: { open: boolean; on
         <button type="button" onClick={onClose} aria-label="Close menu" className="rounded-md border border-border p-3 focus-visible:outline-2 focus-visible:outline-accent"><X size={20} /></button>
       </div>
       <nav aria-label="Portfolio sections" className="flex flex-col gap-1 py-8">
+        <Link href="/" onClick={onClose} className="mb-4 rounded-md border border-border px-3 py-3 text-base font-semibold text-accent hover:bg-secondary focus-visible:outline-2 focus-visible:outline-accent">← Back to AAYI Tech</Link>
         {navItems.map(([name, href]) => <a key={href} href={href} onClick={onClose} className="rounded-md px-3 py-3 text-xl font-medium hover:bg-secondary focus-visible:outline-2 focus-visible:outline-accent">{name}</a>)}
       </nav>
       <a href="/ambreen/Ambreen_Fatima_CV.pdf" download className="inline-flex rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">Download resume</a>

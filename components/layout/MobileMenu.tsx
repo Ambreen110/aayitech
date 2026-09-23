@@ -21,6 +21,7 @@ const navLinks = [
 { label: "Technologies", href: "/technologies" },
   { label: "Projects", href: "/projects" },
   { label: "Approach", href: "/approach" },
+  { label: "Ambreen's Portfolio", href: "/ambreen" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -104,7 +105,7 @@ text-primary-foreground
 hover:bg-accent
 hover:text-background px-6 py-4 font-semibold transition"
             >
-              Let's Talk
+              Let&apos;s Talk
             </Link>
 
             {/* Social */}

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTheme } from "@/components/providers/ThemeProvider";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Moon, Sun } from "lucide-react";
+import { ArrowLeft, Menu, Moon, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import AmbreenMobileMenu from "./AmbreenMobileMenu";
@@ -68,6 +68,14 @@ export default function AmbreenNavbar() {
 
         {/* Right Side */}
         <div className="flex items-center gap-3">
+          <Link
+            href="/"
+            className="hidden items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-accent xl:flex"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            AAYI Tech
+          </Link>
+
           {/* Theme Toggle */}
             <Button
               variant="ghost"

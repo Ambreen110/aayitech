@@ -15,7 +15,7 @@ const navItems = [
   { name: "Projects", href: "/projects" },
   { name: "Approach", href: "/approach" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Ambreen", href: "/ambreen", featured: true },
 ];
 
 export default function Navbar() {
@@ -57,12 +57,19 @@ export default function Navbar() {
 </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground transition-colors duration-300 hover:text-accent"
+                aria-current={pathname === item.href ? "page" : undefined}
+                className={
+                  item.featured
+                    ? "rounded-full border border-accent/35 bg-accent/10 px-4 py-2 text-sm font-semibold text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
+                    : `text-sm font-medium transition-colors duration-300 hover:text-accent ${
+                        pathname === item.href ? "text-accent" : "text-muted-foreground"
+                      }`
+                }
               >
                 {item.name}
               </Link>

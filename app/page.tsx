@@ -6,6 +6,7 @@ import HomeServices from "@/components/sections/HomeServices/HomeServices";
 import HomeTechStack from "@/components/sections/HomeTechStack/HomeTechStack";
 import HomeApproach from "@/components/sections/home-approach/HomeApproach";
 import HomeAbout from "@/components/sections/home-about/HomeAbout";
+import HomeProfile from "@/components/sections/home-profile/HomeProfile";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <HomeServices />
       <HomeAbout />
+      <HomeProfile />
       <HomeTechStack />
       <HomeProjects />
       <HomeApproach />

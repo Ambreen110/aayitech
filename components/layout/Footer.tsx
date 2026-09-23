@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
+  FaUpwork,
 } from "react-icons/fa6";
 
 const navLinks = [
@@ -27,6 +28,10 @@ const socials = [
   {
     icon: FaGithub,
     href: "https://github.com/Ambreen110",
+  },
+  {
+    icon: FaUpwork,
+    href: "https://www.upwork.com/freelancers/ambreencrm",
   },
   {
     icon: FaInstagram,

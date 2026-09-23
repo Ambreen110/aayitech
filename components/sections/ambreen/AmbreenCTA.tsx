@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { FaUpwork } from "react-icons/fa6";
 
 export default function AmbreenCTA() {
   return (
@@ -123,6 +124,16 @@ export default function AmbreenCTA() {
               className="flex h-10 w-10 items-center justify-center rounded-full border border-border/70 text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-foreground"
             >
               <FaGithub size={17} />
+            </a>
+
+            <a
+              href="https://www.upwork.com/freelancers/ambreencrm"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Upwork"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-border/70 text-muted-foreground transition-all duration-300 hover:border-primary/40 hover:bg-primary/10 hover:text-foreground"
+            >
+              <FaUpwork size={18} />
             </a>
           </div>
 

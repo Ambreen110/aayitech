@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaUpwork,
 } from "react-icons/fa6";
 
 interface MobileMenuProps {
@@ -33,6 +34,10 @@ const socials = [
   {
     icon: FaGithub,
     href: "https://github.com/Ambreen110",
+  },
+  {
+    icon: FaUpwork,
+    href: "https://www.upwork.com/freelancers/ambreencrm",
   },
   {
     icon: FaInstagram,

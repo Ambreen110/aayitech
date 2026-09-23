@@ -20,7 +20,7 @@ export default function AmbreenHero() {
             <a className={styles.primary} href="#experience">Explore my experience <ArrowUpRight size={18} /></a>
             <a className={styles.secondary} href="/ambreen/Ambreen_Fatima_CV.pdf" download>Download resume <ArrowDownToLine size={17} /></a>
           </div>
-          <div className={styles.socials}><span><MapPin size={15} /> Pakistan</span><a href={ambreenProfile.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href={ambreenProfile.links.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          <div className={styles.socials}><span><MapPin size={15} /> Pakistan</span><a href={ambreenProfile.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href={ambreenProfile.links.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href={ambreenProfile.links.upwork} target="_blank" rel="noopener noreferrer">Upwork ↗</a></div>
         </motion.div>
         <motion.aside className={styles.portraitPanel} aria-label="Ambreen Fatima professional profile" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .7, delay: .12 }}>
           <div className={styles.portraitTop}><span>THE PERSON BEHIND THE SYSTEMS</span><span>AF / 01</span></div>

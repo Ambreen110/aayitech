@@ -10,7 +10,7 @@ import {
   MapPin,
   Workflow,
 } from "lucide-react";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaUpwork } from "react-icons/fa6";
 
 const credentials = [
   {
@@ -123,15 +123,28 @@ export default function HomeProfile() {
                 View Ambreen&apos;s portfolio
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
-              <a
-                href="https://linkedin.com/in/ambreen-f-50070a62"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-background px-7 py-3.5 font-semibold text-foreground transition-all duration-300 hover:border-accent hover:bg-secondary"
-              >
-                <FaLinkedin className="h-5 w-5 text-accent" />
-                Connect on LinkedIn
-              </a>
+            </div>
+
+            <div className="mt-5 flex flex-wrap items-center gap-3" aria-label="Ambreen's professional profiles">
+              {[
+                { label: "LinkedIn", href: "https://linkedin.com/in/ambreen-f-50070a62", icon: FaLinkedin },
+                { label: "GitHub", href: "https://github.com/Ambreen110", icon: FaGithub },
+                { label: "Upwork", href: "https://www.upwork.com/freelancers/ambreencrm", icon: FaUpwork },
+              ].map((profile) => {
+                const Icon = profile.icon;
+                return (
+                  <a
+                    key={profile.label}
+                    href={profile.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm font-semibold text-foreground transition-all duration-300 hover:border-accent hover:bg-secondary"
+                  >
+                    <Icon className="h-4 w-4 text-accent" />
+                    {profile.label}
+                  </a>
+                );
+              })}
             </div>
           </motion.div>
         </div>

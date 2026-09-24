@@ -27,10 +27,10 @@ export default function HeroContent() {
         transition={{ delay: 0.15, duration: 0.6 }}
         className="max-w-5xl text-5xl font-black leading-tight tracking-tight text-foreground md:text-6xl xl:text-7xl"
       >
-        Stop Managing Your CRM
+        Build Connected
         <br />
         <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-          By Hand
+          Revenue Systems
         </span>
       </motion.h1>
 

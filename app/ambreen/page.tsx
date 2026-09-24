@@ -13,8 +13,8 @@ import PortfolioMotion from "@/components/sections/ambreen/PortfolioMotion";
 import styles from "./portfolio.module.css";
 
 export const metadata: Metadata = {
-  title: "Ambreen Fatima | CRM, Automation & Systems Developer",
-  description: "CRM implementation, workflow automation, web development and technical systems support by Ambreen Fatima. Explore experience, selected work and technical expertise.",
+  title: "Ambreen Fatima | HubSpot & GoHighLevel Automation Specialist",
+  description: "HubSpot and GoHighLevel CRM automation, integrations, reporting, and connected Next.js development by Ambreen Fatima.",
 };
 
 export default function AmbreenPage() {

@@ -14,28 +14,28 @@ const stats = [
     value: "6+",
     title: "Years Experience",
     description:
-      "Building modern websites, CRM systems, automation, and scalable business solutions.",
+      "Building CRM workflows, integrations, and customer-facing systems.",
   },
   {
     icon: Layers3,
-    value: "10+",
-    title: "Technologies",
+    value: "2",
+    title: "Core CRM Platforms",
     description:
-      "React, Next.js, Node.js, HubSpot, GoHighLevel, AI, APIs, databases, and more.",
+      "Deep focus on HubSpot and GoHighLevel instead of shallow coverage across every CRM.",
   },
   {
     icon: BriefcaseBusiness,
     value: "End-to-End",
-    title: "Business Solutions",
+    title: "CRM Delivery",
     description:
-      "From planning and development to deployment, automation, and ongoing optimization.",
+      "From process mapping and setup to workflows, integrations, training, and optimization.",
   },
   {
     icon: Bot,
-    value: "AI + CRM",
-    title: "Automation",
+    value: "Next.js",
+    title: "Custom Experience",
     description:
-      "Workflow automation, AI integrations, CRM implementation, and technical consulting.",
+      "Websites, portals, and dashboards built to connect cleanly with the CRM.",
   },
 ];
 
@@ -55,13 +55,13 @@ export default function HomeStats() {
         </span>
 
         <h3 className="mt-6 text-3xl font-bold text-foreground">
-          Building Complete Digital Solutions
+          Focused on the System After the Click
         </h3>
 
         <p className="mt-5 leading-8 text-muted-foreground">
-          I combine software development, CRM implementation, AI automation,
-          integrations, and technical consulting to deliver complete systems
-          that solve real business challenges.
+          A website can capture attention. The CRM system behind it determines
+          whether leads are followed up, work is assigned, and opportunities
+          stay visible. That is where I focus first.
         </p>
       </div>
 

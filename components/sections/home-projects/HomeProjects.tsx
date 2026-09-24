@@ -33,13 +33,13 @@ export default function HomeProjects() {
           </span>
 
           <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
-            Selected Client
-            <span className="text-accent"> Success Stories</span>
+            CRM Systems Built for
+            <span className="text-accent"> Real Operations</span>
           </h2>
 
           <p className="text-lg leading-8 text-muted-foreground">
-            A selection of projects showcasing CRM implementation, AI
-            automation, technical systems, and modern web solutions.
+            See how connected CRM platforms, workflows, reporting, and custom
+            web experiences reduce admin work and improve visibility.
           </p>
         </motion.div>
 

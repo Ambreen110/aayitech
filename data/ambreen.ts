@@ -1,9 +1,9 @@
 export const ambreenProfile = {
   name: "Ambreen Fatima",
-  title: "CRM Technical Specialist | Automation & Systems Developer",
+  title: "HubSpot & GoHighLevel CRM Automation Specialist | Next.js Developer",
 
   intro:
-    "I build and configure CRM systems, business automations, integrations, and modern web applications — combining technical implementation with practical business workflows.",
+    "I build HubSpot and GoHighLevel CRM systems, business automations, integrations, and Next.js experiences that reduce manual work and keep customer operations moving.",
 
   location: "Pakistan",
 
@@ -21,9 +21,6 @@ export const expertise = [
       "CRM architecture, pipelines, workflows, dashboards, reporting, integrations and business automation.",
     technologies: [
       "HubSpot",
-          "Close CRM",
-
-      "Salesforce",
       "GoHighLevel",
       "Apollo",
       "Make",
@@ -83,14 +80,14 @@ export const expertise = [
 ];
 export const selectedProjects = [
   {
-    title: "Close CRM — CRM Setup & Sales Operations",
+    title: "HubSpot CRM — Sales & Lifecycle Automation",
     description:
-      "Configured Close CRM for contact and lead management, pipeline organization, sales operations, and workflow optimization.",
+      "Built and maintained HubSpot environments for lead management, lifecycle automation, pipeline visibility, and reporting.",
     points: [
-      "Configured contact and lead management.",
-      "Organized sales pipelines and lead stages.",
-      "Managed CRM activities and sales processes.",
-      "Supported CRM workflow optimization and ongoing operations.",
+      "Configured custom properties and lifecycle stages.",
+      "Organized pipelines around the sales process.",
+      "Automated lead routing and follow-up tasks.",
+      "Built dashboards and reporting for operational visibility.",
     ],
   },
   {

@@ -47,17 +47,17 @@ export default function HomeAbout() {
           </span>
 
           <h2 className="mt-6 text-4xl font-bold text-foreground md:text-5xl">
-            Turning Ideas Into
+            CRM Strategy That Becomes
             <span className="text-accent">
               {" "}
-              Scalable Digital Solutions
+              A Working System
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            I help businesses build modern websites, CRM systems, AI-powered
-            automation, and technical infrastructure that improves efficiency,
-            streamlines operations, and supports long-term growth.
+            I translate the way your team sells and serves customers into a
+            clean HubSpot or GoHighLevel setup—then automate the repetitive
+            work and build custom Next.js tools where they add real value.
           </p>
         </motion.div>
 

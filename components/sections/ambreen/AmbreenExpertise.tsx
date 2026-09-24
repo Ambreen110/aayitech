@@ -12,12 +12,11 @@ import {
 const expertise = [
   {
     number: "01",
-    title: "CRM & Automation",
+    title: "HubSpot & GoHighLevel Automation",
     description:
       "Designing and configuring CRM environments around real business processes, including pipelines, properties, workflows, dashboards, reporting, integrations, and automation.",
     technologies: [
       "HubSpot",
-      "Salesforce",
       "GoHighLevel",
       "Apollo",
       "HubSpot Workflows",
@@ -31,9 +30,9 @@ const expertise = [
   },
   {
     number: "02",
-    title: "Web Development",
+    title: "Next.js Development",
     description:
-      "Building modern websites and web applications with component-based development, responsive interfaces, APIs, and modern JavaScript technologies.",
+      "Building conversion-focused websites, client portals, dashboards, and custom interfaces that connect cleanly with CRM data and workflows.",
     technologies: [
       "Next.js",
       "React",

@@ -60,7 +60,7 @@ AAYI<span className="text-accent">/TECH</span>
             </Link>
 
             <p className="mt-3 max-w-sm text-sm leading-7 text-muted-foreground">
-              Building intelligent CRM systems, AI automations, and scalable web applications for modern businesses.
+              HubSpot and GoHighLevel CRM automation, integrations, and custom Next.js experiences that reduce manual work.
             </p>
           </motion.div>
 

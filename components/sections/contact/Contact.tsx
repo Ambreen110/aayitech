@@ -40,15 +40,15 @@ export default function Contact() {
           </span>
 
           <h2 className="mt-4 text-4xl font-bold text-foreground md:text-5xl">
-            Let's Start Your
-            <span className="text-accent"> Next Project</span>
+            Let's Fix Your
+            <span className="text-accent"> CRM Workflow</span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Have an idea, a challenge, or a project in mind? Whether it's CRM
-            implementation, AI automation, API integration, or a modern web
-            application, I'd be happy to discuss how we can build the right
-            solution together.
+            Tell me what your team is still doing manually, where leads are
+            getting stuck, or what HubSpot or GoHighLevel is not doing yet. I&apos;ll
+            help you identify the right automation, integration, or Next.js
+            solution.
           </p>
         </motion.div>
 

@@ -21,7 +21,7 @@ const credentials = [
   {
     icon: Workflow,
     label: "CRM + Automation",
-    detail: "Business systems focus",
+    detail: "HubSpot + GoHighLevel",
   },
   {
     icon: BadgeCheck,
@@ -63,7 +63,7 @@ export default function HomeProfile() {
                 <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
                   <p className="text-2xl font-bold">Ambreen Fatima</p>
                   <p className="mt-1 text-sm text-white/75">
-                    CRM Technical Specialist · Systems Developer
+                    HubSpot & GoHighLevel Automation Specialist
                   </p>
                 </div>
               </div>
@@ -91,10 +91,11 @@ export default function HomeProfile() {
               Technical work is better when you know who is behind it.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-              AAYI Tech is led by Ambreen Fatima, a CRM, automation, and systems
-              specialist who turns complex business requirements into practical,
-              connected solutions. Clients work directly with the person shaping
-              the strategy and delivering the implementation.
+              AAYI Tech is led by Ambreen Fatima, a HubSpot and GoHighLevel
+              automation specialist who turns manual sales and customer
+              processes into practical, connected workflows. Clients work
+              directly with the person shaping the strategy and delivering the
+              implementation.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">

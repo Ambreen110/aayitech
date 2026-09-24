@@ -17,7 +17,7 @@ export default function HeroContent() {
         transition={{ duration: 0.5 }}
         className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent backdrop-blur-xl"
       >
-        CRM • AI • Web Development
+        HUBSPOT • GOHIGHLEVEL • NEXT.JS
       </motion.div>
 
       {/* Heading */}
@@ -27,10 +27,10 @@ export default function HeroContent() {
         transition={{ delay: 0.15, duration: 0.6 }}
         className="max-w-5xl text-5xl font-black leading-tight tracking-tight text-foreground md:text-6xl xl:text-7xl"
       >
-        Build Smarter
+        Stop Managing Your CRM
         <br />
         <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-          Business Systems
+          By Hand
         </span>
       </motion.h1>
 
@@ -41,8 +41,10 @@ export default function HeroContent() {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="mt-8 max-w-3xl text-lg leading-8 text-muted-foreground md:text-xl"
       >
-        We build CRM systems, AI automations, and custom web applications that
-        streamline operations, improve productivity, and help businesses scale.
+        I build HubSpot and GoHighLevel systems that capture leads, automate
+        follow-up, keep pipelines moving, and give your team back the hours
+        lost to repetitive work. When the workflow needs a custom front end,
+        I build it in Next.js.
       </motion.p>
 
       {/* CTA Buttons */}
@@ -58,7 +60,7 @@ export default function HeroContent() {
             size="lg"
             className="group rounded-full bg-primary px-8 py-6 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/15 transition-all duration-300 hover:bg-accent hover:text-background hover:shadow-accent/30"
           >
-            Book a Discovery Call
+            Audit My CRM Workflow
 
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
@@ -71,7 +73,7 @@ export default function HeroContent() {
             variant="outline"
             className="rounded-full border border-accent bg-card px-8 py-6 text-base font-semibold text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
           >
-            Explore Services
+            See CRM Automation Services
           </Button>
         </Link>
       </motion.div>

@@ -51,9 +51,10 @@ export default function AmbreenCTA() {
 
           {/* Description */}
           <p className="relative mx-auto mt-6 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
-            Whether you need a CRM implementation, business automation,
-            integration, technical system support, or a modern web application,
-            I&apos;d be happy to discuss the requirements.
+            Tell me where leads stall, which follow-ups are still manual, or
+            what your team cannot see in HubSpot or GoHighLevel. I&apos;ll help turn
+            that problem into a focused automation, integration, or Next.js
+            project.
           </p>
 
           {/* Email */}
@@ -140,8 +141,8 @@ export default function AmbreenCTA() {
           {/* Contact information */}
           <div className="relative mt-10 border-t border-border/60 pt-7">
             <p className="text-xs text-muted-foreground">
-              Available for CRM implementation, automation, integrations,
-              technical consulting, and web development.
+              Available for HubSpot and GoHighLevel automation, CRM
+              integrations, optimization, and connected Next.js development.
             </p>
           </div>
         </motion.div>

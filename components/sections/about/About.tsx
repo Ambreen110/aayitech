@@ -44,8 +44,8 @@ export default function About() {
             <SectionBadge>About AAYI TECH</SectionBadge>
 
             <SectionHeading
-              title="Building Connected Technology for Modern Businesses"
-              subtitle="AAYI TECH combines development, CRM, automation, AI, integrations, and technical infrastructure to create practical digital systems that help businesses operate smarter."
+              title="Building the System Behind Your Customer Journey"
+              subtitle="AAYI TECH specializes in HubSpot and GoHighLevel automation, integrations, and connected Next.js experiences that reduce manual work and keep revenue operations visible."
             />
           </div>
 

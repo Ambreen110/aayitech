@@ -50,8 +50,8 @@ export default function HomeApproach() {
           <SectionBadge>My Approach</SectionBadge>
 
           <SectionHeading
-            title="A Structured Process For Every Project"
-            subtitle="Every successful solution begins with understanding your goals, planning carefully, building efficiently, and continuously improving after launch."
+            title="From Manual Process to Working Automation"
+            subtitle="I start with how leads and customer work move today, design the CRM around that reality, automate the repetitive steps, and verify the system with your team."
           />
         </div>
 
@@ -82,9 +82,9 @@ export default function HomeApproach() {
           className="mt-16 text-center"
         >
           <p className="mx-auto mb-8 max-w-2xl leading-8 text-muted-foreground">
-            My complete delivery process includes discovery, architecture
-            planning, development, AI automation, optimization, and long-term
-            support.
+            The result is a HubSpot or GoHighLevel system your team can actually
+            use, with clear ownership, dependable workflows, useful reporting,
+            and documentation for what happens next.
           </p>
 
           <Link

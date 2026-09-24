@@ -4,25 +4,22 @@ export const services: Service[] = [
   {
   slug: "crm-implementation",
 
-  badge: "CRM Services",
+  badge: "Primary Service",
 
-  title: "CRM",
+  title: "HubSpot & GoHighLevel",
 
-  highlight: "Implementation",
+  highlight: "CRM Automation",
 
-  shortTitle: "CRM Implementation",
+  shortTitle: "HubSpot & GoHighLevel CRM Automation",
 
   description:
-    "Build and optimize a CRM system that streamlines your sales, marketing, and customer operations through automation, smart workflows, and structured data.",
+    "Turn HubSpot or GoHighLevel into a working revenue system with clean pipelines, automated follow-up, lead routing, reporting, and connected customer data.",
 
   icon: "briefcase",
 
   benefits: [
-    "HubSpot CRM Setup",
-    "Close CRM Setup",
-    "GoHighLevel Configuration",
-    "Zoho CRM Customization",
-    "Brevo & Kit Setup",
+    "HubSpot CRM Setup & Optimization",
+    "GoHighLevel Setup & Optimization",
     "Custom Pipelines",
     "Lifecycle Stages",
     "Dashboards & Reports",
@@ -40,7 +37,6 @@ export const services: Service[] = [
 
   technologies: [
     { name: "HubSpot", icon: "briefcase" },
-    { name: "Close CRM", icon: "briefcase" },
     { name: "GoHighLevel", icon: "workflow" },
     { name: "Zoho CRM", icon: "database" },
     { name: "Brevo", icon: "network" },
@@ -52,13 +48,13 @@ export const services: Service[] = [
     {
       question: "Which CRM platforms do you support?",
       answer:
-        "HubSpot, Close CRM, GoHighLevel, Zoho CRM, Brevo, Kit and custom CRM solutions.",
+        "HubSpot and GoHighLevel are my primary platforms. I also connect them with forms, email tools, calendars, data sources, and custom applications.",
     },
 
     {
-      question: "Can you set up Close CRM?",
+      question: "Can you improve an existing HubSpot or GoHighLevel account?",
       answer:
-        "Yes. I can configure Close CRM for lead and contact management, sales pipelines, activities, sales processes, and workflow optimization.",
+        "Yes. I can audit the current setup, simplify pipelines and properties, repair workflows, improve reporting, and remove repetitive manual steps.",
     },
 
     {
@@ -84,7 +80,7 @@ export const services: Service[] = [
 
     "Whether you're implementing a CRM for the first time, migrating from another platform, or optimizing an existing system, I design solutions that align with your business goals, workflows, and customer journey. Every implementation is tailored to improve efficiency, visibility, and collaboration across departments.",
 
-    "From HubSpot, Close CRM, and GoHighLevel to Zoho CRM, Brevo, and Kit, I build scalable CRM ecosystems that integrate seamlessly with your marketing, sales, and operational processes while reducing manual work through intelligent automation.",
+    "My focus is HubSpot and GoHighLevel: two flexible platforms that can connect marketing, sales, service, and follow-up when they are configured around the way your business actually works.",
   ],
 
   challenges: [
@@ -100,7 +96,7 @@ export const services: Service[] = [
 
   solutions: [
     "Complete CRM implementation and customization",
-    "Close CRM configuration and sales pipeline setup",
+    "HubSpot and GoHighLevel configuration",
     "Sales pipeline design and optimization",
     "Lead capture and automated routing",
     "Workflow automation and task management",
@@ -112,7 +108,7 @@ export const services: Service[] = [
 
   deliverables: [
     "CRM account setup and configuration",
-    "Close CRM setup and configuration",
+    "HubSpot or GoHighLevel account configuration",
     "Custom pipelines and deal stages",
     "Contact, company and deal properties",
     "Workflow automation",
@@ -138,7 +134,7 @@ export const services: Service[] = [
   whyChooseUs: [
     "Business-first CRM strategy tailored to your processes",
     "Hands-on experience with multiple CRM platforms",
-    "Close CRM, HubSpot, GoHighLevel, and Zoho CRM expertise",
+    "Focused HubSpot and GoHighLevel expertise",
     "Automation-focused implementations that reduce manual work",
     "Scalable architecture designed for future business growth",
     "Clean documentation and structured implementation process",
@@ -171,7 +167,7 @@ export const services: Service[] = [
     shortTitle: "Workflow Automation",
 
     description:
-      "Automate repetitive business processes using APIs, AI, Zapier, Make and custom integrations.",
+      "Replace repetitive lead handling, follow-up, task creation, handoffs, and reporting with dependable workflows across your CRM and business tools.",
 
     icon: "workflow",
 
@@ -230,14 +226,14 @@ export const services: Service[] = [
 
     badge: "Artificial Intelligence",
 
-    title: "AI Business",
+    title: "CRM Integration &",
 
-    highlight: "Solutions",
+    highlight: "AI Assistants",
 
-    shortTitle: "AI Business Solutions",
+    shortTitle: "CRM Integrations & AI Assistants",
 
     description:
-      "Custom AI assistants, chatbots, intelligent workflows and productivity tools for modern businesses.",
+      "Connect forms, email, calendars, APIs, and practical AI assistants to your CRM so information moves without copy-and-paste work.",
 
     icon: "bot",
   },
@@ -247,14 +243,14 @@ export const services: Service[] = [
 
     badge: "Development",
 
-    title: "Full Stack",
+    title: "Next.js",
 
-    highlight: "Development",
+    highlight: "Web Development",
 
-    shortTitle: "Full Stack Development",
+    shortTitle: "Next.js Websites & Portals",
 
     description:
-      "Modern web applications using Next.js, React, Node.js, NestJS and scalable architectures.",
+      "Conversion-focused websites, client portals, dashboards, and custom interfaces built in Next.js and connected to your CRM workflows.",
 
     icon: "code2",
   },
@@ -268,10 +264,10 @@ export const services: Service[] = [
 
     highlight: "Development",
 
-    shortTitle: "API Development",
+    shortTitle: "CRM API Integrations",
 
     description:
-      "REST APIs, third-party integrations and secure backend services for scalable applications.",
+      "Secure API integrations that keep HubSpot, GoHighLevel, forms, databases, and third-party business tools in sync.",
 
     icon: "network",
   },
@@ -281,14 +277,14 @@ export const services: Service[] = [
 
     badge: "Backend",
 
-    title: "Database &",
+    title: "CRM Data &",
 
     highlight: "Backend",
 
-    shortTitle: "Database & Backend",
+    shortTitle: "CRM Data & Reporting",
 
     description:
-      "Reliable backend systems powered by PostgreSQL, MongoDB, MySQL and scalable architectures.",
+      "Clean data models, migrations, dashboards, attribution, and reporting that make your CRM trustworthy and useful.",
 
     icon: "database",
   },

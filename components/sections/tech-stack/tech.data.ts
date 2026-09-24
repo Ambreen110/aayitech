@@ -77,7 +77,7 @@ export const techStack = [
 
   expertise: [
     "HubSpot CRM",
-    "Close CRM",
+    "GoHighLevel",
     "Pipeline Setup",
     "Workflow Automation",
     "Lead Management",
@@ -87,9 +87,9 @@ export const techStack = [
 
   technologies: [
     { name: "HubSpot", icon: SiHubspot },
-    { name: "Close CRM", icon: BriefcaseBusiness },
-    { name: "Salesforce", icon: BriefcaseBusiness },
-    { name: "WordPress", icon: SiWordpress },
+    { name: "GoHighLevel", icon: BriefcaseBusiness },
+    { name: "CRM Pipelines", icon: BriefcaseBusiness },
+    { name: "HubSpot CMS", icon: SiWordpress },
   ],
 },
 

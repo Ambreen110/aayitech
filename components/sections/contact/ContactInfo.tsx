@@ -28,14 +28,13 @@ export default function ContactInfo() {
         </span>
 
         <h2 className="mt-4 text-4xl font-bold text-foreground">
-          Let's Build Something Amazing Together
+          Start With the Workflow That Wastes the Most Time
         </h2>
 
         <p className="mt-5 max-w-lg leading-8 text-muted-foreground">
-          Whether you need CRM implementation, AI automation,
-          API integrations, or a modern web application,
-          I'd love to hear about your project and discuss
-          how we can create the right solution.
+          Share the manual steps, missed follow-ups, reporting gaps, or
+          disconnected tools slowing your team down. We can turn them into a
+          focused HubSpot, GoHighLevel, integration, or Next.js project.
         </p>
       </div>
 

@@ -23,7 +23,7 @@ const [formData, setFormData] = useState({
   name: "",
   email: "",
   company: "",
-  service: "CRM Implementation",
+  service: "HubSpot CRM Automation",
   message: "",
 });
 function handleChange(
@@ -64,7 +64,7 @@ function handleChange(
       name: "",
       email: "",
       company: "",
-      service: "CRM Implementation",
+      service: "HubSpot CRM Automation",
       message: "",
     });
 
@@ -235,11 +235,11 @@ focus:border-accent
 focus:ring-2
 focus:ring-accent/20
 "
->              <option>CRM Implementation</option>
-              <option>AI Automation</option>
-              <option>Web Development</option>
-              <option>API Integration</option>
-              <option>Technical Consulting</option>
+>              <option>HubSpot CRM Automation</option>
+              <option>GoHighLevel Automation</option>
+              <option>CRM Audit &amp; Optimization</option>
+              <option>CRM API Integration</option>
+              <option>Next.js Website or Portal</option>
               <option>Other</option>
             </select>
           </div>

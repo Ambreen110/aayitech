@@ -18,16 +18,14 @@ const techGroups = [
     icon: Blocks,
     technologies: [
       "HubSpot",
-      "Close CRM",
-      "Salesforce",
       "GoHighLevel",
       "Apollo",
       "HubSpot CMS",
     ],
   },
   {
-    title: "Development",
-    description: "Technologies I use to build modern web applications.",
+    title: "Next.js Development",
+    description: "Technologies I use to extend CRM workflows with custom web experiences.",
     icon: Braces,
     technologies: [
       "Next.js",
@@ -129,8 +127,8 @@ export default function AmbreenTechStack() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
-            A practical stack spanning CRM platforms, automation, software
-            development, data systems, and technical infrastructure.
+            A focused stack centered on HubSpot and GoHighLevel automation,
+            supported by integrations, data tools, and Next.js development.
           </p>
         </motion.div>
 

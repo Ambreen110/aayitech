@@ -8,7 +8,15 @@ import { techStack } from "../tech-stack/tech.data";
 import HomeTechCategory from "./HomeTechCategory";
 
 export default function HomeTechStack() {
-  const featuredCategories = techStack.slice(0, 4);
+  const categoryOrder = [
+    "CRM & Business Systems",
+    "Automation & AI",
+    "Frontend Development",
+    "Backend Development",
+  ];
+  const featuredCategories = categoryOrder.flatMap((category) =>
+    techStack.filter((item) => item.category === category),
+  );
 
   return (
     <section
@@ -29,17 +37,18 @@ export default function HomeTechStack() {
           className="mx-auto mb-16 max-w-3xl text-center"
         >
           <span className="mb-4 inline-flex rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent">
-            Technologies
+            Core Stack
           </span>
 
           <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
-            Tools That Power
-            <span className="text-accent"> Every Solution</span>
+            HubSpot and GoHighLevel,
+            <span className="text-accent"> Extended With Next.js</span>
           </h2>
 
           <p className="text-lg leading-8 text-muted-foreground">
-            Modern technologies used to build scalable applications, CRM
-            systems, automation workflows, and business platforms.
+            I choose tools around the workflow: CRM platforms for customer
+            operations, automation for repetitive tasks, and Next.js for
+            custom portals, dashboards, and conversion-focused websites.
           </p>
         </motion.div>
 

@@ -88,10 +88,10 @@ export const contactStats = [
 ];
 
 export const contactTopics = [
-  "CRM Implementation",
-  "AI Automation",
-  "Web Development",
-  "API Integrations",
-  "Technical Consulting",
-  "Workflow Automation",
+  "HubSpot CRM Automation",
+  "GoHighLevel Automation",
+  "CRM Audit & Optimization",
+  "CRM API Integration",
+  "Next.js Website or Portal",
+  "Workflow Strategy",
 ];

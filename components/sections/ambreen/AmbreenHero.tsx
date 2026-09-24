@@ -11,10 +11,10 @@ export default function AmbreenHero() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.heroGrid}>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }}>
-          <p className={styles.eyebrow}><span /> CRM · AUTOMATION · TECHNICAL SYSTEMS</p>
+          <p className={styles.eyebrow}><span /> HUBSPOT · GOHIGHLEVEL · NEXT.JS</p>
           <p className={styles.greeting}>Hi, I’m</p>
           <h1 id="ambreen-heading">Ambreen <span>Fatima.</span></h1>
-          <h2>CRM Technical Specialist<br /><span>Automation &amp; Systems Developer</span></h2>
+          <h2>CRM Automation Specialist<br /><span>HubSpot, GoHighLevel &amp; Next.js</span></h2>
           <p className={styles.intro}>{ambreenProfile.intro}</p>
           <div className={styles.actions}>
             <a className={styles.primary} href="#experience">Explore my experience <ArrowUpRight size={18} /></a>
@@ -28,10 +28,10 @@ export default function AmbreenHero() {
             <Image src="/ambreen/ambreen-fatima.png" alt="Ambreen Fatima" width={400} height={400} sizes="(max-width: 700px) 240px, 280px" preload className={styles.portrait} />
           </div>
           <div className={styles.portraitCaption}><h3>Thoughtful implementation.<br />Connected systems.</h3><p>CRM, automation &amp; development</p></div>
-          <div className={styles.platforms}><span>HubSpot</span><span>Close CRM</span><span>Next.js</span></div>
+          <div className={styles.platforms}><span>HubSpot</span><span>GoHighLevel</span><span>Next.js</span></div>
         </motion.aside>
       </div>
-      <div className={styles.focusStrip}>{[[Workflow, "CRM & Automation", "Workflows that connect your business"], [Code2, "Web Development", "Modern, purposeful digital experiences"], [Database, "Data & Infrastructure", "Reliable foundations behind the scenes"]].map(([Icon, title, detail]) => {const FocusIcon = Icon as typeof Workflow; return <div key={title as string}><FocusIcon size={23} strokeWidth={1.5} /><div><h3>{title as string}</h3><p>{detail as string}</p></div></div>;})}</div>
+      <div className={styles.focusStrip}>{[[Workflow, "CRM Automation", "Workflows that remove repetitive work"], [Code2, "Next.js Development", "Web experiences connected to the CRM"], [Database, "Data & Reporting", "Reliable visibility behind every decision"]].map(([Icon, title, detail]) => {const FocusIcon = Icon as typeof Workflow; return <div key={title as string}><FocusIcon size={23} strokeWidth={1.5} /><div><h3>{title as string}</h3><p>{detail as string}</p></div></div>;})}</div>
     </section>
   );
 }

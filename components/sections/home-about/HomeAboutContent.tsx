@@ -10,10 +10,10 @@ import {
 } from "lucide-react";
 
 const expertise = [
-  "Full Stack Web Development",
-  "CRM Implementation & Automation",
-  "AI Solutions & Workflow Automation",
-  "Technical Systems Consulting",
+  "HubSpot CRM Architecture & Automation",
+  "GoHighLevel Funnels & Workflows",
+  "CRM Integrations, APIs & Reporting",
+  "Next.js Websites & Client Portals",
 ];
 
 export default function HomeAboutContent() {
@@ -42,22 +42,21 @@ export default function HomeAboutContent() {
       <p className="mt-8 text-lg leading-8 text-muted-foreground">
         I'm a{" "}
         <span className="font-semibold text-foreground">
-          Full Stack Developer
+          HubSpot & GoHighLevel Specialist
         </span>{" "}
         &{" "}
         <span className="font-semibold text-foreground">
-          CRM & AI Automation Specialist
+          CRM Automation Developer
         </span>{" "}
-        with 6+ years of technical experience building scalable websites,
-        business systems, and automation solutions that improve efficiency and
-        support business growth.
+        with 6+ years of technical experience connecting customer journeys,
+        pipelines, follow-up, reporting, and the web experiences that feed them.
       </p>
 
       <p className="mt-5 leading-8 text-muted-foreground">
-        From modern web applications to CRM implementations, API integrations,
-        AI-powered workflows, and technical infrastructure, I focus on creating
-        practical solutions that help businesses streamline operations and scale
-        with confidence.
+        I do not treat the CRM as another software subscription. I shape it
+        around your process, remove unnecessary admin work, and make sure your
+        team can see what needs attention. Next.js supports that system when you
+        need a custom website, portal, dashboard, or lead experience.
       </p>
 
       {/* Expertise */}

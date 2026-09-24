@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import {
-  BrainCircuit,
-  Bot,
+  Code2,
+  ContactRound,
   Database,
   Workflow,
   BarChart3,
@@ -14,27 +14,27 @@ import FloatingConnections from "./visual/FloatingConnections";
 
 const cards = [
   {
-    title: "CRM",
-    description: "Centralized customer management",
+    title: "Capture",
+    description: "Leads enter HubSpot or GHL automatically",
     icon: Database,
 color: "text-accent",
   },
   {
-    title: "Automation",
-    description: "Smart workflows & integrations",
+    title: "Follow Up",
+    description: "Messages, tasks, and routing happen on time",
     icon: Workflow,
     color: "text-accent",
   },
   {
-    title: "AI Systems",
-    description: "AI agents & intelligent assistants",
-    icon: Bot,
+    title: "Convert",
+    description: "Clear pipelines keep every opportunity visible",
+    icon: ContactRound,
     color: "text-accent",
   },
   {
-    title: "Analytics",
-    description: "Real-time business insights",
-    icon: BarChart3,
+    title: "Extend",
+    description: "Next.js portals connect the customer experience",
+    icon: Code2,
     color: "text-accent",
   },
 ];
@@ -95,11 +95,11 @@ export default function HeroVisual() {
         className="mx-auto mt-14 flex h-28 w-28 items-center justify-center rounded-full border border-accent/30
 bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-xl"
       >
-        <BrainCircuit className="h-12 w-12 text-accent" />
+        <BarChart3 className="h-12 w-12 text-accent" />
       </motion.div>
 
       <p className="mt-6 text-center text-sm uppercase tracking-[0.3em] text-muted-foreground">
-         CONNECTED BUSINESS SYSTEMS
+         ONE CONNECTED REVENUE WORKFLOW
       </p>
     </motion.div>
   );

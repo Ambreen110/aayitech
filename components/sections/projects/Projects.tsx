@@ -47,15 +47,15 @@ export default function Projects() {
           </span>
 
           <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
-            Building Systems That
-            <span className="text-accent"> Drive Business Growth</span>
+            CRM Systems That
+            <span className="text-accent"> Keep Work Moving</span>
           </h2>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground">
-            A collection of real client engagements spanning CRM implementation,
-            AI automation, technical infrastructure, lead generation, business
-            websites, and operational systems across healthcare, procurement,
-            logistics, and professional services.
+            Real work across HubSpot, GoHighLevel, workflow automation,
+            integrations, reporting, technical infrastructure, and connected
+            web experiences for healthcare, procurement, logistics, and
+            professional services.
           </p>
         </motion.div>
 

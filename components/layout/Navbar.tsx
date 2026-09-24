@@ -51,7 +51,7 @@ export default function Navbar() {
     </p>
 
     <p className="mt-0.5 text-[8px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
-      CRM • AI • DEVELOPMENT
+      CRM AUTOMATION • NEXT.JS
     </p>
   </div>
 </Link>

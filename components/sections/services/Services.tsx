@@ -37,14 +37,14 @@ export default function Services() {
           className="mx-auto mb-16 max-w-3xl text-center"
         >
           <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
-            Solutions That Drive
-            <span className="text-accent"> Growth</span>
+            CRM Systems That Remove
+            <span className="text-accent"> Manual Work</span>
           </h2>
 
           <p className="text-lg leading-8 text-muted-foreground">
-            I help businesses build scalable digital products, automate
-            workflows, integrate CRMs, and develop intelligent systems that
-            improve efficiency and accelerate growth.
+            I specialize in HubSpot and GoHighLevel automation, then extend
+            those systems with integrations, reporting, and Next.js experiences
+            when an off-the-shelf workflow is not enough.
           </p>
         </motion.div>
 

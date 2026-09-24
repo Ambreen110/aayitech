@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const highlights = [
-  "Modern Web Development with Next.js, React & Node.js",
-  "CRM Implementation & Business Process Optimization",
-  "Workflow Automation & API Integrations",
-  "AI-Powered Business Solutions",
-  "Email Infrastructure, DNS & Technical Systems",
-  "Connected Digital Ecosystems for Growing Businesses",
+  "HubSpot CRM Setup, Cleanup & Automation",
+  "GoHighLevel Funnels, Pipelines & Workflows",
+  "Lead Routing, Follow-Up & Lifecycle Automation",
+  "CRM Integrations, APIs & Reporting",
+  "Next.js Websites, Portals & Dashboards",
+  "Documentation, Training & Ongoing Optimization",
 ];
 
 export default function AboutContent() {
@@ -27,27 +27,26 @@ export default function AboutContent() {
         </p>
 
         <h3 className="mb-6 text-4xl font-bold leading-tight text-foreground">
-          Technology That Connects Your Business.
+          Your CRM Should Run the Process—Not Create More Admin.
         </h3>
 
         <p className="mb-6 leading-8 text-muted-foreground">
-          AAYI TECH helps businesses build, connect, and improve their
-          technology systems. We combine modern web development, CRM
-          implementation, automation, AI, integrations, and technical
-          infrastructure to create solutions that work together.
+          AAYI TECH helps businesses turn HubSpot and GoHighLevel into working
+          operational systems. The goal is simple: fewer manual updates, faster
+          follow-up, cleaner handoffs, and better visibility across the customer
+          journey.
         </p>
 
         <p className="mb-6 leading-8 text-muted-foreground">
-          Instead of treating websites, CRMs, automations, and business tools
-          as separate systems, we focus on creating connected digital
-          ecosystems that simplify operations and improve efficiency.
+          I start with the process your team follows today, then design the CRM,
+          workflows, data, and integrations around that reality. This keeps the
+          system practical instead of adding automation for its own sake.
         </p>
 
         <p className="leading-8 text-muted-foreground">
-          From developing modern web applications to implementing CRM systems,
-          automating workflows, integrating APIs, and introducing AI-powered
-          solutions, AAYI TECH provides practical technology built around real
-          business needs.
+          When the CRM needs a custom customer-facing layer, I use Next.js to
+          build the website, portal, dashboard, or lead experience that connects
+          directly to the workflow behind it.
         </p>
       </motion.div>
 

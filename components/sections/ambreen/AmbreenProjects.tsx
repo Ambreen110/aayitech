@@ -85,10 +85,10 @@ const projects = [
   },
   {
     number: "05",
-    type: "Sales Operations",
-    title: "Close CRM Setup & Operations",
-    description: "Configured contact and lead management, organized pipelines and lead stages, and supported CRM activities, data management and workflow optimization around business requirements.",
-    technologies: ["Close CRM", "Lead Management", "Sales Pipelines", "Workflow Optimization"],
+    type: "CRM Automation",
+    title: "HubSpot Lifecycle & Lead Routing",
+    description: "Built HubSpot environments with structured properties, pipelines, lifecycle stages, automated lead routing, dashboards, and reporting around real business requirements.",
+    technologies: ["HubSpot", "Lifecycle Stages", "Lead Routing", "Workflow Automation"],
     icon: Layers3,
     featured: false,
     href: "#experience",
@@ -128,8 +128,8 @@ export default function AmbreenProjects() {
           </h2>
 
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
-            A selection of technical work across web development, CRM
-            implementation, automation, and data systems.
+            A selection of work across HubSpot and GoHighLevel CRM systems,
+            automation, integrations, data operations, and Next.js development.
           </p>
         </motion.div>
 

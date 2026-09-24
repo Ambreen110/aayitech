@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 const highlights = [
-  "CRM implementation & architecture",
-  "Close CRM & CRM operations",
+  "HubSpot CRM architecture & automation",
+  "GoHighLevel funnels & workflows",
   "Workflow automation & integrations",
   "Technical systems & troubleshooting",
   "Web development with Next.js",
@@ -57,8 +57,8 @@ export default function AmbreenAbout() {
               <span className="font-semibold text-foreground">
                 CRM Technical Specialist and Automation &amp; Systems Developer
               </span>{" "}
-              working across CRM platforms, business automation, integrations,
-              web development, and technical infrastructure.
+              focused on HubSpot, GoHighLevel, business automation,
+              integrations, and custom Next.js development.
             </p>
 
             <p className="leading-8 text-muted-foreground">
@@ -70,12 +70,11 @@ export default function AmbreenAbout() {
             </p>
 
             <p className="leading-8 text-muted-foreground">
-  I work with CRM platforms such as HubSpot, Close CRM,
-  Salesforce, GoHighLevel, and Apollo, while also building
-  modern web applications with Next.js, React, TypeScript,
-  and Node.js. My work also includes EDI and database-related
-  processes, DNS and email authentication, and technical
-  troubleshooting.
+  HubSpot and GoHighLevel are my primary CRM platforms. I use
+  them to structure pipelines, lifecycle stages, follow-up,
+  reporting, and customer operations, then connect supporting
+  tools through APIs and automation. I also build custom web
+  experiences with Next.js, React, TypeScript, and Node.js.
 </p>
 
             <p className="leading-8 text-muted-foreground">
@@ -169,9 +168,9 @@ export default function AmbreenAbout() {
           className="mt-16 border-t border-border/60 pt-8"
         >
           <p className="max-w-4xl text-sm leading-7 text-muted-foreground sm:text-base">
-            Currently working across CRM implementation, automation,
-            integrations, technical systems, EDI/data processes, and modern
-            web development.
+            Currently focused on HubSpot and GoHighLevel implementation,
+            workflow automation, CRM integrations, reporting, and connected
+            Next.js experiences.
           </p>
         </motion.div>
       </div>

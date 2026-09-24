@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import {
   BriefcaseBusiness,
   BadgeCheck,
-  Clock3,
-  BrainCircuit,
+  Workflow,
+  Code2,
 } from "lucide-react";
 
 import AnimatedCounter from "../../shared/AnimatedCounter";
@@ -21,22 +21,22 @@ const stats = [
   {
     value: 100,
     suffix: "%",
-    label: "Client Satisfaction",
+    label: "Client Commitment",
     icon: BadgeCheck,
     color: "text-accent",
   },
   {
-    value: 24,
-    suffix: "/7",
-    label: "Technical Support",
-    icon: Clock3,
+    value: 2,
+    suffix: " Core CRMs",
+    label: "HubSpot + GoHighLevel",
+    icon: Workflow,
     color: "text-accent",
   },
   {
-    value: 100,
-    suffix: "%",
-    label: "AI Automations",
-    icon: BrainCircuit,
+    value: 1,
+    suffix: " Stack",
+    label: "CRM Automation + Next.js",
+    icon: Code2,
     color: "text-accent",
   },
 ];

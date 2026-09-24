@@ -13,11 +13,11 @@ export default function Home() {
     <main className="bg-background text-foreground">
       <Hero />
       <HomeServices />
-      <HomeAbout />
+      <HomeProjects />
       <HomeProfile />
       <HomeTechStack />
-      <HomeProjects />
       <HomeApproach />
+      <HomeAbout />
       <CTA />
       <Contact />
     </main>

@@ -48,7 +48,7 @@ export default function AmbreenNavbar() {
             </span>
 
             <span className="mt-1 text-[8px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              CRM • AI • DEVELOPMENT
+              HUBSPOT • GHL • NEXT.JS
             </span>
           </div>
         </Link>

@@ -37,7 +37,7 @@ export default function CTA() {
               className="relative z-10 mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm font-medium text-accent"
             >
               <Sparkles className="h-4 w-4" />
-              Let's Build Something Great
+              Fix the Work Behind the Website
             </motion.div>
 
             {/* Heading */}
@@ -48,9 +48,8 @@ export default function CTA() {
               transition={{ delay: 0.2 }}
               className="relative z-10 mx-auto max-w-4xl text-4xl font-bold leading-tight text-foreground md:text-6xl"
             >
-              Ready to Transform Your
-              <span className="text-accent"> Ideas </span>
-              Into Scalable Digital Solutions?
+              Where Is Manual CRM Work
+              <span className="text-accent"> Slowing Your Team Down?</span>
             </motion.h2>
 
             {/* Description */}
@@ -61,10 +60,10 @@ export default function CTA() {
               transition={{ delay: 0.35 }}
               className="relative z-10 mx-auto mt-8 max-w-3xl text-lg leading-8 text-muted-foreground"
             >
-              Whether you need a modern web application, AI-powered automation,
-              CRM implementation, API integration, or a complete digital
-              solution, I build systems that are scalable, reliable, and focused
-              on delivering measurable business results.
+              Bring me the process your team repeats every day—lead entry,
+              assignment, follow-up, reminders, reporting, or handoffs. I&apos;ll
+              map it, automate it in HubSpot or GoHighLevel, and build any
+              supporting Next.js experience it needs.
             </motion.p>
 
             {/* Buttons */}

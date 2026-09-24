@@ -34,14 +34,15 @@ export default function HomeServices() {
           </span>
 
           <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
-            Technical Solutions for{" "}
-            <span className="text-accent">Modern Businesses</span>
+            Replace Manual Work With{" "}
+            <span className="text-accent">Reliable CRM Automation</span>
           </h2>
 
           <p className="text-lg leading-8 text-muted-foreground">
-            From CRM implementation and AI automation to web development and
-            technical systems, I build solutions that improve efficiency and
-            support business growth.
+            Your website can generate attention. The harder part is what
+            happens after a lead arrives. I design the CRM, follow-up, routing,
+            reporting, and integrations that turn interest into an operating
+            sales process.
           </p>
         </motion.div>
 

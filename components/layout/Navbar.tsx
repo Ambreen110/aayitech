@@ -24,7 +24,7 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const darkMode = theme === "dark";
 
-  if (pathname === "/jamil" || pathname === "/ambreen" || pathname.startsWith("/mustansar")) return null;
+  if (pathname === "/jamil" || pathname === "/ambreen" || pathname.startsWith("/mustansar") || pathname.startsWith("/adil")) return null;
 
   return (
     <>

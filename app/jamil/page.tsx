@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowDown, ArrowUpRight, Download, Mail, MapPin, Phone } from "lucide-react";
 import { jamilEducation, jamilExperience, jamilExpertise } from "@/data/jamil";
 import styles from "./portfolio.module.css";
@@ -18,7 +19,7 @@ export default function JamilPage() {
     <div className={styles.portfolio} id="top">
       <a className={styles.skip} href="#about">Skip to content</a>
       <header className={styles.header}>
-        <a href="#top" className={styles.brand}><span className={styles.monogram}>JS</span><span>JAMIL SHAH<small>ACCOUNTING & FINANCE</small></span></a>
+        <Link href="/" className={styles.brand} aria-label="AAYI Tech home"><span className={styles.logoMark}><Image src="/logo1.png" alt="" width={42} height={42} /></span><span>AAYI<span className={styles.brandAccent}>TECH</span><small>CRM AUTOMATION · NEXT.JS</small></span></Link>
         <nav aria-label="Jamil portfolio navigation" className={styles.nav}>
           <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact <ArrowUpRight size={14} /></a>
         </nav>

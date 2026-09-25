@@ -16,7 +16,7 @@ export default function MustansarPage() {
   return <div className={styles.site} id="top">
     <a className={styles.skip} href="#profile">Skip to content</a>
     <header className={styles.header}>
-      <a className={styles.brand} href="#top" aria-label="Mustansar Shah home"><span className={styles.mark}>MS</span><span>Mustansar Shah<small>Network & Infrastructure</small></span></a>
+      <Link className={styles.brand} href="/" aria-label="AAYI Tech home"><span className={styles.logoMark}><Image src="/logo1.png" alt="" width={42} height={42} /></span><span>AAYI<span className={styles.brandAccent}>TECH</span><small>CRM AUTOMATION · NEXT.JS</small></span></Link>
       <nav aria-label="Mustansar portfolio navigation"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
       <ThemeToggle />
     </header>

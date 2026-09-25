@@ -4,9 +4,11 @@
 .portfolio a:focus-visible { outline: 3px solid #ac7927; outline-offset: 5px; }
 .portfolio section { scroll-margin-top: 125px; }
 .header { position: sticky; top: 0; z-index: 60; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px max(6%, calc((100vw - 1200px)/2)); background: #f7f6f0f5; border-bottom: 1px solid #dcded4; backdrop-filter: blur(14px); }
-.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 14px; letter-spacing: 1px; white-space: nowrap; }
-.brand small { display: block; margin-top: 5px; font-size: 8px; letter-spacing: 1.7px; }
-.monogram { display: grid; place-items: center; width: 42px; height: 42px; background: #183e35; color: #f7f6f0; font-family: Georgia, serif; font-size: 23px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 14px; letter-spacing: .6px; white-space: nowrap; }
+.brand small { display: block; margin-top: 5px; color: #58655e; font-size: 8px; font-weight: 550; letter-spacing: 1.3px; }
+.brandAccent { color: #ac7927; }
+.logoMark { display: grid; place-items: center; width: 42px; height: 42px; overflow: hidden; border-radius: 7px; background: #0e1311; }
+.logoMark img { width: 42px; height: 42px; object-fit: contain; }
 .nav { display: flex; align-items: center; gap: 26px; font-size: 13px; }
 .nav a { display: flex; align-items: center; gap: 4px; padding: 7px 0; }
 .nav a:hover, .footer a:hover { color: #90621d; }
@@ -69,7 +71,7 @@
 .portfolio, .header, .expertiseCard, .contact, .profileCard, .themeToggle { transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease; }
 :global(.dark) .portfolio { background: #0b1110; color: #f5f3ec; color-scheme: dark; }
 :global(.dark) .header { background: #0b1110f5; border-color: #2b3d34; }
-:global(.dark) .monogram { background: #d1a84a; color: #0b1110; }
+:global(.dark) .brand small { color: #b5beb8; }
 :global(.dark) .themeToggle { background: #182a25; color: #f5f3ec; border-color: #354a40; }
 :global(.dark) .themeToggle:hover { background: #2b4036; }
 :global(.dark) .eyebrow, :global(.dark) .hero h1 span, :global(.dark) .number, :global(.dark) .period, :global(.dark) .nav a:hover, :global(.dark) .footer a:hover { color: #d1a84a; }

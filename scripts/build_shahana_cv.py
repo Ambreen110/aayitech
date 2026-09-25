@@ -77,7 +77,7 @@ def font(run, size=9.2, color=INK, bold=False, italic=False):
     return run
 
 
-def paragraph(cell, text="", *, size=9.2, color=INK, bold=False, italic=False,
+def paragraph(cell, text="", *, size=9.6, color=INK, bold=False, italic=False,
               before=0, after=0, line=1.0, align=None, keep=False):
     p = cell.add_paragraph() if cell.paragraphs[0].text else cell.paragraphs[0]
     p.paragraph_format.space_before = Pt(before)
@@ -91,29 +91,29 @@ def paragraph(cell, text="", *, size=9.2, color=INK, bold=False, italic=False,
 
 
 def heading(cell, text, before=8):
-    p = paragraph(cell, text.upper(), size=8.5, color=TEAL, bold=True, before=before, after=4, keep=True)
+    p = paragraph(cell, text.upper(), size=8.8, color=INK, bold=True, before=before, after=5, keep=True)
     p.paragraph_format.keep_together = True
     return p
 
 
 def bullet(cell, text, *, after=1.5):
-    p = paragraph(cell, size=8.7, color=MUTED, after=after, line=1.05)
+    p = paragraph(cell, size=9.1, color=MUTED, after=after, line=1.08)
     p.paragraph_format.left_indent = Cm(0.35)
     p.paragraph_format.first_line_indent = Cm(-0.22)
-    font(p.add_run("•  "), 8.7, TEAL, bold=True)
-    font(p.add_run(text), 8.7, MUTED)
+    font(p.add_run("•  "), 9.1, TEAL, bold=True)
+    font(p.add_run(text), 9.1, MUTED)
     return p
 
 
 def role(cell, organization, location, title, period, bullets):
     p = paragraph(cell, before=2, after=0, keep=True)
-    font(p.add_run(organization), 10.1, INK, bold=True)
+    font(p.add_run(organization), 10.4, INK, bold=True)
     if location:
-        font(p.add_run(f"  |  {location}"), 8.4, MUTED)
+        font(p.add_run(f"  |  {location}"), 8.7, MUTED)
     p = paragraph(cell, after=2, keep=True)
-    font(p.add_run(title), 9.2, TEAL, bold=True)
+    font(p.add_run(title), 9.5, TEAL, bold=True)
     if period:
-        font(p.add_run(f"  ·  {period}"), 8.4, MUTED)
+        font(p.add_run(f"  |  {period}"), 8.7, MUTED)
     for item in bullets:
         bullet(cell, item)
 
@@ -133,7 +133,7 @@ def add_skill_pills(cell, skills):
             if index + col < len(skills):
                 p = target.paragraphs[0]
                 p.paragraph_format.space_after = Pt(0)
-                font(p.add_run(skills[index + col]), 8.1, INK, bold=True)
+                font(p.add_run(skills[index + col]), 8.4, INK, bold=True)
             if col == 0:
                 target.width = Cm(3.2)
 
@@ -144,8 +144,8 @@ def build():
     section = doc.sections[0]
     section.page_width = Cm(21)
     section.page_height = Cm(29.7)
-    section.top_margin = Cm(1.15)
-    section.bottom_margin = Cm(1.05)
+    section.top_margin = Cm(1.25)
+    section.bottom_margin = Cm(1.15)
     section.left_margin = Cm(1.25)
     section.right_margin = Cm(1.25)
 
@@ -153,7 +153,7 @@ def build():
     normal.font.name = FONT
     normal._element.rPr.rFonts.set(qn("w:ascii"), FONT)
     normal._element.rPr.rFonts.set(qn("w:hAnsi"), FONT)
-    normal.font.size = Pt(9.2)
+    normal.font.size = Pt(9.6)
     normal.font.color.rgb = RGBColor.from_string(INK)
 
     title_style = doc.styles["Title"]
@@ -161,7 +161,7 @@ def build():
     title_style._element.rPr.rFonts.set(qn("w:ascii"), FONT)
     title_style._element.rPr.rFonts.set(qn("w:hAnsi"), FONT)
     title_style.font.color.rgb = RGBColor.from_string("000000")
-    title_style.font.size = Pt(25)
+    title_style.font.size = Pt(27)
     title_style.font.bold = True
     title_style_ppr = title_style._element.get_or_add_pPr()
     title_style_border = title_style_ppr.find(qn("w:pBdr"))
@@ -173,26 +173,26 @@ def build():
     title.paragraph_format.space_after = Pt(1)
     title.paragraph_format.line_spacing = 1
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    font(title.add_run("Shahana Batool"), 25, "000000", bold=True)
+    font(title.add_run("Shahana Batool"), 27, "000000", bold=True)
     remove_paragraph_border(title)
 
     subtitle = doc.add_paragraph()
     subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
     subtitle.paragraph_format.space_after = Pt(4)
-    font(subtitle.add_run("PROJECT COORDINATOR  ·  SUPPLY CHAIN AND ADMINISTRATION"), 10.5, TEAL, bold=True)
+    font(subtitle.add_run("PROJECT COORDINATOR  |  SUPPLY CHAIN AND ADMINISTRATION"), 10.3, INK, bold=True)
 
     contact = doc.add_paragraph()
     contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
     contact.paragraph_format.space_after = Pt(8)
-    font(contact.add_run("Rawalpindi, Pakistan  ·  +92 318 512 6272  ·  shahanabatool149@gmail.com"), 8.7, MUTED)
+    font(contact.add_run("Rawalpindi, Pakistan  |  +92 318 512 6272  |  shahanabatool149@gmail.com"), 9.0, MUTED)
 
     columns = doc.add_table(rows=1, cols=2)
     set_repeat_table_layout(columns)
-    columns.columns[0].width = Cm(11.4)
-    columns.columns[1].width = Cm(6.6)
+    columns.columns[0].width = Cm(10.55)
+    columns.columns[1].width = Cm(7.45)
     left, right = columns.rows[0].cells
-    left.width = Cm(11.4)
-    right.width = Cm(6.6)
+    left.width = Cm(10.55)
+    right.width = Cm(7.45)
     set_cell_margins(left, 0, 0, 0, 210)
     set_cell_margins(right, 0, 210, 0, 0)
     left.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
@@ -206,10 +206,11 @@ def build():
     ])
     role(left, "Starco Logistics", "Islamabad, Pakistan", "Supply Chain Intern", "", [
         "Supported operations within an end-to-end logistics company and gained practical exposure to supply chain coordination.",
+        "Observed how logistics activities connect across planning, movement, and delivery stages.",
     ])
     role(left, "Pakistan Stock Exchange Company Analysis", "NUML", "Financial Analysis Project", "Feb 2023 - Mar 2023", [
         "Analyzed listed companies using financial information and business performance indicators.",
-        "Completed focused analysis of Fauji Fertilizer and Engro Foods.",
+        "Compared the financial position and performance of Fauji Fertilizer and Engro Foods.",
     ])
     role(left, "Entrepreneurial Journey", "NUML", "Project Participant", "Oct 2022", [
         "Developed UniRide, a shuttle-service concept focused on improving access to dependable transportation.",
@@ -217,7 +218,7 @@ def build():
 
     heading(left, "Education", before=7)
     role(left, "National University of Modern Languages", "Islamabad", "Bachelor of Business Administration", "Feb 2021 - Jan 2025", [
-        "GPA 3.96 / 4.00  ·  Specialization in Supply Chain Management",
+        "GPA 3.96 / 4.00  |  Specialization in Supply Chain Management",
     ])
     role(left, "FG Postgraduate College for Women", "Wah Cantt", "FSc Pre-Medical", "2019", [
         "Percentage 86%",
@@ -225,8 +226,8 @@ def build():
 
     heading(right, "Profile", before=0)
     paragraph(right,
-        "Business Administration graduate specializing in supply chain management, with hands-on experience in project coordination, procurement, logistics, administrative support, and financial analysis. Known for organized execution, thoughtful problem-solving, and clear coordination across teams, vendors, and customers.",
-        size=8.8, color=MUTED, after=4, line=1.08)
+        "Business Administration graduate specializing in supply chain management, with hands-on experience in project coordination, procurement, logistics, administrative support, and financial analysis. Brings organized execution, thoughtful problem-solving, and clear coordination across teams, vendors, and customers.",
+        size=9.2, color=MUTED, after=5, line=1.12)
 
     heading(right, "Core Skills", before=5)
     add_skill_pills(right, [
@@ -235,23 +236,28 @@ def build():
         "Problem-solving", "Communication",
     ])
 
+    heading(right, "Professional Value", before=8)
+    bullet(right, "Coordinates priorities across teams, vendors, and customers.")
+    bullet(right, "Connects procurement and logistics activity with project delivery.")
+    bullet(right, "Uses analytical thinking to support practical business decisions.")
+
     heading(right, "Key Achievement", before=7)
-    paragraph(right, "3rd Prize  ·  SDGs Business Startup Competition", size=9.2, color=INK, bold=True, after=2, keep=True)
+    paragraph(right, "3rd Prize  |  SDGs Business Startup Competition", size=9.4, color=INK, bold=True, after=2, keep=True)
     paragraph(right,
         "Recognized for an oyster-mushroom cultivation concept designed around a controlled environment, supporting sustainable agriculture and food production.",
-        size=8.6, color=MUTED, after=3, line=1.08)
+        size=9.0, color=MUTED, after=3, line=1.1)
 
     heading(right, "Languages", before=6)
     for language, level in (("English", "Advanced"), ("Urdu", "Native"), ("Saraiki", "Native"), ("Chinese", "Beginner")):
         p = paragraph(right, after=1.5)
-        font(p.add_run(language), 8.8, INK, bold=True)
-        font(p.add_run(f"  ·  {level}"), 8.5, MUTED)
+        font(p.add_run(language), 9.0, INK, bold=True)
+        font(p.add_run(f"  |  {level}"), 8.8, MUTED)
 
     heading(right, "Strength", before=6)
     paragraph(right, "Business acumen", size=9.1, color=INK, bold=True, after=1)
     paragraph(right,
         "Combines supply chain knowledge with administrative discipline, analytical thinking, planning, and sound decision-making.",
-        size=8.6, color=MUTED, line=1.08)
+        size=9.0, color=MUTED, line=1.1)
 
     doc.core_properties.title = "Shahana Batool Professional CV"
     doc.core_properties.subject = "Project coordination supply chain and administration"

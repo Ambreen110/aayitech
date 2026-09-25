@@ -1,4 +1,6 @@
 from pathlib import Path
+import shutil
+import time
 
 from docx import Document
 from docx.enum.section import WD_SECTION
@@ -20,6 +22,7 @@ from reportlab.platypus import Paragraph
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "output" / "cv" / "Syed_Adil_Ali_Professional_CV.docx"
 PDF_OUTPUT = ROOT / "output" / "cv" / "Syed_Adil_Ali_Professional_CV.pdf"
+PDF_TEMP = ROOT / "output" / "cv" / "Syed_Adil_Ali_Professional_CV.building.pdf"
 PHOTO = ROOT / "output" / "cv" / "Syed_Adil_Ali_Professional_Headshot.png"
 
 NAVY = "17324D"
@@ -89,16 +92,16 @@ def format_paragraph(paragraph, before=0, after=0, line=1.0):
 
 def add_sidebar_heading(cell, text):
     p = cell.add_paragraph()
-    format_paragraph(p, before=8, after=4)
+    format_paragraph(p, before=13, after=6)
     r = p.add_run(text.upper())
-    set_run_font(r, size=8.5, bold=True, color=WHITE)
+    set_run_font(r, size=9.5, bold=True, color=WHITE)
     r.font.letter_spacing = Pt(0.6)
     return p
 
 
-def add_sidebar_text(cell, text, bold=False, size=8.3, after=2):
+def add_sidebar_text(cell, text, bold=False, size=9.0, after=3):
     p = cell.add_paragraph()
-    format_paragraph(p, after=after, line=1.05)
+    format_paragraph(p, after=after, line=1.12)
     r = p.add_run(text)
     set_run_font(r, size=size, bold=bold, color=WHITE)
     return p
@@ -106,36 +109,36 @@ def add_sidebar_text(cell, text, bold=False, size=8.3, after=2):
 
 def add_main_heading(cell, text):
     p = cell.add_paragraph()
-    format_paragraph(p, before=6, after=3)
+    format_paragraph(p, before=14, after=8)
     r = p.add_run(text.upper())
-    set_run_font(r, size=10, bold=True, color=ACCENT)
+    set_run_font(r, size=11.2, bold=True, color=ACCENT)
     r.font.letter_spacing = Pt(0.8)
     return p
 
 
 def add_role(cell, title, company, dates):
     p = cell.add_paragraph()
-    format_paragraph(p, before=3, after=1)
+    format_paragraph(p, before=12, after=6)
     p.paragraph_format.tab_stops.add_tab_stop(Inches(4.85))
     r = p.add_run(title)
-    set_run_font(r, size=9.2, bold=True, color=INK)
+    set_run_font(r, size=10.6, bold=True, color=INK)
     r = p.add_run(f" | {company}")
-    set_run_font(r, size=9.0, color=MUTED)
+    set_run_font(r, size=10.0, color=MUTED)
     r = p.add_run(f"\t{dates}")
-    set_run_font(r, size=8.2, bold=True, color=ACCENT)
+    set_run_font(r, size=9.3, bold=True, color=ACCENT)
 
 
 def add_bullets(cell, items):
-    for item in items:
+    for index, item in enumerate(items):
         p = cell.add_paragraph(style="List Bullet")
-        format_paragraph(p, after=0.8, line=1.0)
-        p.paragraph_format.left_indent = Inches(0.18)
-        p.paragraph_format.first_line_indent = Inches(-0.12)
+        format_paragraph(p, after=12 if index == len(items) - 1 else 4.5, line=1.2)
+        p.paragraph_format.left_indent = Inches(0.21)
+        p.paragraph_format.first_line_indent = Inches(-0.13)
         for run in p.runs:
-            set_run_font(run, size=8.3, color=INK)
+            set_run_font(run, size=10.0, color=INK)
         if not p.runs:
             r = p.add_run(item)
-            set_run_font(r, size=8.3, color=INK)
+            set_run_font(r, size=10.0, color=INK)
         else:
             p.runs[0].text = item
 
@@ -154,9 +157,9 @@ def build():
     styles["Normal"].font.name = "Aptos"
     styles["Normal"]._element.rPr.rFonts.set(qn("w:ascii"), "Aptos")
     styles["Normal"]._element.rPr.rFonts.set(qn("w:hAnsi"), "Aptos")
-    styles["Normal"].font.size = Pt(9)
+    styles["Normal"].font.size = Pt(10)
     styles["List Bullet"].font.name = "Aptos"
-    styles["List Bullet"].font.size = Pt(8.3)
+    styles["List Bullet"].font.size = Pt(10)
 
     table = doc.add_table(rows=1, cols=2)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -171,18 +174,18 @@ def build():
     left.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
     right.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
     set_cell_shading(left, NAVY)
-    set_cell_margins(left, top=180, start=230, bottom=180, end=230)
-    set_cell_margins(right, top=160, start=300, bottom=120, end=180)
+    set_cell_margins(left, top=210, start=230, bottom=210, end=230)
+    set_cell_margins(right, top=190, start=300, bottom=170, end=180)
 
     # Remove the empty starter paragraphs after reusing them for the photo/name.
     lp = left.paragraphs[0]
     lp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    format_paragraph(lp, after=8)
-    lp.add_run().add_picture(str(PHOTO), width=Cm(3.7))
+    format_paragraph(lp, after=12)
+    lp.add_run().add_picture(str(PHOTO), width=Cm(4.15))
 
     add_sidebar_heading(left, "Contact")
     add_sidebar_text(left, "+92 332 764 8686")
-    add_sidebar_text(left, "aliad40.aa@gmail.com", after=5)
+    add_sidebar_text(left, "aliad40.aa@gmail.com", after=7)
 
     add_sidebar_heading(left, "Core Expertise")
     for skill in (
@@ -196,38 +199,38 @@ def build():
         "Agile development",
         "Level 3 product support",
     ):
-        add_sidebar_text(left, skill, size=8.0, after=1.3)
+        add_sidebar_text(left, skill, size=8.8, after=2.2)
 
     add_sidebar_heading(left, "Education")
-    add_sidebar_text(left, "B.S. Computer System Engineering", bold=True, size=8.1, after=1)
-    add_sidebar_text(left, "Ghulam Ishaq Khan Institute of Engineering Sciences & Technology", size=7.7, after=1)
-    add_sidebar_text(left, "2009 - 2014", size=7.7, after=5)
-    add_sidebar_text(left, "F.Sc. Pre-Engineering", bold=True, size=8.1, after=1)
-    add_sidebar_text(left, "Al-Abbas College, Dera Ismail Khan", size=7.7, after=1)
-    add_sidebar_text(left, "2007 - 2009", size=7.7, after=2)
+    add_sidebar_text(left, "B.S. Computer System Engineering", bold=True, size=9.0, after=2)
+    add_sidebar_text(left, "Ghulam Ishaq Khan Institute of Engineering Sciences & Technology", size=8.4, after=2)
+    add_sidebar_text(left, "2009 - 2014", size=8.4, after=7)
+    add_sidebar_text(left, "F.Sc. Pre-Engineering", bold=True, size=9.0, after=2)
+    add_sidebar_text(left, "Al-Abbas College, Dera Ismail Khan", size=8.4, after=2)
+    add_sidebar_text(left, "2007 - 2009", size=8.4, after=3)
 
     p = right.paragraphs[0]
     format_paragraph(p, after=0)
     r = p.add_run("SYED ADIL ALI")
-    set_run_font(r, size=24, bold=True, color=RGBColor(23, 50, 77))
+    set_run_font(r, size=27, bold=True, color=RGBColor(23, 50, 77))
     r.font.letter_spacing = Pt(0.8)
 
     p = right.add_paragraph()
-    format_paragraph(p, after=7)
+    format_paragraph(p, after=12)
     r = p.add_run("LEAD SOFTWARE ENGINEER")
-    set_run_font(r, size=10.5, bold=True, color=ACCENT)
+    set_run_font(r, size=12, bold=True, color=ACCENT)
     r.font.letter_spacing = Pt(1.0)
 
     add_main_heading(right, "Professional Profile")
     p = right.add_paragraph()
-    format_paragraph(p, after=5, line=1.04)
+    format_paragraph(p, after=13, line=1.25)
     r = p.add_run(
         "Software engineering professional with experience building and supporting web-based business "
         "systems, including point-of-sale, e-commerce, EDI, warehouse, nutrition dashboard, HR, and "
         "procurement solutions. Skilled in full-cycle development, production support, API development, "
         "and guiding teams through complex technical issues."
     )
-    set_run_font(r, size=8.6, color=INK)
+    set_run_font(r, size=10.6, color=INK)
 
     add_main_heading(right, "Professional Experience")
     add_role(right, "Lead Software Engineer", "Invenits Technologies", "Mar 2017 - Present")
@@ -279,7 +282,7 @@ def build():
 def build_pdf():
     page_w, page_h = A4
     sidebar_w = 164
-    c = canvas.Canvas(str(PDF_OUTPUT), pagesize=A4)
+    c = canvas.Canvas(str(PDF_TEMP), pagesize=A4)
     c.setTitle("Syed Adil Ali - Professional CV")
     c.setAuthor("Syed Adil Ali")
     c.setSubject("Lead Software Engineer CV")
@@ -288,7 +291,7 @@ def build_pdf():
     c.rect(0, 0, sidebar_w, page_h, fill=1, stroke=0)
 
     # Headshot with a clean white keyline.
-    photo_x, photo_y, photo_w, photo_h = 25, page_h - 173, 114, 143
+    photo_x, photo_y, photo_w, photo_h = 22, page_h - 202, 120, 168
     c.setFillColor(white)
     c.roundRect(photo_x - 2, photo_y - 2, photo_w + 4, photo_h + 4, 4, fill=1, stroke=0)
     c.drawImage(ImageReader(str(PHOTO)), photo_x, photo_y, width=photo_w, height=photo_h,
@@ -296,11 +299,11 @@ def build_pdf():
 
     def side_heading(text, y):
         c.setFillColor(white)
-        c.setFont("Helvetica-Bold", 8.3)
+        c.setFont("Helvetica-Bold", 9.5)
         c.drawString(22, y, text.upper())
-        return y - 15
+        return y - 19
 
-    def side_lines(lines, y, bold_first=False, size=8.1, gap=10.5):
+    def side_lines(lines, y, bold_first=False, size=9.0, gap=13.2):
         for idx, line in enumerate(lines):
             c.setFont("Helvetica-Bold" if bold_first and idx == 0 else "Helvetica", size)
             c.setFillColor(white)
@@ -310,46 +313,46 @@ def build_pdf():
 
     sy = photo_y - 22
     sy = side_heading("Contact", sy)
-    sy = side_lines(["+92 332 764 8686", "aliad40.aa@gmail.com"], sy, size=7.9, gap=12)
-    sy -= 8
+    sy = side_lines(["+92 332 764 8686", "aliad40.aa@gmail.com"], sy, size=8.9, gap=14)
+    sy -= 13
     sy = side_heading("Core Expertise", sy)
     sy = side_lines([
         "C, C++, C#", "ASP.NET / ASP.NET MVC", "React and JavaScript",
         "HTML and PHP", "REST API development", "MySQL and SQL Server",
         "Visual Studio", "Agile development", "Level 3 product support",
-    ], sy, size=7.7, gap=11)
-    sy -= 8
+    ], sy, size=8.7, gap=13.3)
+    sy -= 13
     sy = side_heading("Education", sy)
-    sy = side_lines(["B.S. Computer System", "Engineering"], sy, bold_first=True, size=7.8, gap=10)
-    sy = side_lines(["Ghulam Ishaq Khan Institute", "of Engineering Sciences &", "Technology", "2009 - 2014"], sy - 1, size=7.3, gap=9.5)
-    sy -= 7
-    sy = side_lines(["F.Sc. Pre-Engineering"], sy, bold_first=True, size=7.8, gap=10)
-    side_lines(["Al-Abbas College", "Dera Ismail Khan", "2007 - 2009"], sy - 1, size=7.3, gap=9.5)
+    sy = side_lines(["B.S. Computer System", "Engineering"], sy, bold_first=True, size=8.8, gap=12.5)
+    sy = side_lines(["Ghulam Ishaq Khan Institute", "of Engineering Sciences &", "Technology", "2009 - 2014"], sy - 2, size=8.0, gap=11.5)
+    sy -= 11
+    sy = side_lines(["F.Sc. Pre-Engineering"], sy, bold_first=True, size=8.8, gap=12.5)
+    side_lines(["Al-Abbas College", "Dera Ismail Khan", "2007 - 2009"], sy - 2, size=8.0, gap=11.5)
 
     main_x = sidebar_w + 22
     main_w = page_w - main_x - 24
-    y = page_h - 47
+    y = page_h - 53
     c.setFillColor(HexColor("#17324D"))
-    c.setFont("Helvetica-Bold", 22)
+    c.setFont("Helvetica-Bold", 26)
     c.drawString(main_x, y, "SYED ADIL ALI")
-    y -= 18
+    y -= 23
     c.setFillColor(HexColor("#2A7F8E"))
-    c.setFont("Helvetica-Bold", 9.5)
+    c.setFont("Helvetica-Bold", 11)
     c.drawString(main_x, y, "LEAD SOFTWARE ENGINEER")
-    y -= 27
+    y -= 34
 
-    body = ParagraphStyle("body", fontName="Helvetica", fontSize=9.0, leading=12.0,
+    body = ParagraphStyle("body", fontName="Helvetica", fontSize=10.8, leading=16.5,
                           textColor=HexColor("#1F2A33"), alignment=TA_LEFT, spaceAfter=0)
-    bullet = ParagraphStyle("bullet", parent=body, fontSize=8.65, leftIndent=12, firstLineIndent=-9,
-                            bulletIndent=0, leading=11.4)
+    bullet = ParagraphStyle("bullet", parent=body, fontSize=10.3, leftIndent=14, firstLineIndent=-10,
+                            bulletIndent=0, leading=16.0)
 
     def heading(text, ypos):
         c.setFillColor(HexColor("#2A7F8E"))
-        c.setFont("Helvetica-Bold", 9.2)
+        c.setFont("Helvetica-Bold", 10.5)
         c.drawString(main_x, ypos, text.upper())
-        return ypos - 18
+        return ypos - 28
 
-    def paragraph(text, ypos, style=body, width=main_w, gap=5):
+    def paragraph(text, ypos, style=body, width=main_w, gap=7):
         p = Paragraph(text, style)
         _, h = p.wrap(width, 200)
         p.drawOn(c, main_x, ypos - h)
@@ -357,28 +360,28 @@ def build_pdf():
 
     def role(title, company, dates, ypos):
         c.setFillColor(HexColor("#1F2A33"))
-        c.setFont("Helvetica-Bold", 8.7)
+        c.setFont("Helvetica-Bold", 10.2)
         c.drawString(main_x, ypos, title)
-        x2 = main_x + stringWidth(title, "Helvetica-Bold", 8.7) + 3
+        x2 = main_x + stringWidth(title, "Helvetica-Bold", 10.2) + 4
         c.setFillColor(HexColor("#566570"))
-        c.setFont("Helvetica", 8.3)
+        c.setFont("Helvetica", 9.6)
         c.drawString(x2, ypos, "| " + company)
         c.setFillColor(HexColor("#2A7F8E"))
-        c.setFont("Helvetica-Bold", 7.8)
+        c.setFont("Helvetica-Bold", 9.0)
         c.drawRightString(main_x + main_w, ypos, dates)
-        return ypos - 14
+        return ypos - 27
 
     def bullets(items, ypos):
         for item in items:
-            ypos = paragraph("- " + item, ypos, bullet, gap=1.0)
-        return ypos - 9
+            ypos = paragraph("- " + item, ypos, bullet, gap=5.5)
+        return ypos - 34
 
     y = heading("Professional Profile", y)
     y = paragraph(
         "Software engineering professional with experience building and supporting web-based business "
         "systems, including point-of-sale, e-commerce, EDI, warehouse, nutrition dashboard, HR, and "
         "procurement solutions. Skilled in full-cycle development, production support, API development, "
-        "and guiding teams through complex technical issues.", y, gap=12)
+        "and guiding teams through complex technical issues.", y, gap=24)
 
     y = heading("Professional Experience", y)
     y = role("Lead Software Engineer", "Invenits Technologies", "Mar 2017 - Present", y)
@@ -402,6 +405,16 @@ def build_pdf():
 
     c.showPage()
     c.save()
+    for attempt in range(6):
+        try:
+            PDF_TEMP.replace(PDF_OUTPUT)
+            break
+        except PermissionError:
+            if attempt == 5:
+                shutil.copyfile(PDF_TEMP, PDF_OUTPUT)
+                PDF_TEMP.unlink()
+                break
+            time.sleep(0.5)
     print(PDF_OUTPUT)
 
 
